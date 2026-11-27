@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VOSTY Design | Simulador de Orçamentos — Móveis Sob Medida &amp; Remodelações (Portugal &amp; Europa)</title>
-    <meta name="description" content="Simulador online de orçamentos para móveis planejados, móveis sob medida e remodelações completas ou parciais em Portugal e toda a Europa.">
+    <title>VOSTY Design | Simulador Oficial de Orçamentos — Portugal &amp; Toda a Europa</title>
+    <meta name="description" content="Simulador de orçamentos VOSTY Design: móveis planejados, móveis sob medida e remodelações completas ou parciais em Portugal e toda a Europa.">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -62,18 +62,18 @@
 
     <!-- Header -->
     <header class="bg-white border-b border-vosty-stone sticky top-0 z-30">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-18 py-4 flex flex-wrap items-center justify-between gap-4">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-wrap items-center justify-between gap-4">
             <div class="flex items-center gap-3">
                 <div class="w-9 h-9 border border-vosty-gold flex items-center justify-center rotate-45">
                     <div class="w-5 h-5 border border-vosty-dark/70"></div>
                 </div>
                 <div class="pl-1">
                     <span class="block text-lg font-bold tracking-[0.22em] text-vosty-dark leading-none">VOSTY</span>
-                    <span class="block text-[10px] tracking-[0.18em] text-vosty-muted uppercase mt-1">Simulador de Orçamentos</span>
+                    <span class="block text-[10px] tracking-[0.18em] text-vosty-muted uppercase mt-1">Simulador Oficial de Orçamentos</span>
                 </div>
             </div>
             <div class="text-xs text-vosty-muted">
-                Referências sincronizadas: <strong class="text-vosty-dark">Leroy Merlin • Brico Depôt • Obramat • Chapas &amp; Ferragens</strong>
+                Base Central Sincronizada: <strong class="text-vosty-dark">Leroy Merlin • Brico Depôt • Obramat • Egger/Sonae/Finsa • Blum/Hettich</strong>
             </div>
         </div>
     </header>
@@ -96,7 +96,7 @@
                         </div>
                         <div>
                             <label class="block text-xs font-semibold uppercase tracking-wider mb-1.5">Cidade / País (Portugal ou Europa) *</label>
-                            <input type="text" id="cliente-local" oninput="atualizarPreview()" placeholder="Ex: Lisboa, Porto, Madrid, Paris, Londres, Milão..."
+                            <input type="text" id="cliente-local" oninput="atualizarPreview()" placeholder="Ex: Portugal, Espanha, França, Itália, Reino Unido..."
                                    class="w-full border border-vosty-stone bg-vosty-cream/40 px-3.5 py-2.5 text-sm focus:outline-none focus:border-vosty-gold">
                         </div>
                         <div>
@@ -121,7 +121,7 @@
                         </span>
                     </div>
                     <p class="text-xs text-vosty-muted mb-4">
-                        Envie a planta, PDF ou fotografia do ambiente (ou tire uma foto agora pelo telemóvel). O sistema identifica os materiais de execução (Leroy Merlin, Brico Depôt, Obramat, chapas, orlas e ferragens) e permite orçar itens complementares (portas em vidro, pedras, serralharia).
+                        Envie a planta, PDF ou fotografia do ambiente (ou tire uma foto agora pelo telemóvel). O sistema sincroniza as referências de materiais (Leroy Merlin, Brico Depôt, Obramat, chapas Egger/Sonae/Finsa e ferragens Blum/Hettich) e permite incluir itens complementares (vidro, pedra, serralharia).
                     </p>
 
                     <div class="grid sm:grid-cols-2 gap-3 mb-4">
@@ -158,18 +158,18 @@
                         <!-- Itens Complementares Identificados na Imagem (Vidro, Pedra, Serralharia, etc.) -->
                         <div class="bg-white p-4 border border-vosty-stone space-y-3">
                             <p class="text-xs font-bold uppercase tracking-wider text-vosty-dark">
-                                Adicionar Item Complementar Identificado na Imagem / Planta (Vidro, Pedra, Serralharia, Outros)
+                                Adicionar Item Complementar Identificado na Imagem / Planta (Vidro, Pedra, Serralharia)
                             </p>
                             <div class="grid sm:grid-cols-2 gap-3">
                                 <div>
                                     <label class="block text-[11px] font-semibold uppercase mb-1">Tipo de Item Complementar</label>
-                                    <select id="comp-tipo" onchange="atualizarBaseComplementar()" class="w-full border border-vosty-stone px-3 py-2 text-xs bg-vosty-cream/30">
-                                        <option value="porta_vidro">Porta de Correr em Vidro Temperado/Laminado (Embutida ou Aparente)</option>
-                                        <option value="pedra_silestone">Bancada / Revestimento em Pedra Silestone / Quartzo Composto</option>
-                                        <option value="pedra_dekton">Bancada / Revestimento em Pedra Dekton / Porcelânico Grande Formato</option>
-                                        <option value="pedra_granito">Bancada / Revestimento em Granito Natural / Mármore</option>
-                                        <option value="serralharia_ferro">Serralharia Sob Medida (Divisória Ferro/Vidro, Estrutura Metálica)</option>
-                                        <option value="espelho_vidro">Espelho Sob Medida / Resguardo de Duche em Vidro Temperado</option>
+                                    <select id="comp-tipo" class="w-full border border-vosty-stone px-3 py-2 text-xs bg-vosty-cream/30">
+                                        <option value="COMP-VIDRO">Porta de Correr em Vidro Temperado/Laminado (Embutida ou Aparente)</option>
+                                        <option value="COMP-SILESTONE">Bancada / Revestimento em Pedra Silestone / Quartzo Composto</option>
+                                        <option value="COMP-DEKTON">Bancada / Revestimento em Pedra Dekton / Porcelânico Grande Formato</option>
+                                        <option value="COMP-GRANITO">Bancada / Revestimento em Granito Natural / Mármore</option>
+                                        <option value="COMP-SERRALHARIA">Serralharia Sob Medida (Divisória Ferro/Vidro, Estrutura Metálica)</option>
+                                        <option value="COMP-ESPELHO">Espelho Sob Medida / Resguardo de Duche em Vidro Temperado</option>
                                     </select>
                                 </div>
                                 <div>
@@ -216,33 +216,23 @@
                         </button>
                     </div>
 
-                    <!-- PAINEL A: MARCENARIA SOB MEDIDA -->
+                    <!-- PAINEL A: MARCENARIA SOB MEDIDA (BASE DE PREÇOS CENTRAL ~53%) -->
                     <div id="panel-marcenaria" class="space-y-4">
-                        <div class="grid sm:grid-cols-2 gap-4">
-                            <div>
-                                <label class="block text-xs font-semibold uppercase tracking-wider mb-1.5">Tipo de Móvel Sob Medida *</label>
-                                <select id="marc-tipo" class="w-full border border-vosty-stone bg-vosty-cream/40 px-3.5 py-2.5 text-sm">
-                                    <option value="cozinha_sob_medida">Cozinha Planejada / Sob Medida Completa</option>
-                                    <option value="roupeiro_lacado">Roupeiro Embutido Lacado (Portas de Abrir ou Correr)</option>
-                                    <option value="closet_sob_medida">Closet Completo Sob Medida com Gaveteiros e LED</option>
-                                    <option value="painel_tv_ripado">Painel de TV Sob Medida com Ripado e Iluminação LED</option>
-                                    <option value="moveis_quarto">Móveis para Quarto Sob Medida (Cabeceira, Mesas de Cabeceira e Cómoda)</option>
-                                    <option value="movel_wc_suspenso">Móvel de Casa de Banho Suspenso Hidrófugo Sob Medida</option>
-                                    <option value="garrafeira_bar">Garrafeira / Aparador Bar Iluminado Sob Medida</option>
-                                </select>
-                            </div>
-                            <div>
-                                <label class="block text-xs font-semibold uppercase tracking-wider mb-1.5">Acabamento Principal *</label>
-                                <select id="marc-acabamento" class="w-full border border-vosty-stone bg-vosty-cream/40 px-3.5 py-2.5 text-sm">
-                                    <option value="melamina">Melamina Texturizada / Madeira (Finsa / Egger)</option>
-                                    <option value="termolaminado">Termolaminado Alta Resistência / Hidrófugo</option>
-                                    <option value="lacado_mate">Lacado Mate de Alta Qualidade (2 faces)</option>
-                                    <option value="lacado_brilho_ripado">Lacado Alto Brilho + Painel Ripado + LED Integrado</option>
-                                </select>
-                            </div>
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider mb-1.5">Item da Base de Preços — Marcenaria *</label>
+                            <select id="marc-code" onchange="ajustarCamposMarcenaria()" class="w-full border border-vosty-stone bg-vosty-cream/40 px-3.5 py-2.5 text-sm">
+                                <option value="COZ-MEL">COZ-MEL — Cozinha Linear / em L (Melamina Egger/Sonae) [m² frontal]</option>
+                                <option value="COZ-ILHA">COZ-ILHA — Cozinha com Ilha Central [m² parede]</option>
+                                <option value="ROUP-MEL">ROUP-MEL — Roupeiro / Closet Melamina 19mm [m² frontal]</option>
+                                <option value="ROUP-LAC">ROUP-LAC — Roupeiro / Closet Exterior Lacado Branco [m² frontal]</option>
+                                <option value="PAIN-RIP">PAIN-RIP — Painel Ripado Decorativo MDF / Painel TV [m²]</option>
+                                <option value="QUARTO-MOV">QUARTO-MOV — Móveis para Quarto Sob Medida (Cabeceira, Mesas e Cómoda) [m²]</option>
+                                <option value="WC-MOV">WC-MOV — Móvel de Casa de Banho Suspenso [Conjunto]</option>
+                            </select>
                         </div>
 
-                        <div class="grid grid-cols-3 gap-4">
+                        <!-- Medidas (Largura x Altura) para itens em m² -->
+                        <div id="campos-marc-medidas" class="grid grid-cols-3 gap-4">
                             <div>
                                 <label class="block text-xs font-semibold uppercase tracking-wider mb-1.5">Largura (m)</label>
                                 <input type="number" id="marc-largura" step="0.05" min="0.2" value="2.40"
@@ -260,6 +250,13 @@
                             </div>
                         </div>
 
+                        <!-- Quantidade de Conjuntos para WC-MOV -->
+                        <div id="campos-marc-conj" class="hidden">
+                            <label class="block text-xs font-semibold uppercase tracking-wider mb-1.5">Quantidade de Conjuntos</label>
+                            <input type="number" id="marc-conj-qtd" min="1" value="1"
+                                   class="w-full border border-vosty-stone bg-vosty-cream/40 px-3.5 py-2.5 text-sm">
+                        </div>
+
                         <div>
                             <label class="block text-xs font-semibold uppercase tracking-wider mb-1.5">Observações Específicas deste Móvel (Opcional)</label>
                             <input type="text" id="marc-obs" placeholder="Ex: Cor branco mate, ferragens Blum amortecidas, fita LED quente 3000K..."
@@ -275,36 +272,32 @@
                     <!-- PAINEL B: REMODELAÇÃO & JANELAS PVC -->
                     <div id="panel-remodelacao" class="hidden space-y-4">
                         <div>
-                            <label class="block text-xs font-semibold uppercase tracking-wider mb-1.5">Tipo de Serviço de Remodelação *</label>
-                            <select id="rem-tipo" onchange="ajustarCamposRemodelacao()"
+                            <label class="block text-xs font-semibold uppercase tracking-wider mb-1.5">Item da Base de Preços — Remodelação *</label>
+                            <select id="rem-code" onchange="ajustarCamposRemodelacao()"
                                     class="w-full border border-vosty-stone bg-vosty-cream/40 px-3.5 py-2.5 text-sm">
-                                <option value="casa_completa">Remodelação de Casa / Apartamento Completo (Chave na Mão)</option>
-                                <option value="casa_parcial">Remodelação Parcial de Casa / Apartamento</option>
-                                <option value="wc_completa">Remodelação Completa de Casa de Banho</option>
-                                <option value="wc_parcial">Remodelação Parcial de Casa de Banho</option>
-                                <option value="cozinha_completa">Remodelação Completa de Cozinha (Obra Civil + Instalações)</option>
-                                <option value="cozinha_parcial">Remodelação Parcial de Cozinha</option>
-                                <option value="parede_pladur">Parede Divisória em Pladur (Estrutura Metálica, Barramento, Fita Telada e Pintura)</option>
-                                <option value="teto_pladur">Teto Falso em Pladur com Sanca LED, Barramento, Fita Telada e Pintura</option>
-                                <option value="pavimento_pintura">Assentamento de Chão Flutuante / Cerâmico + Pintura Geral</option>
-                                <option value="janelas_pvc">Janelas em Caixilharia PVC com Vidro Duplo Acústico + Estore</option>
+                                <option value="REM-GER-STD">REM-GER-STD — Remodelação Geral Chave na Mão — Gama Standard (por m²)</option>
+                                <option value="REM-GER-PRM">REM-GER-PRM — Remodelação Geral Chave na Mão — Gama Premium (por m²)</option>
+                                <option value="REM-COZ-COMP">REM-COZ-COMP — Remodelação Parcial — Cozinha Completa (Obra Civil até 10m²) [Conj.]</option>
+                                <option value="REM-WC-COMP">REM-WC-COMP — Remodelação Parcial — Casa de Banho Completa (até 5m²) [Conj.]</option>
+                                <option value="REM-PLD-PAR">REM-PLD-PAR — Divisória em Pladur (Parede Simples/Dupla + Estrutura, Barramento, Fita Telada) [m²]</option>
+                                <option value="REM-PLD-TET">REM-PLD-TET — Teto Falso em Pladur Completo (Estrutura, Fita, Barramento e Pintura) [m²]</option>
+                                <option value="REM-BAR-PIN">REM-BAR-PIN — Barramento Geral e Pintura (Paredes/Tetos) [m²]</option>
+                                <option value="REM-CH-FLU">REM-CH-FLU — Pavimento Flutuante AC4 / AC5 [m²]</option>
+                                <option value="REM-CH-CER">REM-CH-CER — Pavimento / Revestimento Cerâmico [m²]</option>
+                                <option value="REM-CAN-HID">REM-CAN-HID — Canalização / Rede Hidráulica [Ponto]</option>
+                                <option value="REM-ELE-PON">REM-ELE-PON — Eletricidade &amp; Iluminação LED [Ponto]</option>
+                                <option value="REM-PRT-INT">REM-PRT-INT — Porta Interior Completa (Branca/Madeira) [Unid.]</option>
+                                <option value="REM-PRT-BLI">REM-PRT-BLI — Porta Blindada de Alta Segurança [Unid.]</option>
+                                <option value="REM-DEM-ENT">REM-DEM-ENT — Demolições e Gestão de Entulho [m²]</option>
+                                <option value="REM-JAN-PVC">REM-JAN-PVC — Janelas em Caixilharia PVC com Vidro Duplo Acústico + Estore [m² / Unid.]</option>
                             </select>
                         </div>
 
-                        <!-- Campos Padrão de Remodelação (Área m²) -->
-                        <div id="campos-rem-area" class="grid sm:grid-cols-2 gap-4">
-                            <div>
-                                <label class="block text-xs font-semibold uppercase tracking-wider mb-1.5">Área Estimada (m²)</label>
-                                <input type="number" id="rem-area" step="0.5" min="1" value="80"
-                                       class="w-full border border-vosty-stone bg-vosty-cream/40 px-3.5 py-2.5 text-sm">
-                            </div>
-                            <div>
-                                <label class="block text-xs font-semibold uppercase tracking-wider mb-1.5">Padrão de Acabamento / Materiais</label>
-                                <select id="rem-padrao" class="w-full border border-vosty-stone bg-vosty-cream/40 px-3.5 py-2.5 text-sm">
-                                    <option value="standard">Linha Essencial (Leroy Merlin / Brico Depôt / Obramat)</option>
-                                    <option value="premium">Linha Superior / Retificados &amp; Equipamentos Premium</option>
-                                </select>
-                            </div>
+                        <!-- Campo padrão para m², Conj., Ponto ou Unid. -->
+                        <div id="campos-rem-qtd">
+                            <label id="label-rem-qtd" class="block text-xs font-semibold uppercase tracking-wider mb-1.5">Área Estimada (m²)</label>
+                            <input type="number" id="rem-qtd" step="0.5" min="1" value="80"
+                                   class="w-full border border-vosty-stone bg-vosty-cream/40 px-3.5 py-2.5 text-sm">
                         </div>
 
                         <!-- Campos Específicos para Janelas PVC com Vidro Duplo Acústico + Estore -->
@@ -369,8 +362,8 @@
                     <span id="contador-itens" class="text-xs font-semibold bg-vosty-dark text-white px-3 py-1">0 itens</span>
                 </div>
 
-                <!-- FOLHA DO ORÇAMENTO QUE VIRA PDF -->
-                <div id="documento-pdf" class="pdf-sheet border border-vosty-stone shadow-lg p-6 sm:p-8 space-y-6">
+                <!-- FOLHA DO ORÇAMENTO DO CLIENTE (PDF) -->
+                <div id="documento-pdf-cliente" class="pdf-sheet border border-vosty-stone shadow-lg p-6 sm:p-8 space-y-6">
                     <!-- Cabeçalho PDF -->
                     <div class="border-b-2 border-vosty-gold pb-4 flex justify-between items-start gap-4">
                         <div>
@@ -391,21 +384,21 @@
                     <!-- Dados do Cliente no PDF -->
                     <div class="bg-vosty-cream/70 p-3.5 border border-vosty-stone text-xs space-y-1">
                         <p><strong class="uppercase tracking-wider text-vosty-muted">Cliente:</strong> <span id="prev-nome" class="font-semibold text-vosty-dark">A preencher</span></p>
-                        <p><strong class="uppercase tracking-wider text-vosty-muted">Local da Obra:</strong> <span id="prev-local" class="font-semibold text-vosty-dark">Portugal / Europa</span></p>
+                        <p><strong class="uppercase tracking-wider text-vosty-muted">Local da Obra:</strong> <span id="prev-local" class="font-semibold text-vosty-dark">Portugal / Toda a Europa</span></p>
                         <p><strong class="uppercase tracking-wider text-vosty-muted">Contacto:</strong> <span id="prev-contato" class="text-vosty-dark">—</span></p>
                         <p id="prev-anexo-linha" class="hidden text-emerald-800 font-medium pt-1">
                             📎 Projeto / Referência anexada: <span id="prev-anexo-nome"></span>
                         </p>
                     </div>
 
-                    <!-- Lista Detalhada de Itens e Especificações -->
+                    <!-- Lista Detalhada de Itens e Especificações (Visão Cliente) -->
                     <div id="lista-itens-preview" class="space-y-4">
                         <div class="text-center py-8 text-xs text-vosty-muted border border-dashed border-vosty-stone">
                             Adicione móveis sob medida ou serviços de remodelação ao lado para visualizar aqui a descrição técnica completa e os valores.
                         </div>
                     </div>
 
-                    <!-- Resumo Financeiro -->
+                    <!-- Resumo Financeiro Cliente -->
                     <div class="border-t-2 border-vosty-dark pt-4 space-y-2">
                         <div class="flex justify-between items-center text-xs text-vosty-muted">
                             <span>Subtotal Serviços &amp; Fabrico</span>
@@ -421,12 +414,60 @@
                     </div>
                 </div>
 
+                <!-- FOLHA INTERNA OCULTA PARA GERAR O PDF COMPLETO DA VOSTY DESIGN (CUSTO MATERIAL + MÃO DE OBRA + LUCRO) -->
+                <div style="position: absolute; left: -9999px; top: 0; width: 780px;">
+                    <div id="documento-pdf-interno" class="pdf-sheet p-8 space-y-6 bg-white text-vosty-dark">
+                        <div class="border-b-2 border-vosty-dark pb-4 flex justify-between items-start">
+                            <div>
+                                <p class="text-xl font-bold tracking-[0.2em]">VOSTY DESIGN — FICHA TÉCNICA &amp; FINANCEIRA INTERNA</p>
+                                <p class="text-xs text-vosty-gold font-bold uppercase mt-1">Discriminação de Custos (Material + Mão de Obra) &amp; Lucro Real</p>
+                            </div>
+                            <div class="text-right text-xs">
+                                <p class="font-bold" id="int-pdf-numero"></p>
+                                <p id="int-pdf-data"></p>
+                            </div>
+                        </div>
+
+                        <div class="bg-vosty-cream p-4 border border-vosty-stone text-xs space-y-1">
+                            <p><strong>Cliente:</strong> <span id="int-nome"></span></p>
+                            <p><strong>Local da Obra:</strong> <span id="int-local"></span></p>
+                            <p><strong>WhatsApp / E-mail do Cliente:</strong> <span id="int-contato"></span></p>
+                            <p id="int-anexo-linha" class="hidden"><strong>Projeto / Referência Anexada:</strong> <span id="int-anexo-nome"></span></p>
+                        </div>
+
+                        <div id="int-lista-itens" class="space-y-4"></div>
+
+                        <div class="border-t-2 border-vosty-dark pt-4 bg-vosty-cream/60 p-4 space-y-2 text-xs">
+                            <div class="flex justify-between">
+                                <span>Custo Total de Materiais:</span>
+                                <strong id="int-total-mat">0,00 €</strong>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Custo Total de Mão de Obra:</span>
+                                <strong id="int-total-lab">0,00 €</strong>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Custo Total Operacional (Material + Mão de Obra):</span>
+                                <strong id="int-total-custo">0,00 €</strong>
+                            </div>
+                            <div class="flex justify-between text-emerald-700 font-bold text-sm pt-1 border-t border-vosty-stone">
+                                <span>LUCRO LÍQUIDO ESTIMADO VOSTY DESIGN:</span>
+                                <span id="int-total-lucro">0,00 €</span>
+                            </div>
+                            <div class="flex justify-between text-base font-bold text-vosty-dark pt-1">
+                                <span>PREÇO FINAL AO CLIENTE:</span>
+                                <span id="int-total-cliente" class="text-vosty-gold">0,00 €</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- BOTÕES FINAIS UNIFICADOS -->
                 <div class="bg-white p-5 border border-vosty-stone shadow-sm space-y-3">
-                    <!-- 1. Descarregar PDF no telemóvel / PC -->
-                    <button type="button" onclick="baixarPDF()"
+                    <!-- 1. Descarregar PDF do Cliente -->
+                    <button type="button" onclick="baixarPDFCliente()"
                             class="w-full bg-vosty-dark hover:bg-vosty-charcoal text-white text-xs font-bold uppercase tracking-widest py-3.5 px-4 transition flex items-center justify-center gap-2">
-                        📥 Descarregar Proposta Completa em PDF
+                        📥 Descarregar Proposta Completa em PDF (Cliente)
                     </button>
 
                     <!-- 2. Botão Único do Cliente: WhatsApp + E-mail do Cliente -->
@@ -435,10 +476,10 @@
                         📲 Enviar Cópia para o Meu WhatsApp &amp; E-mail (Cliente)
                     </button>
 
-                    <!-- 3. Botão Único VOSTY Design: Fechar / Concretizar Trabalho -->
+                    <!-- 3. Botão Único VOSTY Design: Fechar / Concretizar Trabalho + PDF Interno com Custos e Lucro -->
                     <button type="button" onclick="finalizarComVosty()"
                             class="w-full bg-vosty-gold hover:bg-vosty-dark text-white text-xs font-bold uppercase tracking-widest py-4 px-4 transition shadow-md flex items-center justify-center gap-2 text-center">
-                        ✅ Gostou desta proposta? Vamos finalizá-la e enviar para a VOSTY Design (WhatsApp &amp; E-mail)
+                        ✅ Gostou desta proposta? Vamos finalizá-la e enviar para a VOSTY Design (WhatsApp &amp; E-mail + PDF Interno)
                     </button>
 
                     <!-- 4. Limpar / Novo Orçamento -->
@@ -453,140 +494,310 @@
     </main>
 
     <script>
-        // Margem de lucro aplicada (38% sobre o preço final => custo / (1 - 0.38))
-        const MARGEM_DIVISOR = 0.62;
         const VOSTY_WHATSAPP = '351923189914';
         const VOSTY_EMAIL = 'contato@vostydesign.com';
 
         let itensOrcamento = [];
         let anexoAtual = null;
 
-        // Data e número da proposta
-        document.getElementById('pdf-data').textContent = 'Data: ' + new Date().toLocaleDateString('pt-PT');
-        document.getElementById('pdf-numero').textContent = 'PROPOSTA #VD-' + Math.floor(1000 + Math.random() * 9000);
+        const hojeStr = new Date().toLocaleDateString('pt-PT');
+        const numProposta = 'PROPOSTA #VD-' + Math.floor(1000 + Math.random() * 9000);
+        document.getElementById('pdf-data').textContent = 'Data: ' + hojeStr;
+        document.getElementById('pdf-numero').textContent = numProposta;
+        document.getElementById('int-pdf-data').textContent = 'Data: ' + hojeStr;
+        document.getElementById('int-pdf-numero').textContent = numProposta;
 
-        // Descritivos técnicos completos
-        const DESCRICOES_MARCENARIA = {
-            cozinha_sob_medida: {
-                titulo: 'Cozinha Planejada / Sob Medida Completa',
-                custoM2: 340,
-                desc: 'Conceção, fabrico em oficina CNC e montagem integral de módulos inferiores, superiores e colunas até ao teto em MDF hidrófugo de alta densidade, dobradiças e corrediças de gavetas com amortecimento suave (soft-close), rodapé em alumínio/PVC hidrófugo, fitagem de orlas em PVC de alta resistência, nivelamento e fixação completa.'
+        // =========================================================================
+        // BASE DE PREÇOS CENTRAL OFICIAL (VOSTY Design - Base de Preços Central)
+        // Fórmula exata: custoTotal = matCost + labCost | precoCliente = custoTotal / (1 - margin)
+        // =========================================================================
+        const BASE_PRECOS = {
+            // MARCENARIA (Margens da tabela: 52.1% a 54.9%, média 53%)
+            'COZ-MEL': {
+                category: 'Marcenaria Sob Medida',
+                code: 'COZ-MEL',
+                title: 'Cozinha Linear / em L (Melamina Egger/Sonae)',
+                unit: 'm² frontal',
+                matCost: 135.00,
+                labCost: 100.00,
+                margin: 0.530,
+                specs: 'Estrutura hidrófuga 19mm, frentes Egger/Sonae, dobradiças e gavetas Hettich/Blum soft-close, fitagem de orlas em PVC de alta resistência, rodapé hidrófugo, nivelamento e montagem completa.'
             },
-            roupeiro_lacado: {
-                titulo: 'Roupeiro Embutido Lacado Sob Medida',
-                custoM2: 295,
-                desc: 'Fabrico e instalação de roupeiro embutido à medida com estrutura interior em melamina hidrófuga/linho, frentes lacadas de alta resistência, prateleiras reguláveis, varões metálicos, bloco de gavetas interiores com corrediças ocultas amortecidas, remates laterais e superiores alinhados ao teto.'
+            'COZ-ILHA': {
+                category: 'Marcenaria Sob Medida',
+                code: 'COZ-ILHA',
+                title: 'Cozinha com Ilha Central',
+                unit: 'm² parede',
+                matCost: 215.00,
+                labCost: 160.00,
+                margin: 0.531,
+                specs: 'Módulos inferiores, colunas até ao teto e ilha central com gavetões Blum Tandembox, frentes melamínicas/lacadas, ferragens amortecidas e montagem integral.'
             },
-            closet_sob_medida: {
-                titulo: 'Closet Completo Sob Medida com Gaveteiros e LED',
-                custoM2: 310,
-                desc: 'Projeto e montagem de closet aberto ou fechado à medida, módulos de prateleiras, sapateiras extraíveis, gaveteiros centrais, varões em alumínio e perfis de iluminação LED embutida com transformador e sensores.'
+            'ROUP-MEL': {
+                category: 'Marcenaria Sob Medida',
+                code: 'ROUP-MEL',
+                title: 'Roupeiro / Closet Melamina 19mm',
+                unit: 'm² frontal',
+                matCost: 145.00,
+                labCost: 103.00,
+                margin: 0.549,
+                specs: 'Interior linho/branco Sonae/Finsa 19mm, portas de abrir ou correr Egger, bloco de gavetas interiores, prateleiras reguláveis, varões metálicos, calhas Hettich e remates alinhados ao teto.'
             },
-            painel_tv_ripado: {
-                titulo: 'Painel de TV Sob Medida com Ripado e LED',
-                custoM2: 260,
-                desc: 'Fabrico e montagem de painel de televisão sob medida com estrutura de fixação oculta, passagem interna de cablagem elétrica/HDMI, acabamento ripado em madeira ou lacado, móvel suspenso inferior com gavetas/portas basculantes e fita LED indireta.'
+            'ROUP-LAC': {
+                category: 'Marcenaria Sob Medida',
+                code: 'ROUP-LAC',
+                title: 'Roupeiro / Closet Exterior Lacado Branco',
+                unit: 'm² frontal',
+                matCost: 180.00,
+                labCost: 130.00,
+                margin: 0.530,
+                specs: 'Frentes em MDF hidrófugo lacado mate/acetinado de alta resistência, interior melamina 19mm Sonae/Finsa, gavetas interiores com corrediças ocultas e ferragens Blum soft-close.'
             },
-            moveis_quarto: {
-                titulo: 'Móveis para Quarto Sob Medida / Planejados',
-                custoM2: 270,
-                desc: 'Fabrico e instalação de conjunto personalizado para quarto (painel cabeceira à medida com pontos elétricos integrados, mesas de cabeceira suspensas, cómoda/toucador e módulos de arrumação) com ferragens amortecidas.'
+            'PAIN-RIP': {
+                category: 'Marcenaria Sob Medida',
+                code: 'PAIN-RIP',
+                title: 'Painel Ripado Decorativo MDF / Painel de TV',
+                unit: 'm²',
+                matCost: 85.00,
+                labCost: 65.00,
+                margin: 0.524,
+                specs: 'Ripas em MDF folheado/melamínico Egger/Finsa sobre base estrutural oculta, passagem interna de cablagem elétrica/HDMI e preparação para iluminação LED indireta.'
             },
-            movel_wc_suspenso: {
-                titulo: 'Móvel de Casa de Banho Suspenso Sob Medida',
-                custoM2: 320,
-                desc: 'Fabrico e montagem de móvel suspenso em MDF hidrófugo resistente à humidade, gavetões com recorte para sifão, corrediças reforçadas com fecho suave, acabamento lacado ou termolaminado e fixação reforçada à parede.'
+            'QUARTO-MOV': {
+                category: 'Marcenaria Sob Medida',
+                code: 'QUARTO-MOV',
+                title: 'Móveis para Quarto Sob Medida (Cabeceira, Mesas e Cómoda)',
+                unit: 'm²',
+                matCost: 140.00,
+                labCost: 105.00,
+                margin: 0.530,
+                specs: 'Fabrico e montagem de painel cabeceira à medida em MDF/melamina Egger/Finsa com pontos elétricos integrados, mesas de cabeceira suspensas e cómoda com corrediças ocultas Blum/Hettich.'
             },
-            garrafeira_bar: {
-                titulo: 'Garrafeira & Aparador Bar Sob Medida',
-                custoM2: 290,
-                desc: 'Fabrico e instalação de garrafeira e módulo bar sob medida com nichos climatizados/ventilados, suportes para garrafas e copos, fundos espelhados ou ripados e iluminação LED integrada.'
-            }
-        };
+            'WC-MOV': {
+                category: 'Marcenaria Sob Medida',
+                code: 'WC-MOV',
+                title: 'Móvel de Casa de Banho Suspenso',
+                unit: 'Conj.',
+                matCost: 330.00,
+                labCost: 250.00,
+                margin: 0.521,
+                specs: 'MDF hidrófugo de alta densidade resistente à humidade, puxador cava em alumínio, gavetões com recorte para sifão, corrediças ocultas Hettich e fixação reforçada.'
+            },
 
-        const DESCRICOES_REMODELACAO = {
-            casa_completa: {
-                titulo: 'Remodelação de Casa / Apartamento Completo (Chave na Mão)',
-                custoM2: 268,
-                desc: 'Execução integral chave na mão: demolições e remoção de entulho a vazadouro autorizado; remodelação completa da cozinha com substituição total da canalização de águas e esgotos, nova fiação elétrica e quadro dedicado, assentamento de azulejos, pavimento e pintura; remodelação completa da casa de banho com nova rede hidráulica, impermeabilização, revestimentos cerâmicos, base de duche e louças; instalação de tetos falsos em pladur com estruturas metálicas, barramento geral, fita telada e pintura completa; instalação elétrica e iluminação LED; assentamento de pavimento flutuante vinílico/laminado ou cerâmico em toda a habitação e pintura geral de paredes e tetos.'
+            // REMODELAÇÃO (Margem exata da tabela: 50,0%)
+            'REM-GER-STD': {
+                category: 'Remodelação',
+                code: 'REM-GER-STD',
+                title: 'Remodelação Geral Chave na Mão — Gama Standard',
+                unit: 'm² área',
+                matCost: 165.00,
+                labCost: 135.00,
+                margin: 0.500,
+                specs: 'Obra integral do imóvel: demolições e remoção de entulho; remodelação completa da cozinha (nova canalização, fiação elétrica dedicada, azulejos, pavimento e pintura); remodelação completa de 1 WC (canalização multicamada, impermeabilização, cerâmica, base de duche e louças); tetos falsos Pladur com estruturas metálicas, fita telada, barramento e pintura geral CIN; pavimento flutuante AC4 e portas interiores.'
             },
-            casa_parcial: {
-                titulo: 'Remodelação Parcial de Casa / Apartamento',
-                custoM2: 185,
-                desc: 'Intervenção parcial nas divisões selecionadas: preparação e regularização de superfícies, adaptação de pontos elétricos e iluminação LED, execução de tetos ou divisórias em pladur com barramento e fita telada, assentamento de chão flutuante ou cerâmico, substituição de rodapés e pintura completa das áreas intervencionadas.'
+            'REM-GER-PRM': {
+                category: 'Remodelação',
+                code: 'REM-GER-PRM',
+                title: 'Remodelação Geral Chave na Mão — Gama Premium',
+                unit: 'm² área',
+                matCost: 230.00,
+                labCost: 180.00,
+                margin: 0.500,
+                specs: 'Obra integral de alta gama: demolições, infraestruturas elétricas e hidráulicas completas, cozinha e WCs integrais com revestimentos retificados, Pladur acústico com sancas LED, barramento fino com fita telada, pavimento flutuante AC5/vinílico, portas lacadas até ao teto e porta blindada.'
             },
-            wc_completa: {
-                titulo: 'Remodelação Completa de Casa de Banho',
-                custoM2: 490,
-                desc: 'Remodelação integral da casa de banho: demolição e remoção de louças e revestimentos antigos; troca completa de toda a canalização hidráulica (águas quentes, frias e esgotos em tubo multicamada/PPR); impermeabilização integral da zona húmida; substituição dos azulejos de parede e pavimento cerâmico retificado; troca de banheira por base de duche com resguardo em vidro temperado; teto falso em pladur hidrófugo com focos LED, pintura anti-fungos e montagem de sanita, bidé, torneiras e móvel.'
+            'REM-COZ-COMP': {
+                category: 'Remodelação',
+                code: 'REM-COZ-COMP',
+                title: 'Remodelação Parcial — Cozinha Completa (Obra Civil até 10m²)',
+                unit: 'Conj.',
+                matCost: 2100.00,
+                labCost: 1850.00,
+                margin: 0.500,
+                specs: 'Demolição de revestimentos e bancada antiga, entulho, troca completa de toda a canalização de águas e esgotos (lava-loiça, máquinas), quadro e fiação elétrica dedicada, assentamento de azulejos parede/chão e pintura de teto (não inclui móveis).'
             },
-            wc_parcial: {
-                titulo: 'Remodelação Parcial de Casa de Banho',
-                custoM2: 310,
-                desc: 'Atualização parcial da casa de banho: substituição de banheira por cabine/base de duche com resguardo em vidro, adaptação de pontos hidráulicos, revestimento pontual ou sobreposição cerâmica, revisão elétrica/iluminação, pintura anti-humidade de teto e paredes e instalação de novas louças/torneiras.'
+            'REM-WC-COMP': {
+                category: 'Remodelação',
+                code: 'REM-WC-COMP',
+                title: 'Remodelação Parcial — Casa de Banho Completa (até 5m²)',
+                unit: 'Conj.',
+                matCost: 1850.00,
+                labCost: 1650.00,
+                margin: 0.500,
+                specs: 'Demolição e entulho; troca completa de toda a canalização hidráulica (águas quentes/frias multicamada e esgotos); impermeabilização integral; substituição dos azulejos e pavimento cerâmico retificado; troca de banheira por base/cabine de duche com resguardo; teto em pladur hidrófugo, pintura e montagem de sanita, lavatório e torneiras.'
             },
-            cozinha_completa: {
-                titulo: 'Remodelação Completa de Cozinha (Obra Civil & Instalações)',
-                custoM2: 430,
-                desc: 'Remodelação integral de cozinha: demolição de revestimentos e bancadas antigas; troca completa de toda a canalização de água e esgotos; renovação total da eletricidade e fiação dedicada para eletrodomésticos de alta potência; regularização de paredes, assentamento de azulejos e novo pavimento cerâmico ou vinílico; teto falso em pladur com iluminação LED, barramento com fita telada e pintura lavável.'
+            'REM-PLD-PAR': {
+                category: 'Remodelação',
+                code: 'REM-PLD-PAR',
+                title: 'Divisória em Pladur (Parede Simples/Dupla)',
+                unit: 'm²',
+                matCost: 18.00,
+                labCost: 22.00,
+                margin: 0.500,
+                specs: 'Placas de gesso cartonado 13mm (ou H1 hidrófuga), estrutura metálica em montantes e canais galvanizados, lã mineral acústica, parafusos, fita telada de juntas, massa de barramento, lixagem e pintura.'
             },
-            cozinha_parcial: {
-                titulo: 'Remodelação Parcial de Cozinha',
-                custoM2: 250,
-                desc: 'Intervenção parcial na cozinha: atualização de pontos de água/eletricidade para novos equipamentos, substituição de revestimento entre móveis (backsplash) ou pavimento, reparação e pintura de paredes e tetos.'
+            'REM-PLD-TET': {
+                category: 'Remodelação',
+                code: 'REM-PLD-TET',
+                title: 'Teto Falso em Pladur Completo',
+                unit: 'm²',
+                matCost: 16.50,
+                labCost: 21.00,
+                margin: 0.500,
+                specs: 'Placas 13mm, estrutura metálica T47/primária galvanizada, varões roscados, pivotantes, fita telada de juntas, massa de barramento e pintura completa.'
             },
-            parede_pladur: {
-                titulo: 'Parede Divisória em Pladur (Estruturas Metálicas, Barramento, Fita Telada & Pintura)',
-                custoM2: 48,
-                desc: 'Fornecimento e montagem de parede divisória em gesso cartonado (Pladur) com estrutura metálica em perfis galvanizados (guias e montantes), isolamento termoacústico interior em lã mineral, aplicação de placas, tratamento de juntas com massa de barramento e fita telada de reforço, lixagem fina e pintura completa a duas demãos.'
+            'REM-BAR-PIN': {
+                category: 'Remodelação',
+                code: 'REM-BAR-PIN',
+                title: 'Barramento Geral e Pintura (Paredes/Tetos)',
+                unit: 'm²',
+                matCost: 5.50,
+                labCost: 12.50,
+                margin: 0.500,
+                specs: 'Raspagem, massa de barramento fino (2 demãos), lixagem mecânica, primário isolante e 2 demãos de tinta plástica lavável (CIN / Robbialac).'
             },
-            teto_pladur: {
-                titulo: 'Teto Falso em Pladur com Sanca LED, Barramento, Fita Telada & Pintura',
-                custoM2: 52,
-                desc: 'Execução de teto falso em gesso cartonado (Pladur) suspenso sobre estrutura metálica galvanizada nivelada a laser, sanca para iluminação LED indireta, tratamento integral de juntas com massa de barramento e fita telada, lixagem e pintura geral do teto.'
+            'REM-CH-FLU': {
+                category: 'Remodelação',
+                code: 'REM-CH-FLU',
+                title: 'Pavimento Flutuante AC4 / AC5',
+                unit: 'm²',
+                matCost: 19.00,
+                labCost: 13.00,
+                margin: 0.500,
+                specs: 'Regularização da base, tela acústica/barreira de vapor, réguas flutuantes (10-12mm), rodapé branco hidrófugo, perfis de transição e cortes.'
             },
-            pavimento_pintura: {
-                titulo: 'Assentamento de Chão Flutuante / Cerâmico & Pintura Geral',
-                custoM2: 45,
-                desc: 'Fornecimento e assentamento de pavimento flutuante (com manta acústica) ou revestimento cerâmico, colocação de rodapés lacados, preparação de paredes e tetos com massas de correção e pintura geral a duas demãos.'
+            'REM-CH-CER': {
+                category: 'Remodelação',
+                code: 'REM-CH-CER',
+                title: 'Pavimento / Revestimento Cerâmico',
+                unit: 'm²',
+                matCost: 24.00,
+                labCost: 24.00,
+                margin: 0.500,
+                specs: 'Regularização, cimento-cola flexível C2TE, mosaico/azulejo retificado, cruzetas niveladoras, betume de juntas e cortes.'
             },
-            janelas_pvc: {
-                titulo: 'Janelas em Caixilharia PVC com Vidro Duplo Acústico + Estore',
-                custoM2: 295,
-                desc: 'Fornecimento, fabrico à medida e instalação de janela em caixilharia de PVC multicâmara de alto isolamento térmico e acústico, equipada com vidro duplo acústico (com câmara de gás árgon e controlo solar), ferragens perimetrais de segurança, selagem exterior/interior e estore térmico.'
-            }
-        };
+            'REM-CAN-HID': {
+                category: 'Remodelação',
+                code: 'REM-CAN-HID',
+                title: 'Canalização / Rede Hidráulica (Ponto)',
+                unit: 'Ponto',
+                matCost: 45.00,
+                labCost: 75.00,
+                margin: 0.500,
+                specs: 'Abertura de roços, tubagem multicamada (água quente/fria), acessórios de prensar, rede de esgotos PVC e fecho de roços.'
+            },
+            'REM-ELE-PON': {
+                category: 'Remodelação',
+                code: 'REM-ELE-PON',
+                title: 'Eletricidade & Iluminação LED (Ponto)',
+                unit: 'Ponto',
+                matCost: 22.00,
+                labCost: 38.00,
+                margin: 0.500,
+                specs: 'Abertura de roços, tubo corrugado, cabo H07V-U, caixas, aparelhagem Efapel/Legrand ou driver/perfil LED.'
+            },
+            'REM-PRT-INT': {
+                category: 'Remodelação',
+                code: 'REM-PRT-INT',
+                title: 'Porta Interior Completa (Branca/Madeira)',
+                unit: 'Unid.',
+                matCost: 195.00,
+                labCost: 115.00,
+                margin: 0.500,
+                specs: 'Folha alveolar/maciça, aro, guarnições, fechadura magnética, dobradiças ocultas/inox e montagem.'
+            },
+            'REM-PRT-BLI': {
+                category: 'Remodelação',
+                code: 'REM-PRT-BLI',
+                title: 'Porta Blindada de Alta Segurança',
+                unit: 'Unid.',
+                matCost: 680.00,
+                labCost: 270.00,
+                margin: 0.500,
+                specs: 'Estrutura em aço galvanizado, fechadura multi-pontos, cilindro anti-gazua, painéis decorativos e instalação.'
+            },
+            'REM-DEM-ENT': {
+                category: 'Remodelação',
+                code: 'REM-DEM-ENT',
+                title: 'Demolições e Gestão de Entulho',
+                unit: 'm²',
+                matCost: 8.00,
+                labCost: 17.00,
+                margin: 0.500,
+                specs: 'Demolição de alvenaria/revestimentos antigos, ensacamento, transporte e vazadouro certificado.'
+            },
 
-        const DESCRICOES_COMPLEMENTARES = {
-            porta_vidro: {
-                titulo: 'Porta de Correr em Vidro Temperado / Laminado (Embutida ou Calha Oculta)',
-                custoM2: 240,
-                desc: 'Fornecimento e instalação de folha de porta em vidro temperado/laminado de segurança 8mm/10mm, sistema de calha deslizante em alumínio anodizado (embutido em parede de pladur/alvenaria ou aparente), puxador inox e afinação completa.'
+            // JANELAS PVC COM VIDRO DUPLO ACÚSTICO + ESTORE (Calibrado fornecedores PT + 25% margem)
+            'REM-JAN-PVC': {
+                category: 'Remodelação & Caixilharia PVC',
+                code: 'REM-JAN-PVC',
+                title: 'Janelas em Caixilharia PVC com Vidro Duplo Acústico + Estore',
+                unit: 'm²',
+                matCost: 260.00,
+                labCost: 120.00,
+                margin: 0.250,
+                specs: 'Caixilharia PVC multicâmara fabricada por medida de alto isolamento térmico e acústico, vidro duplo acústico (câmara de gás árgon e controlo solar), ferragens perimetrais de segurança, remoção da janela existente, tapa-juntas/selagem exterior e interior e estore térmico.'
             },
-            pedra_silestone: {
-                titulo: 'Bancada / Revestimento em Pedra Silestone / Quartzo',
-                custoM2: 280,
-                desc: 'Fornecimento, corte à medida em marmoraria, acabamento de esquadria/meia-cana, furação para lava-loiça/placa e montagem profissional de pedra em quartzo compacto.'
+
+            // COMPLEMENTARES DE PROJETO / IMAGEM (Margem 50,0%)
+            'COMP-VIDRO': {
+                category: 'Complementar (Projeto/Imagem)',
+                code: 'COMP-VIDRO',
+                title: 'Porta de Correr em Vidro Temperado / Laminado',
+                unit: 'm²',
+                matCost: 155.00,
+                labCost: 85.00,
+                margin: 0.500,
+                specs: 'Folha em vidro temperado/laminado de segurança 8mm/10mm, calha deslizante em alumínio anodizado (embutida em parede ou aparente), puxador inox e montagem.'
             },
-            pedra_dekton: {
-                titulo: 'Bancada / Revestimento em Pedra Dekton / Porcelânico Ultra-Compacto',
-                custoM2: 340,
-                desc: 'Fornecimento, corte técnico CNC em pedra ultra-compacta de alta resistência térmica e mecânica, acabamento de cantos e instalação no local.'
+            'COMP-SILESTONE': {
+                category: 'Complementar (Projeto/Imagem)',
+                code: 'COMP-SILESTONE',
+                title: 'Bancada / Revestimento em Pedra Silestone / Quartzo',
+                unit: 'm²',
+                matCost: 185.00,
+                labCost: 95.00,
+                margin: 0.500,
+                specs: 'Corte à medida em marmoraria, acabamento de esquadria/meia-cana, furação para lava-loiça/placa e instalação profissional.'
             },
-            pedra_granito: {
-                titulo: 'Bancada / Revestimento em Pedra Natural (Granito / Mármore)',
-                custoM2: 210,
-                desc: 'Fornecimento, corte à medida, polimento/hidrofugação e instalação completa de pedra natural selecionada.'
+            'COMP-DEKTON': {
+                category: 'Complementar (Projeto/Imagem)',
+                code: 'COMP-DEKTON',
+                title: 'Bancada / Revestimento em Pedra Dekton / Porcelânico',
+                unit: 'm²',
+                matCost: 230.00,
+                labCost: 110.00,
+                margin: 0.500,
+                specs: 'Corte técnico CNC em pedra ultra-compacta de alta resistência térmica e mecânica, acabamento de cantos e montagem no local.'
             },
-            serralharia_ferro: {
-                titulo: 'Serralharia Sob Medida (Estrutura Metálica / Divisória Ferro & Vidro)',
-                custoM2: 260,
-                desc: 'Fabrico em serralharia de estrutura metálica em ferro/alumínio com pintura eletrostática lacada ao forno, vidros laminados de segurança e montagem fixa no local.'
+            'COMP-GRANITO': {
+                category: 'Complementar (Projeto/Imagem)',
+                code: 'COMP-GRANITO',
+                title: 'Bancada / Revestimento em Pedra Natural (Granito / Mármore)',
+                unit: 'm²',
+                matCost: 135.00,
+                labCost: 75.00,
+                margin: 0.500,
+                specs: 'Corte à medida, polimento, hidrofugação e instalação completa de pedra natural selecionada.'
             },
-            espelho_vidro: {
-                titulo: 'Espelho Sob Medida / Resguardo de Duche em Vidro Temperado',
-                custoM2: 145,
-                desc: 'Fornecimento e montagem de vidro temperado ou espelho lapidado à medida com perfis/ferragens em inox ou preto mate.'
+            'COMP-SERRALHARIA': {
+                category: 'Complementar (Projeto/Imagem)',
+                code: 'COMP-SERRALHARIA',
+                title: 'Serralharia Sob Medida (Estrutura Ferro / Divisória Vidro)',
+                unit: 'm²',
+                matCost: 160.00,
+                labCost: 100.00,
+                margin: 0.500,
+                specs: 'Fabrico em serralharia de estrutura metálica com pintura eletrostática lacada ao forno, vidros laminados de segurança e fixação no local.'
+            },
+            'COMP-ESPELHO': {
+                category: 'Complementar (Projeto/Imagem)',
+                code: 'COMP-ESPELHO',
+                title: 'Espelho Sob Medida / Resguardo de Duche em Vidro Temperado',
+                unit: 'm²',
+                matCost: 90.00,
+                labCost: 55.00,
+                margin: 0.500,
+                specs: 'Vidro temperado ou espelho lapidado à medida com perfis/ferragens em inox ou preto mate.'
             }
         };
 
@@ -613,17 +824,41 @@
             }
         }
 
-        function ajustarCamposRemodelacao() {
-            const tipo = document.getElementById('rem-tipo').value;
-            const boxArea = document.getElementById('campos-rem-area');
-            const boxJan = document.getElementById('campos-rem-janelas');
+        function ajustarCamposMarcenaria() {
+            const code = document.getElementById('marc-code').value;
+            const boxMed = document.getElementById('campos-marc-medidas');
+            const boxConj = document.getElementById('campos-marc-conj');
+            if (code === 'WC-MOV') {
+                boxMed.classList.add('hidden');
+                boxConj.classList.remove('hidden');
+            } else {
+                boxMed.classList.remove('hidden');
+                boxConj.classList.add('hidden');
+            }
+        }
 
-            if (tipo === 'janelas_pvc') {
-                boxArea.classList.add('hidden');
+        function ajustarCamposRemodelacao() {
+            const code = document.getElementById('rem-code').value;
+            const item = BASE_PRECOS[code];
+            const boxQtd = document.getElementById('campos-rem-qtd');
+            const boxJan = document.getElementById('campos-rem-janelas');
+            const labelQtd = document.getElementById('label-rem-qtd');
+            const inputQtd = document.getElementById('rem-qtd');
+
+            if (code === 'REM-JAN-PVC') {
+                boxQtd.classList.add('hidden');
                 boxJan.classList.remove('hidden');
             } else {
-                boxArea.classList.remove('hidden');
+                boxQtd.classList.remove('hidden');
                 boxJan.classList.add('hidden');
+                labelQtd.textContent = `Quantidade (${item.unit})`;
+                if (item.unit === 'Conj.' || item.unit === 'Unid.' || item.unit === 'Ponto') {
+                    inputQtd.step = '1';
+                    inputQtd.value = '1';
+                } else {
+                    inputQtd.step = '0.5';
+                    inputQtd.value = '40';
+                }
             }
         }
 
@@ -641,7 +876,7 @@
 
             box.classList.remove('hidden');
             nomeEl.textContent = file.name + ' (' + (file.size / 1024).toFixed(0) + ' KB)';
-            statusEl.textContent = '✓ Ficheiro analisado e sincronizado com referências de execução (Leroy Merlin, Brico Depôt, Obramat e Chapas/Ferragens).';
+            statusEl.textContent = '✓ Ficheiro analisado e sincronizado com a Base de Preços Central (Leroy Merlin, Brico Depôt, Obramat, Egger/Sonae e Blum/Hettich).';
 
             if (file.type.startsWith('image/')) {
                 const reader = new FileReader();
@@ -665,42 +900,67 @@
             atualizarPreview();
         }
 
+        // Cálculo oficial: Custo Material + Custo Mão de Obra + Margem => Preço Cliente & Lucro Real
+        function calcularLinha(itemBase, multiplicadorQtd, extraMatFixo = 0, extraLabFixo = 0) {
+            const totalMat = (itemBase.matCost * multiplicadorQtd) + extraMatFixo;
+            const totalLab = (itemBase.labCost * multiplicadorQtd) + extraLabFixo;
+            const custoOperacional = totalMat + totalLab;
+            const precoFinal = custoOperacional / (1 - itemBase.margin);
+            const lucroLiquido = precoFinal - custoOperacional;
+            return {
+                totalMat: Number(totalMat.toFixed(2)),
+                totalLab: Number(totalLab.toFixed(2)),
+                custoOperacional: Number(custoOperacional.toFixed(2)),
+                lucroLiquido: Number(lucroLiquido.toFixed(2)),
+                precoFinal: Number(precoFinal.toFixed(2)),
+                marginPct: (itemBase.margin * 100).toFixed(1) + '%'
+            };
+        }
+
         // Adicionar Marcenaria Sob Medida
         function adicionarMarcenaria() {
-            const tipo = document.getElementById('marc-tipo').value;
-            const acab = document.getElementById('marc-acabamento').value;
-            const larg = parseFloat(document.getElementById('marc-largura').value) || 1;
-            const alt = parseFloat(document.getElementById('marc-altura').value) || 1;
-            const qtd = parseInt(document.getElementById('marc-qtd').value) || 1;
+            const code = document.getElementById('marc-code').value;
             const obs = document.getElementById('marc-obs').value.trim();
+            const base = BASE_PRECOS[code];
 
-            const base = DESCRICOES_MARCENARIA[tipo];
-            const multAcab = acab === 'melamina' ? 1.0 : acab === 'termolaminado' ? 1.15 : acab === 'lacado_mate' ? 1.32 : 1.48;
-            const labelAcab = document.getElementById('marc-acabamento').selectedOptions[0].text;
+            let mult = 1;
+            let detalheMedida = '';
 
-            const area = Math.max(0.5, larg * alt);
-            const custoTotal = area * base.custoM2 * multAcab * qtd;
-            const precoCliente = Math.round(custoTotal / MARGEM_DIVISOR);
+            if (code === 'WC-MOV') {
+                const qtdConj = parseInt(document.getElementById('marc-conj-qtd').value) || 1;
+                mult = qtdConj;
+                detalheMedida = `${qtdConj} Conjunto(s)`;
+            } else {
+                const larg = parseFloat(document.getElementById('marc-largura').value) || 1;
+                const alt = parseFloat(document.getElementById('marc-altura').value) || 1;
+                const qtd = parseInt(document.getElementById('marc-qtd').value) || 1;
+                const area = larg * alt * qtd;
+                mult = area;
+                detalheMedida = `${qtd} un. (${larg.toFixed(2)}m × ${alt.toFixed(2)}m = ${area.toFixed(2)} ${base.unit})`;
+            }
+
+            const calc = calcularLinha(base, mult);
 
             itensOrcamento.push({
-                categoria: 'Marcenaria Sob Medida',
-                titulo: `${base.titulo} (${qtd} un. — ${larg.toFixed(2)}m × ${alt.toFixed(2)}m)`,
-                subtitulo: `Acabamento: ${labelAcab}` + (obs ? ` | Obs: ${obs}` : ''),
-                descricao: base.desc,
-                valor: precoCliente
+                code: base.code,
+                categoria: base.category,
+                titulo: `${base.title} — ${detalheMedida}`,
+                subtitulo: `Código: ${base.code}` + (obs ? ` | Obs: ${obs}` : ''),
+                descricao: base.specs,
+                ...calc
             });
 
             document.getElementById('marc-obs').value = '';
             atualizarPreview();
         }
 
-        // Adicionar Remodelação ou Janelas PVC
+        // Adicionar Remodelação ou Janelas PVC (25% margem nas janelas, 50% nas restantes remodelações)
         function adicionarRemodelacao() {
-            const tipo = document.getElementById('rem-tipo').value;
+            const code = document.getElementById('rem-code').value;
             const obs = document.getElementById('rem-obs').value.trim();
-            const base = DESCRICOES_REMODELACAO[tipo];
+            const base = BASE_PRECOS[code];
 
-            if (tipo === 'janelas_pvc') {
+            if (code === 'REM-JAN-PVC') {
                 const larg = parseFloat(document.getElementById('jan-largura').value) || 1.2;
                 const alt = parseFloat(document.getElementById('jan-altura').value) || 1.2;
                 const qtd = parseInt(document.getElementById('jan-qtd').value) || 1;
@@ -708,33 +968,38 @@
                 const abertura = document.getElementById('jan-abertura').selectedOptions[0].text;
                 const labelEstore = document.getElementById('jan-estore').selectedOptions[0].text;
 
-                const area = Math.max(1.0, larg * alt);
-                const extraEstore = estore === 'com_estore_eletrico' ? 145 : estore === 'com_estore_termico' ? 85 : 0;
-                const custoUnitario = (area * base.custoM2) + (area * extraEstore);
-                const precoCliente = Math.round((custoUnitario * qtd) / MARGEM_DIVISOR);
+                // Área mínima faturada de 1,20 m² por janela para cobrir ferragens oscilobatentes e vidro acústico
+                const areaUnitariaReal = larg * alt;
+                const areaFaturadaTotal = Math.max(1.20, areaUnitariaReal) * qtd;
+
+                // Insumos fixos por janela (tapa-juntas/espuma/selantes = 35 €) + estore por janela
+                const matEstorePorJanela = estore === 'com_estore_eletrico' ? 220 : estore === 'com_estore_termico' ? 120 : 0;
+                const labEstorePorJanela = estore === 'com_estore_eletrico' ? 55 : estore === 'com_estore_termico' ? 35 : 0;
+
+                const extraMatFixo = (35 + matEstorePorJanela) * qtd;
+                const extraLabFixo = labEstorePorJanela * qtd;
+
+                const calc = calcularLinha(base, areaFaturadaTotal, extraMatFixo, extraLabFixo);
 
                 itensOrcamento.push({
-                    categoria: 'Remodelação & Caixilharia PVC',
-                    titulo: `${base.titulo} (${qtd} un. — ${larg.toFixed(2)}m × ${alt.toFixed(2)}m)`,
-                    subtitulo: `Sistema: ${abertura} | ${labelEstore}` + (obs ? ` | Obs: ${obs}` : ''),
-                    descricao: base.desc + ` Configuração selecionada: ${abertura} e ${labelEstore}.`,
-                    valor: precoCliente
+                    code: base.code,
+                    categoria: base.category,
+                    titulo: `${base.title} — ${qtd} un. (${larg.toFixed(2)}m × ${alt.toFixed(2)}m = ${(areaUnitariaReal * qtd).toFixed(2)} m²)`,
+                    subtitulo: `Código: ${base.code} | ${abertura} | ${labelEstore}` + (obs ? ` | Obs: ${obs}` : ''),
+                    descricao: base.specs + ` Configuração: ${abertura}; ${labelEstore}.`,
+                    ...calc
                 });
             } else {
-                const area = parseFloat(document.getElementById('rem-area').value) || 10;
-                const padrao = document.getElementById('rem-padrao').value;
-                const labelPadrao = document.getElementById('rem-padrao').selectedOptions[0].text;
-                const multPadrao = padrao === 'premium' ? 1.25 : 1.0;
-
-                const custoTotal = area * base.custoM2 * multPadrao;
-                const precoCliente = Math.round(custoTotal / MARGEM_DIVISOR);
+                const qtd = parseFloat(document.getElementById('rem-qtd').value) || 1;
+                const calc = calcularLinha(base, qtd);
 
                 itensOrcamento.push({
-                    categoria: 'Remodelação',
-                    titulo: `${base.titulo} (${area.toFixed(1)} m²)`,
-                    subtitulo: `Padrão de Materiais: ${labelPadrao}` + (obs ? ` | Obs: ${obs}` : ''),
-                    descricao: base.desc,
-                    valor: precoCliente
+                    code: base.code,
+                    categoria: base.category,
+                    titulo: `${base.title} — ${qtd} ${base.unit}`,
+                    subtitulo: `Código: ${base.code}` + (obs ? ` | Obs: ${obs}` : ''),
+                    descricao: base.specs,
+                    ...calc
                 });
             }
 
@@ -744,23 +1009,23 @@
 
         // Adicionar Item Complementar (Vidro, Pedra, Serralharia)
         function adicionarComplementar() {
-            const tipo = document.getElementById('comp-tipo').value;
+            const code = document.getElementById('comp-tipo').value;
             const spec = document.getElementById('comp-spec').value.trim();
             const larg = parseFloat(document.getElementById('comp-largura').value) || 1;
             const alt = parseFloat(document.getElementById('comp-altura').value) || 1;
             const qtd = parseInt(document.getElementById('comp-qtd').value) || 1;
 
-            const base = DESCRICOES_COMPLEMENTARES[tipo];
-            const area = Math.max(0.5, larg * alt);
-            const custoTotal = area * base.custoM2 * qtd;
-            const precoCliente = Math.round(custoTotal / MARGEM_DIVISOR);
+            const base = BASE_PRECOS[code];
+            const areaTotal = Math.max(0.5, larg * alt) * qtd;
+            const calc = calcularLinha(base, areaTotal);
 
             itensOrcamento.push({
-                categoria: 'Item Complementar (Projeto / Referência)',
-                titulo: `${base.titulo} (${qtd} un. — ${larg.toFixed(2)}m × ${alt.toFixed(2)}m)`,
-                subtitulo: spec ? `Especificação: ${spec}` : 'Especificação padrão conforme projeto',
-                descricao: base.desc + (spec ? ` Acabamento definido: ${spec}.` : ''),
-                valor: precoCliente
+                code: base.code,
+                categoria: base.category,
+                titulo: `${base.title} — ${qtd} un. (${larg.toFixed(2)}m × ${alt.toFixed(2)}m = ${areaTotal.toFixed(2)} m²)`,
+                subtitulo: (spec ? `Especificação: ${spec}` : 'Conforme projeto/imagem'),
+                descricao: base.specs + (spec ? ` Acabamento definido: ${spec}.` : ''),
+                ...calc
             });
 
             document.getElementById('comp-spec').value = '';
@@ -772,26 +1037,38 @@
             atualizarPreview();
         }
 
-        // Atualiza a pré-visualização em tempo real
+        // Atualiza a pré-visualização do Cliente e a ficha interna da VOSTY Design
         function atualizarPreview() {
             const nome = document.getElementById('cliente-nome').value.trim() || 'A preencher';
             const local = document.getElementById('cliente-local').value.trim() || 'Portugal / Toda a Europa';
             const whats = document.getElementById('cliente-whatsapp').value.trim();
             const email = document.getElementById('cliente-email').value.trim();
+            const contatoStr = [whats, email].filter(Boolean).join(' • ') || '—';
 
+            // Cliente
             document.getElementById('prev-nome').textContent = nome;
             document.getElementById('prev-local').textContent = local;
-            document.getElementById('prev-contato').textContent = [whats, email].filter(Boolean).join(' • ') || '—';
+            document.getElementById('prev-contato').textContent = contatoStr;
+
+            // Interno
+            document.getElementById('int-nome').textContent = nome;
+            document.getElementById('int-local').textContent = local;
+            document.getElementById('int-contato').textContent = contatoStr;
 
             const anexoLinha = document.getElementById('prev-anexo-linha');
+            const intAnexoLinha = document.getElementById('int-anexo-linha');
             if (anexoAtual) {
                 anexoLinha.classList.remove('hidden');
+                intAnexoLinha.classList.remove('hidden');
                 document.getElementById('prev-anexo-nome').textContent = anexoAtual.name;
+                document.getElementById('int-anexo-nome').textContent = anexoAtual.name;
             } else {
                 anexoLinha.classList.add('hidden');
+                intAnexoLinha.classList.add('hidden');
             }
 
             const listaEl = document.getElementById('lista-itens-preview');
+            const intListaEl = document.getElementById('int-lista-itens');
             document.getElementById('contador-itens').textContent = `${itensOrcamento.length} ${itensOrcamento.length === 1 ? 'item' : 'itens'}`;
 
             if (itensOrcamento.length === 0) {
@@ -799,14 +1076,25 @@
                     <div class="text-center py-8 text-xs text-vosty-muted border border-dashed border-vosty-stone">
                         Adicione móveis sob medida ou serviços de remodelação ao lado para visualizar aqui a descrição técnica completa e os valores.
                     </div>`;
+                intListaEl.innerHTML = '';
                 document.getElementById('prev-subtotal').textContent = '0,00 €';
                 document.getElementById('prev-total').textContent = '0,00 €';
                 return;
             }
 
-            let total = 0;
+            let somaMat = 0;
+            let somaLab = 0;
+            let somaCusto = 0;
+            let somaLucro = 0;
+            let somaCliente = 0;
+
             listaEl.innerHTML = itensOrcamento.map((item, idx) => {
-                total += item.valor;
+                somaMat += item.totalMat;
+                somaLab += item.totalLab;
+                somaCusto += item.custoOperacional;
+                somaLucro += item.lucroLiquido;
+                somaCliente += item.precoFinal;
+
                 return `
                     <div class="pdf-break-avoid border border-vosty-stone p-4 bg-white space-y-2 relative">
                         <div class="flex justify-between items-start gap-2">
@@ -816,7 +1104,7 @@
                                 <p class="text-[11px] font-medium text-vosty-muted mt-0.5">${item.subtitulo}</p>
                             </div>
                             <div class="text-right shrink-0">
-                                <span class="block text-sm font-bold text-vosty-dark">${formatarEuro(item.valor)}</span>
+                                <span class="block text-sm font-bold text-vosty-dark">${formatarEuro(item.precoFinal)}</span>
                                 <button type="button" data-html2canvas-ignore="true" onclick="removerItem(${idx})"
                                         class="text-[10px] text-red-600 hover:underline mt-1">
                                     Remover
@@ -830,81 +1118,134 @@
                 `;
             }).join('');
 
-            document.getElementById('prev-subtotal').textContent = formatarEuro(total);
-            document.getElementById('prev-total').textContent = formatarEuro(total);
+            // Ficha Interna VOSTY Design (com Material + Mão de Obra + Lucro + Margem %)
+            intListaEl.innerHTML = itensOrcamento.map((item, idx) => `
+                <div class="pdf-break-avoid border border-vosty-stone p-4 space-y-2 text-xs">
+                    <div class="flex justify-between font-bold">
+                        <span>${idx + 1}. [${item.code}] ${item.titulo}</span>
+                        <span>Cliente: ${formatarEuro(item.precoFinal)}</span>
+                    </div>
+                    <p class="text-vosty-muted">${item.subtitulo}</p>
+                    <p class="text-[11px]"><strong>Descrição:</strong> ${item.descricao}</p>
+                    <div class="grid grid-cols-4 gap-2 bg-vosty-cream p-2 border border-vosty-stone text-[11px]">
+                        <div>Material: <strong>${formatarEuro(item.totalMat)}</strong></div>
+                        <div>Mão de Obra: <strong>${formatarEuro(item.totalLab)}</strong></div>
+                        <div>Lucro (${item.marginPct}): <strong class="text-emerald-700">${formatarEuro(item.lucroLiquido)}</strong></div>
+                        <div>Custo Base: <strong>${formatarEuro(item.custoOperacional)}</strong></div>
+                    </div>
+                </div>
+            `).join('');
+
+            document.getElementById('prev-subtotal').textContent = formatarEuro(somaCliente);
+            document.getElementById('prev-total').textContent = formatarEuro(somaCliente);
+
+            document.getElementById('int-total-mat').textContent = formatarEuro(somaMat);
+            document.getElementById('int-total-lab').textContent = formatarEuro(somaLab);
+            document.getElementById('int-total-custo').textContent = formatarEuro(somaCusto);
+            document.getElementById('int-total-lucro').textContent = formatarEuro(somaLucro);
+            document.getElementById('int-total-cliente').textContent = formatarEuro(somaCliente);
         }
 
-        // Gerar e baixar o ficheiro PDF real (funciona no telemóvel e no PC)
-        function baixarPDF() {
+        // PDF do Cliente (limpo e profissional)
+        function baixarPDFCliente() {
             if (itensOrcamento.length === 0) {
                 alert('Adicione pelo menos um móvel ou serviço de remodelação antes de descarregar o PDF.');
                 return;
             }
-
-            const elemento = document.getElementById('documento-pdf');
+            const elemento = document.getElementById('documento-pdf-cliente');
             const nomeCliente = (document.getElementById('cliente-nome').value.trim() || 'Cliente').replace(/\s+/g, '_');
-            const nomeFicheiro = `Orcamento_VOSTY_Design_${nomeCliente}.pdf`;
-
-            const opcoes = {
+            html2pdf().set({
                 margin: [8, 8, 8, 8],
-                filename: nomeFicheiro,
+                filename: `Proposta_VOSTY_Design_${nomeCliente}.pdf`,
                 image: { type: 'jpeg', quality: 0.98 },
                 html2canvas: { scale: 2, useCORS: true, scrollY: 0 },
                 jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
-            };
-
-            html2pdf().set(opcoes).from(elemento).save();
+            }).from(elemento).save();
         }
 
-        function montarTextoResumo() {
+        // PDF Interno VOSTY Design (com Material, Mão de Obra, Lucro e Percentuais)
+        function baixarPDFInternoVosty() {
+            const elemento = document.getElementById('documento-pdf-interno');
+            const nomeCliente = (document.getElementById('cliente-nome').value.trim() || 'Cliente').replace(/\s+/g, '_');
+            html2pdf().set({
+                margin: [8, 8, 8, 8],
+                filename: `INTERNO_VOSTY_Custos_Lucro_${nomeCliente}.pdf`,
+                image: { type: 'jpeg', quality: 0.98 },
+                html2canvas: { scale: 2, useCORS: true, scrollY: 0 },
+                jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+            }).from(elemento).save();
+        }
+
+        function montarTextoCliente() {
             const nome = document.getElementById('cliente-nome').value.trim() || 'Cliente';
-            const local = document.getElementById('cliente-local').value.trim() || 'Portugal / Europa';
-            const email = document.getElementById('cliente-email').value.trim() || 'Não informado';
-            const whats = document.getElementById('cliente-whatsapp').value.trim() || 'Não informado';
+            const local = document.getElementById('cliente-local').value.trim() || 'Portugal / Toda a Europa';
 
             let total = 0;
             const linhasItens = itensOrcamento.map((it, i) => {
-                total += it.valor;
-                return `${i + 1}. *${it.titulo}* (${formatarEuro(it.valor)})\n   _${it.subtitulo}_\n   • Escopo: ${it.descricao}`;
+                total += it.precoFinal;
+                return `${i + 1}. *${it.titulo}* — *${formatarEuro(it.precoFinal)}*\n   _${it.subtitulo}_\n   • Escopo: ${it.descricao}`;
             }).join('\n\n');
 
             return `*PROPOSTA DE ORÇAMENTO — VOSTY DESIGN*\n` +
                    `Atuação: Portugal & Toda a Europa\n\n` +
                    `*Cliente:* ${nome}\n` +
                    `*Local da Obra:* ${local}\n` +
-                   `*WhatsApp:* ${whats}\n` +
-                   `*E-mail:* ${email}\n` +
                    (anexoAtual ? `*Projeto Anexado:* ${anexoAtual.name}\n` : '') +
-                   `\n*ITENS E ESPECIFICAÇÕES TÉCNICAS:*\n\n${linhasItens}\n\n` +
+                   `\n*ESPECIFICAÇÃO DOS TRABALHOS:*\n\n${linhasItens}\n\n` +
                    `*VALOR TOTAL ESTIMADO:* *${formatarEuro(total)}*`;
         }
 
-        // Botão único do Cliente: Descarrega PDF + Envia para WhatsApp e E-mail do Cliente
+        function montarTextoInternoVosty() {
+            const nome = document.getElementById('cliente-nome').value.trim() || 'Cliente';
+            const local = document.getElementById('cliente-local').value.trim() || 'Portugal / Toda a Europa';
+            const email = document.getElementById('cliente-email').value.trim() || 'Não informado';
+            const whats = document.getElementById('cliente-whatsapp').value.trim() || 'Não informado';
+
+            let tMat = 0, tLab = 0, tLucro = 0, tTotal = 0;
+            const linhasItens = itensOrcamento.map((it, i) => {
+                tMat += it.totalMat;
+                tLab += it.totalLab;
+                tLucro += it.lucroLiquido;
+                tTotal += it.precoFinal;
+                return `${i + 1}. *[${it.code}] ${it.titulo}*\n` +
+                       `   • Escopo: ${it.descricao}\n` +
+                       `   • Material: ${formatarEuro(it.totalMat)} | Mão de Obra: ${formatarEuro(it.totalLab)} | Lucro (${it.marginPct}): ${formatarEuro(it.lucroLiquido)} | Cliente: *${formatarEuro(it.precoFinal)}*`;
+            }).join('\n\n');
+
+            return `Olá VOSTY Design! Gostei desta proposta e quero avançar para concretizar o trabalho:\n\n` +
+                   `*DADOS DO CLIENTE:*\n` +
+                   `• Nome: ${nome}\n` +
+                   `• Local da Obra: ${local}\n` +
+                   `• WhatsApp: ${whats}\n` +
+                   `• E-mail: ${email}\n` +
+                   (anexoAtual ? `• Projeto Anexado: ${anexoAtual.name}\n` : '') +
+                   `\n*DETALHAMENTO TÉCNICO & FINANCEIRO:*\n\n${linhasItens}\n\n` +
+                   `*RESUMO FINANCEIRO VOSTY DESIGN:*\n` +
+                   `• Total Materiais: ${formatarEuro(tMat)}\n` +
+                   `• Total Mão de Obra: ${formatarEuro(tLab)}\n` +
+                   `• *Lucro Estimado: ${formatarEuro(tLucro)}*\n` +
+                   `• *Valor Final Cliente: ${formatarEuro(tTotal)}*`;
+        }
+
+        // Botão único do Cliente: Baixa PDF do Cliente + Envia para WhatsApp e E-mail do Cliente
         function enviarParaCliente() {
             if (itensOrcamento.length === 0) {
                 alert('Adicione pelo menos um item ao orçamento primeiro.');
                 return;
             }
-
             const whatsRaw = document.getElementById('cliente-whatsapp').value.replace(/\D/g, '');
             const emailCliente = document.getElementById('cliente-email').value.trim();
-
             if (!whatsRaw && !emailCliente) {
                 alert('Preencha o seu WhatsApp ou E-mail no passo 1 para receber a cópia da proposta.');
                 return;
             }
 
-            // 1. Baixa o PDF no dispositivo do cliente para anexar/guardar
-            baixarPDF();
+            baixarPDFCliente();
+            const texto = montarTextoCliente();
 
-            const texto = montarTextoResumo();
-
-            // 2. Abre o envio para o WhatsApp do cliente
             if (whatsRaw) {
                 window.open(`https://wa.me/${whatsRaw}?text=${encodeURIComponent(texto)}`, '_blank');
             }
-
-            // 3. Prepara o envio para o E-mail do cliente
             if (emailCliente) {
                 const assunto = encodeURIComponent('Sua Proposta de Orçamento — VOSTY Design');
                 const corpo = encodeURIComponent(texto.replace(/\*/g, '').replace(/_/g, ''));
@@ -914,24 +1255,20 @@
             }
         }
 
-        // Botão único VOSTY Design: Envia proposta completa para WhatsApp e E-mail da VOSTY Design
+        // Botão único VOSTY Design: Baixa PDF Interno (Material + Mão de Obra + Lucro) + Envia para WhatsApp e E-mail VOSTY Design
         function finalizarComVosty() {
             if (itensOrcamento.length === 0) {
                 alert('Adicione pelo menos um item ao orçamento antes de enviar para a VOSTY Design.');
                 return;
             }
 
-            // Baixa o PDF para o cliente já ter o ficheiro pronto
-            baixarPDF();
+            baixarPDFInternoVosty();
+            const textoInterno = montarTextoInternoVosty();
 
-            const texto = `Olá VOSTY Design! Gostei desta proposta e gostaria de avançar para concretizar o trabalho:\n\n` + montarTextoResumo();
+            window.open(`https://wa.me/${VOSTY_WHATSAPP}?text=${encodeURIComponent(textoInterno)}`, '_blank');
 
-            // 1. Envia diretamente para o WhatsApp da VOSTY Design (+351 923 189 914)
-            window.open(`https://wa.me/${VOSTY_WHATSAPP}?text=${encodeURIComponent(texto)}`, '_blank');
-
-            // 2. Abre também o envio para o E-mail da VOSTY Design
-            const assunto = encodeURIComponent('Nova Proposta para Fechamento — VOSTY Design');
-            const corpo = encodeURIComponent(texto.replace(/\*/g, '').replace(/_/g, ''));
+            const assunto = encodeURIComponent('Fechamento de Proposta (Custos, Lucro & Especificações) — VOSTY Design');
+            const corpo = encodeURIComponent(textoInterno.replace(/\*/g, '').replace(/_/g, ''));
             setTimeout(() => {
                 window.location.href = `mailto:${VOSTY_EMAIL}?subject=${assunto}&body=${corpo}`;
             }, 600);
