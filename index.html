@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title id="meta-title">VOSTY DESIGN | Remodelações, Móveis Sob Medida & Marcenaria — Portugal & Europa</title>
-    <meta id="meta-desc" name="description" content="Remodelação completa chave na mão, marcenaria e móveis sob medida em Portugal e na Europa. Cozinhas, roupeiros, casas de banho, remodelação de apartamentos e divisões, piso flutuante, tetos em pladur, pintura e cerâmica.">
-    <meta name="keywords" content="marcenaria, móveis planejados, móveis sob medida, roupeiro sob medida, cozinha sob medida, remodelação de casa de banho, remodelação de cozinha, remodelação de apartamento, remodelação de divisão, piso flutuante, chão flutuante, teto falso pladur, pintura, cerâmica, obras chave na mão, Portugal, Lisboa, Europa, carpintería a medida, reformas integrales, menuiserie sur mesure, rénovation, bespoke joinery, home renovation, falegnameria su misura, ristrutturazione">
+    <title id="meta-title">VOSTY DESIGN | Remodelações, Marcenaria &amp; Móveis Sob Medida — Portugal Inteiro &amp; Europa</title>
+    <meta id="meta-desc" name="description" content="Remodelações, carpintaria, marcenaria, móveis sob medida, cozinhas, roupeiros, casas de banho, remodelação de apartamentos e divisões, piso flutuante, tetos em pladur, pintura e cerâmica em Portugal inteiro e em toda a Europa.">
+    <meta name="keywords" content="marcenaria, carpintaria, móveis sob medida, móveis planejados, roupeiro sob medida, cozinha sob medida, remodelação de casa de banho, remodelação de cozinha, remodelação de apartamento, remodelação de divisão, piso flutuante, chão flutuante, teto em pladur, pintura, cerâmica, obras, Portugal inteiro, Europa, vostydesign@gmail.com, @vostydesign_remodelacoes, carpintería a medida, reformas integrales, menuiserie sur mesure, rénovation, bespoke joinery, home renovation, falegnameria su misura, ristrutturazione">
     <meta name="robots" content="index, follow">
 
-    <!-- hreflang para mercados europeus -->
     <link rel="alternate" hreflang="pt-PT" href="https://vostydesign.com/">
     <link rel="alternate" hreflang="es" href="https://vostydesign.com/?lang=es">
     <link rel="alternate" hreflang="fr" href="https://vostydesign.com/?lang=fr">
@@ -16,17 +15,17 @@
     <link rel="alternate" hreflang="it" href="https://vostydesign.com/?lang=it">
     <link rel="alternate" hreflang="x-default" href="https://vostydesign.com/">
 
-    <!-- Dados Estruturados (Schema.org) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "HomeAndConstructionBusiness",
       "name": "VOSTY DESIGN",
       "url": "https://vostydesign.com",
+      "email": "vostydesign@gmail.com",
       "telephone": "+351923189914",
       "sameAs": ["https://instagram.com/vostydesign_remodelacoes"],
-      "areaServed": ["Portugal", "Lisboa", "Espanha", "França", "Reino Unido", "Itália", "Europa"],
-      "description": "Remodelação completa chave na mão, marcenaria e móveis sob medida: cozinhas, roupeiros, casas de banho, apartamentos, piso flutuante, tetos, pintura e cerâmica."
+      "areaServed": ["Portugal", "Espanha", "França", "Reino Unido", "Itália", "Europa"],
+      "description": "Marcenaria, carpintaria, móveis sob medida, cozinhas, obras e remodelações em Portugal inteiro e em toda a Europa."
     }
     </script>
 
@@ -45,11 +44,11 @@
                     colors: {
                         vosty: {
                             dark: '#121210',
-                            charcoal: '#1D1C19',
+                            charcoal: '#1C1B18',
                             gold: '#B89352',
                             goldlight: '#D8B77E',
                             cream: '#F8F6F2',
-                            stone: '#E7E1D6',
+                            stone: '#E6E0D5',
                             muted: '#66625B'
                         }
                     }
@@ -58,15 +57,52 @@
         }
     </script>
     <style>
+        /* Grelha e cotas técnicas arquitetónicas */
+        .cad-grid {
+            background-image:
+                linear-gradient(to right, rgba(18, 18, 16, 0.045) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(18, 18, 16, 0.045) 1px, transparent 1px);
+            background-size: 64px 64px;
+        }
+        .cad-frame {
+            position: relative;
+        }
+        .cad-frame::before,
+        .cad-frame::after {
+            content: '';
+            position: absolute;
+            pointer-events: none;
+            border-color: rgba(184, 147, 82, 0.45);
+        }
+        .cad-frame::before {
+            top: -10px;
+            left: -10px;
+            width: 36px;
+            height: 36px;
+            border-top: 1.5px solid rgba(184, 147, 82, 0.65);
+            border-left: 1.5px solid rgba(184, 147, 82, 0.65);
+        }
+        .cad-frame::after {
+            bottom: -10px;
+            right: -10px;
+            width: 36px;
+            height: 36px;
+            border-bottom: 1.5px solid rgba(184, 147, 82, 0.65);
+            border-right: 1.5px solid rgba(184, 147, 82, 0.65);
+        }
+        .cad-dim-tag {
+            font-variant-numeric: tabular-nums;
+            letter-spacing: 0.14em;
+        }
         .glass-nav {
-            background: rgba(248, 246, 242, 0.88);
+            background: rgba(248, 246, 242, 0.9);
             backdrop-filter: blur(14px);
             -webkit-backdrop-filter: blur(14px);
         }
         .reveal {
             opacity: 0;
-            transform: translateY(22px);
-            transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1), transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+            transform: translateY(20px);
+            transition: opacity 0.65s cubic-bezier(0.22, 1, 0.36, 1), transform 0.65s cubic-bezier(0.22, 1, 0.36, 1);
         }
         .reveal.visible {
             opacity: 1;
@@ -117,10 +153,6 @@
             cursor: ew-resize;
             box-shadow: 0 12px 28px rgba(0,0,0,0.45);
             z-index: 20;
-            transition: transform 0.2s ease;
-        }
-        .ba-handle:hover {
-            transform: translate(-50%, -50%) scale(1.08);
         }
         #lightbox.active {
             display: flex;
@@ -134,15 +166,14 @@
 </head>
 <body class="bg-vosty-cream text-vosty-dark antialiased selection:bg-vosty-gold selection:text-white">
 
-    <!-- Top Bar com Idiomas (Portugal & Europa) -->
+    <!-- Top Bar -->
     <div class="bg-vosty-dark text-vosty-stone/85 text-xs py-2.5 px-4 border-b border-white/10">
         <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-3">
             <div class="flex items-center gap-3">
                 <span class="w-2 h-2 rounded-full bg-vosty-gold animate-pulse"></span>
-                <span id="topbar-region" class="font-medium">Portugal &amp; Europa • Lisboa, Odivelas, Sintra, Cascais, Oeiras</span>
+                <span id="topbar-region" class="font-medium">Portugal Inteiro &amp; Toda a Europa • Sem Limites de Região</span>
             </div>
 
-            <!-- Seletor de Idioma -->
             <div class="flex items-center gap-1 bg-white/10 rounded-full p-0.5" role="group" aria-label="Idioma">
                 <button type="button" onclick="setLanguage('pt')" data-lang="pt" class="lang-btn active-lang px-2.5 py-0.5 rounded-full text-[11px] transition">PT</button>
                 <button type="button" onclick="setLanguage('es')" data-lang="es" class="lang-btn px-2.5 py-0.5 rounded-full text-[11px] hover:bg-white/15 transition">ES</button>
@@ -151,8 +182,9 @@
                 <button type="button" onclick="setLanguage('it')" data-lang="it" class="lang-btn px-2.5 py-0.5 rounded-full text-[11px] hover:bg-white/15 transition">IT</button>
             </div>
 
-            <div class="flex items-center gap-4 font-medium">
+            <div class="flex flex-wrap items-center gap-4 font-medium">
                 <a href="https://instagram.com/vostydesign_remodelacoes" target="_blank" rel="noopener" class="hover:text-vosty-goldlight transition">@vostydesign_remodelacoes</a>
+                <a href="mailto:vostydesign@gmail.com" class="hover:text-vosty-goldlight transition">vostydesign@gmail.com</a>
                 <a href="tel:+351923189914" class="text-vosty-goldlight hover:underline">+351 923 189 914</a>
             </div>
         </div>
@@ -167,7 +199,7 @@
                 </div>
                 <div class="pl-1">
                     <span class="block text-xl font-semibold tracking-[0.22em] text-vosty-dark leading-none">VOSTY</span>
-                    <span class="block text-[10px] tracking-[0.18em] text-vosty-muted uppercase mt-1">Design • Marcenaria &amp; Obras</span>
+                    <span class="block text-[10px] tracking-[0.18em] text-vosty-muted uppercase mt-1">Design • Portugal &amp; Europa</span>
                 </div>
             </a>
 
@@ -177,7 +209,7 @@
                 <a href="#antes-depois" data-i18n="nav_ba" class="hover:text-vosty-gold transition">Antes &amp; Depois</a>
                 <a href="#portfolio" data-i18n="nav_portfolio" class="hover:text-vosty-gold transition">Portfólio</a>
                 <a href="#videos" data-i18n="nav_videos" class="hover:text-vosty-gold transition">Vídeos</a>
-                <a href="#orcamento" data-i18n="nav_contact" class="hover:text-vosty-gold transition">Orçamento</a>
+                <a href="#orcamento" data-i18n="nav_contact" class="hover:text-vosty-gold transition">Contactos</a>
             </nav>
 
             <div class="flex items-center gap-2.5 shrink-0">
@@ -189,14 +221,23 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="relative overflow-hidden border-b border-vosty-stone bg-gradient-to-b from-vosty-cream to-white/70">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 lg:py-24">
+    <!-- Hero Section com cotas e linhas técnicas -->
+    <section class="relative overflow-hidden border-b border-vosty-stone cad-grid">
+        <!-- Linha de cota superior decorativa -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6">
+            <div class="flex items-center justify-between text-[10px] cad-dim-tag text-vosty-muted/80 border-b border-dashed border-vosty-dark/20 pb-2">
+                <span>|← 00.00 m</span>
+                <span class="hidden sm:inline text-vosty-gold font-semibold">ESC. 1:50 • PROJETO &amp; EXECUÇÃO SOB MEDIDA</span>
+                <span>PT • EU →|</span>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-20">
             <div class="grid lg:grid-cols-12 gap-12 items-center">
                 <div class="lg:col-span-6 space-y-7">
-                    <div id="hero-badge" class="inline-flex items-center gap-2 px-3.5 py-1.5 bg-vosty-stone/80 text-vosty-dark text-xs font-semibold tracking-widest uppercase rounded-sm">
+                    <div id="hero-badge" class="inline-flex items-center gap-2 px-3.5 py-1.5 bg-white/90 border border-vosty-stone text-vosty-dark text-xs font-semibold tracking-widest uppercase rounded-sm shadow-2xs">
                         <span class="w-1.5 h-1.5 rounded-full bg-vosty-gold"></span>
-                        Marcenaria Sob Medida &amp; Remodelações • Portugal &amp; Europa
+                        Portugal Inteiro &amp; Toda a Europa
                     </div>
 
                     <h1 id="hero-title" class="font-serif text-5xl sm:text-6xl lg:text-7xl font-semibold text-vosty-dark leading-[1.03]">
@@ -205,21 +246,20 @@
                     </h1>
 
                     <p id="hero-desc" class="text-base sm:text-lg text-vosty-muted leading-relaxed max-w-xl">
-                        Móveis planejados e sob medida, roupeiros, cozinhas, remodelação de casas de banho, apartamentos e divisões, piso flutuante, tetos em pladur, pintura e cerâmica.
+                        Marcenaria, carpintaria, móveis sob medida, cozinhas, roupeiros, remodelação de casa de banho, apartamento e divisão, piso flutuante, chão, tetos em pladur, pintura e cerâmica em Portugal inteiro e em toda a Europa.
                     </p>
 
                     <div class="flex flex-wrap gap-3.5 pt-2">
                         <a href="#simulador" data-i18n="hero_btn_sim"
                            class="bg-vosty-gold hover:bg-vosty-dark text-white text-xs font-semibold uppercase tracking-widest px-7 py-4 rounded-sm transition-all duration-300 inline-flex items-center gap-2 shadow-lg">
-                            Abrir Simulador de Orçamento
-                            <span>↓</span>
+                            Abrir Simulador <span>↓</span>
                         </a>
                         <a href="https://wa.me/351923189914?text=Ol%C3%A1%20VOSTY%20DESIGN!%20Gostaria%20de%20pedir%20um%20or%C3%A7amento." target="_blank" rel="noopener" data-i18n="hero_btn_wa"
                            class="bg-vosty-dark hover:bg-vosty-charcoal text-white text-xs font-semibold uppercase tracking-widest px-7 py-4 rounded-sm transition-all duration-300 inline-flex items-center gap-2">
                             WhatsApp Direto
                         </a>
                         <a href="#portfolio" data-i18n="hero_btn_work"
-                           class="border border-vosty-dark/25 hover:border-vosty-dark text-vosty-dark text-xs font-semibold uppercase tracking-widest px-6 py-4 rounded-sm transition-all duration-300">
+                           class="bg-white/80 border border-vosty-dark/25 hover:border-vosty-dark text-vosty-dark text-xs font-semibold uppercase tracking-widest px-6 py-4 rounded-sm transition-all duration-300">
                             Ver Obras Reais
                         </a>
                     </div>
@@ -227,32 +267,36 @@
                     <div class="grid grid-cols-3 gap-6 pt-8 border-t border-vosty-stone">
                         <div>
                             <p class="font-serif text-3xl font-bold text-vosty-dark">100%</p>
-                            <p data-i18n="stat_1" class="text-xs text-vosty-muted mt-1">Móveis sob medida</p>
+                            <p data-i18n="stat_1" class="text-xs text-vosty-muted mt-1">Sob medida</p>
                         </div>
                         <div>
-                            <p id="stat-2-val" class="font-serif text-3xl font-bold text-vosty-dark">Chave na Mão</p>
-                            <p data-i18n="stat_2" class="text-xs text-vosty-muted mt-1">Obras &amp; acabamentos</p>
+                            <p class="font-serif text-3xl font-bold text-vosty-dark">01 : 01</p>
+                            <p data-i18n="stat_2" class="text-xs text-vosty-muted mt-1">Do traço à obra</p>
                         </div>
                         <div>
-                            <p class="font-serif text-3xl font-bold text-vosty-dark">PT • EU</p>
-                            <p data-i18n="stat_3" class="text-xs text-vosty-muted mt-1">Portugal &amp; Europa</p>
+                            <p class="font-serif text-3xl font-bold text-vosty-dark">PT + EU</p>
+                            <p data-i18n="stat_3" class="text-xs text-vosty-muted mt-1">Sem limites de zona</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="lg:col-span-6">
-                    <div class="relative bg-vosty-charcoal p-3 sm:p-4 shadow-2xl rounded-sm">
-                        <div class="aspect-[4/3] overflow-hidden relative">
-                            <img src="01.png" alt="Remodelação completa de cozinha e marcenaria sob medida VOSTY DESIGN"
-                                 class="w-full h-full object-cover hover:scale-105 transition-transform duration-700 cursor-pointer"
-                                 onclick="openLightbox('01.png', 'Cozinha e Sala — Remodelação Integral & Marcenaria Sob Medida')">
+                    <div class="cad-frame relative bg-vosty-charcoal p-3 sm:p-4 shadow-2xl rounded-sm">
+                        <div class="flex items-center justify-between text-[10px] cad-dim-tag text-vosty-goldlight/90 pb-2 px-1">
+                            <span>COTA A — 3.80 m</span>
+                            <span>COTA B — 2.65 m</span>
                         </div>
-                        <div class="bg-vosty-dark text-white px-5 py-4 flex items-center justify-between">
+                        <div class="aspect-[4/3] overflow-hidden relative">
+                            <img src="01.png" alt="Remodelação e marcenaria sob medida VOSTY DESIGN"
+                                 class="w-full h-full object-cover hover:scale-105 transition-transform duration-700 cursor-pointer"
+                                 onclick="openLightbox('01.png', 'VOSTY DESIGN — Projeto & Execução Sob Medida')">
+                        </div>
+                        <div class="bg-vosty-dark text-white px-5 py-4 flex items-center justify-between mt-3">
                             <div>
-                                <p class="text-[11px] uppercase tracking-widest text-vosty-goldlight">VOSTY DESIGN • Projeto em Destaque</p>
-                                <p class="text-sm font-medium mt-0.5">Cozinha Sob Medida, Marcenaria &amp; Iluminação LED</p>
+                                <p class="text-[11px] uppercase tracking-widest text-vosty-goldlight">VOSTY DESIGN • Portugal Inteiro &amp; Europa</p>
+                                <p class="text-sm font-medium mt-0.5">Marcenaria, Carpintaria, Cozinhas &amp; Remodelações</p>
                             </div>
-                            <button onclick="openLightbox('01.png', 'Cozinha e Sala — Remodelação Integral & Marcenaria Sob Medida')"
+                            <button onclick="openLightbox('01.png', 'VOSTY DESIGN — Projeto & Execução Sob Medida')"
                                     class="text-xs uppercase tracking-wider text-vosty-goldlight hover:underline">
                                 Ampliar
                             </button>
@@ -263,79 +307,102 @@
         </div>
     </section>
 
-    <!-- Especialidades (Marcenaria + Remodelações + Obras) -->
-    <section id="especialidades" class="py-20 bg-white border-b border-vosty-stone reveal">
+    <!-- Especialidades -->
+    <section id="especialidades" class="py-20 bg-white border-b border-vosty-stone cad-grid reveal">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="max-w-3xl mb-14">
-                <p id="serv-kicker" class="text-xs font-semibold uppercase tracking-[0.2em] text-vosty-gold">Marcenaria, Móveis Planejados &amp; Obras</p>
-                <h2 id="serv-title" class="font-serif text-4xl sm:text-5xl font-semibold text-vosty-dark mt-2">
-                    Soluções completas para casa, apartamento e comércio
-                </h2>
+            <div class="flex flex-wrap items-baseline justify-between gap-4 mb-14">
+                <div class="max-w-3xl">
+                    <p id="serv-kicker" class="text-xs font-semibold uppercase tracking-[0.2em] text-vosty-gold">Marcenaria, Carpintaria &amp; Obras</p>
+                    <h2 id="serv-title" class="font-serif text-4xl sm:text-5xl font-semibold text-vosty-dark mt-2">
+                        Soluções completas em Portugal e na Europa
+                    </h2>
+                </div>
+                <span class="text-[11px] cad-dim-tag text-vosty-muted border border-vosty-stone px-3 py-1 bg-vosty-cream rounded-sm">
+                    REF. VD-2026 • TODOS OS AMBIENTES
+                </span>
             </div>
 
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-7">
-                <div class="p-8 bg-vosty-cream border border-vosty-stone hover:border-vosty-gold hover:-translate-y-1 transition duration-300 rounded-sm">
-                    <span class="text-vosty-gold font-serif text-2xl font-bold">01</span>
-                    <h3 id="s1-title" class="font-serif text-2xl font-semibold mt-3">Cozinhas &amp; Roupeiros Sob Medida</h3>
+                <div class="p-8 bg-vosty-cream/95 border border-vosty-stone hover:border-vosty-gold hover:-translate-y-1 transition duration-300 rounded-sm">
+                    <div class="flex items-center justify-between text-[11px] cad-dim-tag text-vosty-muted">
+                        <span class="text-vosty-gold font-serif text-2xl font-bold">01</span>
+                        <span>[ DIM. SOB MEDIDA ]</span>
+                    </div>
+                    <h3 id="s1-title" class="font-serif text-2xl font-semibold mt-3">Marcenaria, Móveis &amp; Cozinhas</h3>
                     <p id="s1-desc" class="text-sm text-vosty-muted mt-3 leading-relaxed">
-                        Cozinhas sob medida, móveis planejados, roupeiros sob medida e closets com ferragens de precisão, iluminação LED e aproveitamento total do espaço.
+                        Marcenaria, carpintaria, móveis sob medida, roupeiros sob medida, cozinhas sob medida e closets com precisão e iluminação LED.
                     </p>
                 </div>
 
-                <div class="p-8 bg-vosty-cream border border-vosty-stone hover:border-vosty-gold hover:-translate-y-1 transition duration-300 rounded-sm">
-                    <span class="text-vosty-gold font-serif text-2xl font-bold">02</span>
+                <div class="p-8 bg-vosty-cream/95 border border-vosty-stone hover:border-vosty-gold hover:-translate-y-1 transition duration-300 rounded-sm">
+                    <div class="flex items-center justify-between text-[11px] cad-dim-tag text-vosty-muted">
+                        <span class="text-vosty-gold font-serif text-2xl font-bold">02</span>
+                        <span>[ WC &amp; COZINHA ]</span>
+                    </div>
                     <h3 id="s2-title" class="font-serif text-2xl font-semibold mt-3">Remodelação de Casa de Banho &amp; Cozinha</h3>
                     <p id="s2-desc" class="text-sm text-vosty-muted mt-3 leading-relaxed">
-                        Remodelação de casa de banho e remodelação de cozinha completas: canalizações, impermeabilização, cerâmica, bases de duche e móveis suspensos.
+                        Remodelação de casa de banho e remodelação de cozinha completas: canalizações, cerâmica, bases de duche e mobiliário à medida.
                     </p>
                 </div>
 
-                <div class="p-8 bg-vosty-cream border border-vosty-stone hover:border-vosty-gold hover:-translate-y-1 transition duration-300 rounded-sm">
-                    <span class="text-vosty-gold font-serif text-2xl font-bold">03</span>
+                <div class="p-8 bg-vosty-cream/95 border border-vosty-stone hover:border-vosty-gold hover:-translate-y-1 transition duration-300 rounded-sm">
+                    <div class="flex items-center justify-between text-[11px] cad-dim-tag text-vosty-muted">
+                        <span class="text-vosty-gold font-serif text-2xl font-bold">03</span>
+                        <span>[ APARTAMENTO &amp; DIVISÃO ]</span>
+                    </div>
                     <h3 id="s3-title" class="font-serif text-2xl font-semibold mt-3">Remodelação de Apartamento &amp; Divisões</h3>
                     <p id="s3-desc" class="text-sm text-vosty-muted mt-3 leading-relaxed">
-                        Remodelação de apartamento e remodelação de divisão com gestão integral: salas, quartos, corredores e espaços abertos prontos a habitar.
+                        Remodelação de apartamento e remodelação de divisão com planeamento técnico e acabamento de excelência.
                     </p>
                 </div>
 
-                <div class="p-8 bg-vosty-cream border border-vosty-stone hover:border-vosty-gold hover:-translate-y-1 transition duration-300 rounded-sm">
-                    <span class="text-vosty-gold font-serif text-2xl font-bold">04</span>
+                <div class="p-8 bg-vosty-cream/95 border border-vosty-stone hover:border-vosty-gold hover:-translate-y-1 transition duration-300 rounded-sm">
+                    <div class="flex items-center justify-between text-[11px] cad-dim-tag text-vosty-muted">
+                        <span class="text-vosty-gold font-serif text-2xl font-bold">04</span>
+                        <span>[ PAVIMENTOS &amp; CERÂMICA ]</span>
+                    </div>
                     <h3 id="s4-title" class="font-serif text-2xl font-semibold mt-3">Piso Flutuante, Chão &amp; Cerâmica</h3>
                     <p id="s4-desc" class="text-sm text-vosty-muted mt-3 leading-relaxed">
-                        Instalação profissional de piso flutuante, chão flutuante vinílico ou laminado, pavimentos de madeira e revestimentos cerâmicos com acabamento nivelado.
+                        Piso flutuante, chão flutuante, pavimentos em madeira/vinil e revestimentos cerâmicos com nivelamento rigoroso.
                     </p>
                 </div>
 
-                <div class="p-8 bg-vosty-cream border border-vosty-stone hover:border-vosty-gold hover:-translate-y-1 transition duration-300 rounded-sm">
-                    <span class="text-vosty-gold font-serif text-2xl font-bold">05</span>
-                    <h3 id="s5-title" class="font-serif text-2xl font-semibold mt-3">Tetos em Pladur, Pintura &amp; Painéis TV</h3>
+                <div class="p-8 bg-vosty-cream/95 border border-vosty-stone hover:border-vosty-gold hover:-translate-y-1 transition duration-300 rounded-sm">
+                    <div class="flex items-center justify-between text-[11px] cad-dim-tag text-vosty-muted">
+                        <span class="text-vosty-gold font-serif text-2xl font-bold">05</span>
+                        <span>[ PLADUR &amp; PINTURA ]</span>
+                    </div>
+                    <h3 id="s5-title" class="font-serif text-2xl font-semibold mt-3">Tetos em Pladur, Pintura &amp; Painéis</h3>
                     <p id="s5-desc" class="text-sm text-vosty-muted mt-3 leading-relaxed">
-                        Tetos falsos em pladur com sancas e focos LED, pintura interior de alto acabamento, painéis de TV ripados, garrafeiras e estantes à medida.
+                        Tetos em pladur, iluminação LED, pintura interior, painéis de TV ripados, garrafeiras e estantes feitas à medida.
                     </p>
                 </div>
 
-                <div class="p-8 bg-vosty-cream border border-vosty-stone hover:border-vosty-gold hover:-translate-y-1 transition duration-300 rounded-sm">
-                    <span class="text-vosty-gold font-serif text-2xl font-bold">06</span>
-                    <h3 id="s6-title" class="font-serif text-2xl font-semibold mt-3">Espaços Comerciais &amp; Atuação Europeia</h3>
+                <div class="p-8 bg-vosty-cream/95 border border-vosty-stone hover:border-vosty-gold hover:-translate-y-1 transition duration-300 rounded-sm">
+                    <div class="flex items-center justify-between text-[11px] cad-dim-tag text-vosty-muted">
+                        <span class="text-vosty-gold font-serif text-2xl font-bold">06</span>
+                        <span>[ PORTUGAL &amp; EUROPA ]</span>
+                    </div>
+                    <h3 id="s6-title" class="font-serif text-2xl font-semibold mt-3">Espaços Comerciais &amp; Europa</h3>
                     <p id="s6-desc" class="text-sm text-vosty-muted mt-3 leading-relaxed">
-                        Lojas, clínicas e escritórios com balcões e mobiliário personalizado, com atendimento para Portugal e clientes em toda a Europa.
+                        Projetos residenciais e comerciais para todo o Portugal e países da Europa, com orçamento rápido e acompanhamento direto.
                     </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Simulador Integrado no Site -->
+    <!-- Simulador Integrado -->
     <section id="simulador" class="py-20 bg-vosty-stone/50 border-b border-vosty-stone reveal">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-8">
                 <div>
-                    <p class="text-xs font-semibold uppercase tracking-[0.2em] text-vosty-gold">Simulador Interativo VOSTY DESIGN</p>
+                    <p class="text-xs font-semibold uppercase tracking-[0.2em] text-vosty-gold">Simulador VOSTY DESIGN</p>
                     <h2 id="sim-title" class="font-serif text-4xl sm:text-5xl font-semibold text-vosty-dark mt-2">
                         Simule o Seu Orçamento na Hora
                     </h2>
                     <p id="sim-desc" class="text-sm text-vosty-muted mt-2 max-w-2xl">
-                        Escolha as medidas, acabamentos e serviços de marcenaria ou remodelação diretamente no simulador abaixo ou abra em ecrã inteiro.
+                        Utilize o nosso simulador integrado abaixo ou abra em ecrã inteiro.
                     </p>
                 </div>
                 <div class="flex flex-wrap gap-3 shrink-0">
@@ -357,7 +424,7 @@
         </div>
     </section>
 
-    <!-- Antes & Depois Interativo -->
+    <!-- Antes & Depois -->
     <section id="antes-depois" class="py-20 bg-vosty-dark text-white border-b border-white/10 reveal">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
@@ -368,7 +435,7 @@
                     </h2>
                 </div>
                 <p id="ba-desc" class="text-sm text-white/70 max-w-md">
-                    Deslize o controlo central para comparar o estado original com o resultado final entregue pela VOSTY DESIGN.
+                    Deslize o controlo central para comparar o estado inicial com o resultado final entregue pela VOSTY DESIGN.
                 </p>
             </div>
 
@@ -408,8 +475,8 @@
         </div>
     </section>
 
-    <!-- Portfólio Completo com Filtros -->
-    <section id="portfolio" class="py-20 bg-vosty-cream border-b border-vosty-stone reveal">
+    <!-- Portfólio Completo -->
+    <section id="portfolio" class="py-20 bg-vosty-cream border-b border-vosty-stone cad-grid reveal">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-2xl mx-auto mb-10">
                 <p class="text-xs font-semibold uppercase tracking-[0.2em] text-vosty-gold">Portfólio VOSTY DESIGN</p>
@@ -444,818 +511,305 @@
 
             <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6" id="portfolio-grid">
                 <!-- 1. COZINHAS & SALA -->
-                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="cozinhas"
-                     onclick="openLightbox('02.png', 'Cozinha Antracite & Garrafeira Iluminada — Móveis Sob Medida')">
-                    <div class="aspect-[4/3] overflow-hidden">
-                        <img src="02.png" alt="Cozinha remodelada com garrafeira" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div class="p-4">
-                        <span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Cozinhas &amp; Sala</span>
-                        <h3 class="font-serif text-xl font-semibold mt-0.5">Cozinha Antracite &amp; Garrafeira</h3>
-                    </div>
+                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="cozinhas" onclick="openLightbox('02.png', 'Cozinha Antracite & Garrafeira Iluminada — Móveis Sob Medida')">
+                    <div class="aspect-[4/3] overflow-hidden"><img src="02.png" alt="Cozinha remodelada com garrafeira" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"></div>
+                    <div class="p-4"><span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Cozinhas &amp; Sala</span><h3 class="font-serif text-xl font-semibold mt-0.5">Cozinha Antracite &amp; Garrafeira</h3></div>
                 </div>
-
-                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="cozinhas"
-                     onclick="openLightbox('5.png', 'Sala de Jantar com Divisória Ripada em Madeira e Sala de Estar')">
-                    <div class="aspect-[4/3] overflow-hidden">
-                        <img src="5.png" alt="Sala de jantar e divisória ripada" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div class="p-4">
-                        <span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Cozinhas &amp; Sala</span>
-                        <h3 class="font-serif text-xl font-semibold mt-0.5">Sala de Jantar &amp; Divisória Ripada</h3>
-                    </div>
+                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="cozinhas" onclick="openLightbox('5.png', 'Sala de Jantar com Divisória Ripada em Madeira e Sala de Estar')">
+                    <div class="aspect-[4/3] overflow-hidden"><img src="5.png" alt="Sala de jantar e divisória ripada" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"></div>
+                    <div class="p-4"><span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Cozinhas &amp; Sala</span><h3 class="font-serif text-xl font-semibold mt-0.5">Sala de Jantar &amp; Divisória Ripada</h3></div>
                 </div>
-
-                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="cozinhas"
-                     onclick="openLightbox('6.png', 'Cozinha Antracite — Bancada Branca & Revestimento Hexagonal')">
-                    <div class="aspect-[4/3] overflow-hidden">
-                        <img src="6.png" alt="Cozinha moderna bancada branca" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div class="p-4">
-                        <span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Cozinhas &amp; Sala</span>
-                        <h3 class="font-serif text-xl font-semibold mt-0.5">Bancada &amp; Revestimento Cerâmico</h3>
-                    </div>
+                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="cozinhas" onclick="openLightbox('6.png', 'Cozinha Antracite — Bancada Branca & Revestimento Hexagonal')">
+                    <div class="aspect-[4/3] overflow-hidden"><img src="6.png" alt="Cozinha moderna bancada branca" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"></div>
+                    <div class="p-4"><span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Cozinhas &amp; Sala</span><h3 class="font-serif text-xl font-semibold mt-0.5">Bancada &amp; Revestimento Cerâmico</h3></div>
                 </div>
-
-                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="cozinhas"
-                     onclick="openLightbox('7.png', 'Cozinha Sob Medida com Iluminação Linear LED no Teto')">
-                    <div class="aspect-[4/3] overflow-hidden">
-                        <img src="7.png" alt="Cozinha sob medida iluminação LED" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div class="p-4">
-                        <span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Cozinhas &amp; Sala</span>
-                        <h3 class="font-serif text-xl font-semibold mt-0.5">Armários Superiores &amp; Teto LED</h3>
-                    </div>
+                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="cozinhas" onclick="openLightbox('7.png', 'Cozinha Sob Medida com Iluminação Linear LED no Teto')">
+                    <div class="aspect-[4/3] overflow-hidden"><img src="7.png" alt="Cozinha sob medida iluminação LED" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"></div>
+                    <div class="p-4"><span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Cozinhas &amp; Sala</span><h3 class="font-serif text-xl font-semibold mt-0.5">Armários Superiores &amp; Teto LED</h3></div>
                 </div>
-
-                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="cozinhas"
-                     onclick="openLightbox('8.png', 'Copa Integrada com Painel Ripado Escuro e Aparador Suspenso')">
-                    <div class="aspect-[4/3] overflow-hidden">
-                        <img src="8.png" alt="Copa com ripado escuro" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div class="p-4">
-                        <span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Cozinhas &amp; Sala</span>
-                        <h3 class="font-serif text-xl font-semibold mt-0.5">Copa Integrada &amp; Ripado Antracite</h3>
-                    </div>
+                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="cozinhas" onclick="openLightbox('8.png', 'Copa Integrada com Painel Ripado Escuro e Aparador Suspenso')">
+                    <div class="aspect-[4/3] overflow-hidden"><img src="8.png" alt="Copa com ripado escuro" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"></div>
+                    <div class="p-4"><span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Cozinhas &amp; Sala</span><h3 class="font-serif text-xl font-semibold mt-0.5">Copa Integrada &amp; Ripado Antracite</h3></div>
                 </div>
-
-                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="cozinhas"
-                     onclick="openLightbox('9.png', 'Detalhe do Painel Ripado Antracite e Iluminação LED Escultural')">
-                    <div class="aspect-[4/3] overflow-hidden">
-                        <img src="9.png" alt="Detalhe painel ripado antracite" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div class="p-4">
-                        <span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Cozinhas &amp; Sala</span>
-                        <h3 class="font-serif text-xl font-semibold mt-0.5">Acabamento Ripado &amp; LED</h3>
-                    </div>
+                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="cozinhas" onclick="openLightbox('9.png', 'Detalhe do Painel Ripado Antracite e Iluminação LED Escultural')">
+                    <div class="aspect-[4/3] overflow-hidden"><img src="9.png" alt="Detalhe painel ripado antracite" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"></div>
+                    <div class="p-4"><span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Cozinhas &amp; Sala</span><h3 class="font-serif text-xl font-semibold mt-0.5">Acabamento Ripado &amp; LED</h3></div>
                 </div>
-
-                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="cozinhas"
-                     onclick="openLightbox('10.png', 'Vista Lateral da Zona de Refeições com Ripado e Espelhos Fumê')">
-                    <div class="aspect-[4/3] overflow-hidden">
-                        <img src="10.png" alt="Zona de refeições ripado" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div class="p-4">
-                        <span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Cozinhas &amp; Sala</span>
-                        <h3 class="font-serif text-xl font-semibold mt-0.5">Zona de Refeições &amp; Espelhos</h3>
-                    </div>
+                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="cozinhas" onclick="openLightbox('10.png', 'Vista Lateral da Zona de Refeições com Ripado e Espelhos Fumê')">
+                    <div class="aspect-[4/3] overflow-hidden"><img src="10.png" alt="Zona de refeições ripado" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"></div>
+                    <div class="p-4"><span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Cozinhas &amp; Sala</span><h3 class="font-serif text-xl font-semibold mt-0.5">Zona de Refeições &amp; Espelhos</h3></div>
                 </div>
-
-                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="cozinhas"
-                     onclick="openLightbox('11.png', 'Coluna de Eletrodomésticos Encastrados & Despenseiro Sob Medida')">
-                    <div class="aspect-[4/3] overflow-hidden">
-                        <img src="11.png" alt="Coluna de eletrodomésticos sob medida" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div class="p-4">
-                        <span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Cozinhas &amp; Sala</span>
-                        <h3 class="font-serif text-xl font-semibold mt-0.5">Torre de Fornos &amp; Despenseiro</h3>
-                    </div>
+                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="cozinhas" onclick="openLightbox('11.png', 'Coluna de Eletrodomésticos Encastrados & Despenseiro Sob Medida')">
+                    <div class="aspect-[4/3] overflow-hidden"><img src="11.png" alt="Coluna de eletrodomésticos sob medida" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"></div>
+                    <div class="p-4"><span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Cozinhas &amp; Sala</span><h3 class="font-serif text-xl font-semibold mt-0.5">Torre de Fornos &amp; Despenseiro</h3></div>
                 </div>
-
-                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="cozinhas"
-                     onclick="openLightbox('12.png', 'Armários Altos e Vitrines com Espelho Fumê Sob Medida')">
-                    <div class="aspect-[4/3] overflow-hidden">
-                        <img src="12.png" alt="Vitrines espelho fumê cozinha" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div class="p-4">
-                        <span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Cozinhas &amp; Sala</span>
-                        <h3 class="font-serif text-xl font-semibold mt-0.5">Despenseiros Altos &amp; Vitrine</h3>
-                    </div>
+                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="cozinhas" onclick="openLightbox('12.png', 'Armários Altos e Vitrines com Espelho Fumê Sob Medida')">
+                    <div class="aspect-[4/3] overflow-hidden"><img src="12.png" alt="Vitrines espelho fumê cozinha" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"></div>
+                    <div class="p-4"><span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Cozinhas &amp; Sala</span><h3 class="font-serif text-xl font-semibold mt-0.5">Despenseiros Altos &amp; Vitrine</h3></div>
                 </div>
-
-                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="cozinhas"
-                     onclick="openLightbox('61.png', 'Cozinha Azul-Marinho & Branca com Ferragens e Torneira Dourada')">
-                    <div class="aspect-[4/3] overflow-hidden">
-                        <img src="61.png" alt="Cozinha azul marinho e branca" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div class="p-4">
-                        <span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Cozinhas &amp; Sala</span>
-                        <h3 class="font-serif text-xl font-semibold mt-0.5">Cozinha Azul-Marinho &amp; Dourado</h3>
-                    </div>
+                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="cozinhas" onclick="openLightbox('61.png', 'Cozinha Azul-Marinho & Branca com Ferragens e Torneira Dourada')">
+                    <div class="aspect-[4/3] overflow-hidden"><img src="61.png" alt="Cozinha azul marinho e branca" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"></div>
+                    <div class="p-4"><span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Cozinhas &amp; Sala</span><h3 class="font-serif text-xl font-semibold mt-0.5">Cozinha Azul-Marinho &amp; Dourado</h3></div>
                 </div>
-
-                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="cozinhas"
-                     onclick="openLightbox('62.png', 'Bancada em Efeito Mármore Calacatta, Placa de Indução e Forno Encastrado')">
-                    <div class="aspect-[4/3] overflow-hidden">
-                        <img src="62.png" alt="Cozinha bancada mármore Calacatta" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div class="p-4">
-                        <span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Cozinhas &amp; Sala</span>
-                        <h3 class="font-serif text-xl font-semibold mt-0.5">Bancada Calacatta &amp; Indução</h3>
-                    </div>
+                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="cozinhas" onclick="openLightbox('62.png', 'Bancada em Efeito Mármore Calacatta, Placa de Indução e Forno Encastrado')">
+                    <div class="aspect-[4/3] overflow-hidden"><img src="62.png" alt="Cozinha bancada mármore Calacatta" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"></div>
+                    <div class="p-4"><span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Cozinhas &amp; Sala</span><h3 class="font-serif text-xl font-semibold mt-0.5">Bancada Calacatta &amp; Indução</h3></div>
                 </div>
-
-                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="cozinhas"
-                     onclick="openLightbox('63.png', 'Zona de Confeção com Armários Superiores Brancos e Puxadores Dourados')">
-                    <div class="aspect-[4/3] overflow-hidden">
-                        <img src="63.png" alt="Armários brancos puxadores dourados" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div class="p-4">
-                        <span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Cozinhas &amp; Sala</span>
-                        <h3 class="font-serif text-xl font-semibold mt-0.5">Armários Lacados &amp; Cerâmica</h3>
-                    </div>
+                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="cozinhas" onclick="openLightbox('63.png', 'Zona de Confeção com Armários Superiores Brancos e Puxadores Dourados')">
+                    <div class="aspect-[4/3] overflow-hidden"><img src="63.png" alt="Armários brancos puxadores dourados" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"></div>
+                    <div class="p-4"><span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Cozinhas &amp; Sala</span><h3 class="font-serif text-xl font-semibold mt-0.5">Armários Lacados &amp; Cerâmica</h3></div>
                 </div>
-
-                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="cozinhas"
-                     onclick="openLightbox('64.png', 'Lava-loiça Duplo e Torneira Misturadora Dourada com Iluminação LED')">
-                    <div class="aspect-[4/3] overflow-hidden">
-                        <img src="64.png" alt="Torneira dourada e lava-loiça" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div class="p-4">
-                        <span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Cozinhas &amp; Sala</span>
-                        <h3 class="font-serif text-xl font-semibold mt-0.5">Torneira Dourada &amp; LED Embutido</h3>
-                    </div>
+                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="cozinhas" onclick="openLightbox('64.png', 'Lava-loiça Duplo e Torneira Misturadora Dourada com Iluminação LED')">
+                    <div class="aspect-[4/3] overflow-hidden"><img src="64.png" alt="Torneira dourada e lava-loiça" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"></div>
+                    <div class="p-4"><span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Cozinhas &amp; Sala</span><h3 class="font-serif text-xl font-semibold mt-0.5">Torneira Dourada &amp; LED Embutido</h3></div>
                 </div>
-
-                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="cozinhas"
-                     onclick="openLightbox('65.png', 'Coluna de Micro-ondas e Frigorífico Americano em Lacado Azul Mate')">
-                    <div class="aspect-[4/3] overflow-hidden">
-                        <img src="65.png" alt="Coluna lacada azul mate" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div class="p-4">
-                        <span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Cozinhas &amp; Sala</span>
-                        <h3 class="font-serif text-xl font-semibold mt-0.5">Coluna Encastrada Azul Mate</h3>
-                    </div>
+                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="cozinhas" onclick="openLightbox('65.png', 'Coluna de Micro-ondas e Frigorífico Americano em Lacado Azul Mate')">
+                    <div class="aspect-[4/3] overflow-hidden"><img src="65.png" alt="Coluna lacada azul mate" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"></div>
+                    <div class="p-4"><span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Cozinhas &amp; Sala</span><h3 class="font-serif text-xl font-semibold mt-0.5">Coluna Encastrada Azul Mate</h3></div>
                 </div>
-
-                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="cozinhas"
-                     onclick="openLightbox('66.png', 'Zona de Apoio e Refeições Rápidas com Ripado de Madeira e Estante Azul')">
-                    <div class="aspect-[4/3] overflow-hidden">
-                        <img src="66.png" alt="Bancada de apoio com ripado de madeira" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div class="p-4">
-                        <span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Cozinhas &amp; Sala</span>
-                        <h3 class="font-serif text-xl font-semibold mt-0.5">Bancada de Apoio &amp; Ripado</h3>
-                    </div>
+                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="cozinhas" onclick="openLightbox('66.png', 'Zona de Apoio e Refeições Rápidas com Ripado de Madeira e Estante Azul')">
+                    <div class="aspect-[4/3] overflow-hidden"><img src="66.png" alt="Bancada de apoio com ripado de madeira" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"></div>
+                    <div class="p-4"><span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Cozinhas &amp; Sala</span><h3 class="font-serif text-xl font-semibold mt-0.5">Bancada de Apoio &amp; Ripado</h3></div>
                 </div>
-
-                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="cozinhas"
-                     onclick="openLightbox('67.png', 'Vista Geral da Cozinha Remodelada Chave na Mão com Pavimento Mármore')">
-                    <div class="aspect-[4/3] overflow-hidden">
-                        <img src="67.png" alt="Vista geral cozinha remodelada" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div class="p-4">
-                        <span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Cozinhas &amp; Sala</span>
-                        <h3 class="font-serif text-xl font-semibold mt-0.5">Cozinha Integral &amp; Pavimento</h3>
-                    </div>
+                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="cozinhas" onclick="openLightbox('67.png', 'Vista Geral da Cozinha Remodelada Chave na Mão com Pavimento Mármore')">
+                    <div class="aspect-[4/3] overflow-hidden"><img src="67.png" alt="Vista geral cozinha remodelada" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"></div>
+                    <div class="p-4"><span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Cozinhas &amp; Sala</span><h3 class="font-serif text-xl font-semibold mt-0.5">Cozinha Integral &amp; Pavimento</h3></div>
                 </div>
-
-                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="cozinhas"
-                     onclick="openLightbox('68.png', 'Perspetiva Inversa da Cozinha Remodelada e Carpintaria Sob Medida')">
-                    <div class="aspect-[4/3] overflow-hidden">
-                        <img src="68.png" alt="Perspetiva cozinha azul e ripado" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div class="p-4">
-                        <span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Cozinhas &amp; Sala</span>
-                        <h3 class="font-serif text-xl font-semibold mt-0.5">Integração Cozinha &amp; Ripado</h3>
-                    </div>
+                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="cozinhas" onclick="openLightbox('68.png', 'Perspetiva Inversa da Cozinha Remodelada e Carpintaria Sob Medida')">
+                    <div class="aspect-[4/3] overflow-hidden"><img src="68.png" alt="Perspetiva cozinha azul e ripado" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"></div>
+                    <div class="p-4"><span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Cozinhas &amp; Sala</span><h3 class="font-serif text-xl font-semibold mt-0.5">Integração Cozinha &amp; Ripado</h3></div>
                 </div>
-
-                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="cozinhas"
-                     onclick="openLightbox('69...png', 'Estado Original (Antes) — Cozinha Antes da Remodelação Integral')">
-                    <div class="aspect-[4/3] overflow-hidden relative">
-                        <img src="69...png" alt="Antes da remodelação cozinha" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                        <span class="absolute top-3 left-3 bg-black/75 text-white text-[10px] font-semibold uppercase tracking-widest px-2.5 py-1">Antes</span>
-                    </div>
-                    <div class="p-4">
-                        <span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Cozinhas &amp; Sala</span>
-                        <h3 class="font-serif text-xl font-semibold mt-0.5">Antes da Remodelação — Vista Geral</h3>
-                    </div>
+                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="cozinhas" onclick="openLightbox('69...png', 'Estado Original (Antes) — Cozinha Antes da Remodelação Integral')">
+                    <div class="aspect-[4/3] overflow-hidden relative"><img src="69...png" alt="Antes da remodelação cozinha" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"><span class="absolute top-3 left-3 bg-black/75 text-white text-[10px] font-semibold uppercase tracking-widest px-2.5 py-1">Antes</span></div>
+                    <div class="p-4"><span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Cozinhas &amp; Sala</span><h3 class="font-serif text-xl font-semibold mt-0.5">Antes da Remodelação — Vista Geral</h3></div>
                 </div>
-
-                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="cozinhas"
-                     onclick="openLightbox('69..png', 'Estado Original (Antes) — Armários Antigos Antes da Intervenção')">
-                    <div class="aspect-[4/3] overflow-hidden relative">
-                        <img src="69..png" alt="Antes da remodelação bancada antiga" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                        <span class="absolute top-3 left-3 bg-black/75 text-white text-[10px] font-semibold uppercase tracking-widest px-2.5 py-1">Antes</span>
-                    </div>
-                    <div class="p-4">
-                        <span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Cozinhas &amp; Sala</span>
-                        <h3 class="font-serif text-xl font-semibold mt-0.5">Antes da Remodelação — Bancada Original</h3>
-                    </div>
+                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="cozinhas" onclick="openLightbox('69..png', 'Estado Original (Antes) — Armários Antigos Antes da Intervenção')">
+                    <div class="aspect-[4/3] overflow-hidden relative"><img src="69..png" alt="Antes da remodelação bancada antiga" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"><span class="absolute top-3 left-3 bg-black/75 text-white text-[10px] font-semibold uppercase tracking-widest px-2.5 py-1">Antes</span></div>
+                    <div class="p-4"><span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Cozinhas &amp; Sala</span><h3 class="font-serif text-xl font-semibold mt-0.5">Antes da Remodelação — Bancada Original</h3></div>
                 </div>
 
                 <!-- 2. PAINÉIS DE TV & GARRAFEIRAS -->
-                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="paineis"
-                     onclick="openLightbox('30.png', 'Painel de Televisão em Madeira com Frisos Pretos, Estantes Espelhadas e LED')">
-                    <div class="aspect-[4/3] overflow-hidden">
-                        <img src="30.png" alt="Painel de TV madeira e estantes LED" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div class="p-4">
-                        <span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Painéis de TV &amp; Garrafeiras</span>
-                        <h3 class="font-serif text-xl font-semibold mt-0.5">Painel de TV &amp; Estantes Espelhadas</h3>
-                    </div>
+                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="paineis" onclick="openLightbox('30.png', 'Painel de Televisão em Madeira com Frisos Pretos, Estantes Espelhadas e LED')">
+                    <div class="aspect-[4/3] overflow-hidden"><img src="30.png" alt="Painel de TV madeira e estantes LED" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"></div>
+                    <div class="p-4"><span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Painéis de TV &amp; Garrafeiras</span><h3 class="font-serif text-xl font-semibold mt-0.5">Painel de TV &amp; Estantes Espelhadas</h3></div>
                 </div>
-
-                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="paineis"
-                     onclick="openLightbox('31.png', 'Perspetiva Lateral do Painel de TV e Integração de Climatização')">
-                    <div class="aspect-[4/3] overflow-hidden">
-                        <img src="31.png" alt="Painel de TV vista lateral" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div class="p-4">
-                        <span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Painéis de TV &amp; Garrafeiras</span>
-                        <h3 class="font-serif text-xl font-semibold mt-0.5">Móvel de Sala Sob Medida</h3>
-                    </div>
+                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="paineis" onclick="openLightbox('31.png', 'Perspetiva Lateral do Painel de TV e Integração de Climatização')">
+                    <div class="aspect-[4/3] overflow-hidden"><img src="31.png" alt="Painel de TV vista lateral" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"></div>
+                    <div class="p-4"><span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Painéis de TV &amp; Garrafeiras</span><h3 class="font-serif text-xl font-semibold mt-0.5">Móvel de Sala Sob Medida</h3></div>
                 </div>
-
-                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="paineis"
-                     onclick="openLightbox('100.png', 'Garrafeira e Bar Sob Medida com Iluminação LED Indireta')">
-                    <div class="aspect-[4/3] overflow-hidden">
-                        <img src="100.png" alt="Garrafeira e bar sob medida" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div class="p-4">
-                        <span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Painéis de TV &amp; Garrafeiras</span>
-                        <h3 class="font-serif text-xl font-semibold mt-0.5">Garrafeira &amp; Bar Iluminado</h3>
-                    </div>
+                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="paineis" onclick="openLightbox('100.png', 'Garrafeira e Bar Sob Medida com Iluminação LED Indireta')">
+                    <div class="aspect-[4/3] overflow-hidden"><img src="100.png" alt="Garrafeira e bar sob medida" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"></div>
+                    <div class="p-4"><span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Painéis de TV &amp; Garrafeiras</span><h3 class="font-serif text-xl font-semibold mt-0.5">Garrafeira &amp; Bar Iluminado</h3></div>
                 </div>
-
-                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="paineis"
-                     onclick="openLightbox('102.png', 'Detalhe da Garrafeira com Focos Embutidos e Suportes Flutuantes')">
-                    <div class="aspect-[4/3] overflow-hidden">
-                        <img src="102.png" alt="Detalhe garrafeira iluminada" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div class="p-4">
-                        <span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Painéis de TV &amp; Garrafeiras</span>
-                        <h3 class="font-serif text-xl font-semibold mt-0.5">Garrafeira &amp; Focos LED</h3>
-                    </div>
+                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="paineis" onclick="openLightbox('102.png', 'Detalhe da Garrafeira com Focos Embutidos e Suportes Flutuantes')">
+                    <div class="aspect-[4/3] overflow-hidden"><img src="102.png" alt="Detalhe garrafeira iluminada" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"></div>
+                    <div class="p-4"><span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Painéis de TV &amp; Garrafeiras</span><h3 class="font-serif text-xl font-semibold mt-0.5">Garrafeira &amp; Focos LED</h3></div>
                 </div>
-
-                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="paineis"
-                     onclick="openLightbox('103.png', 'Painel de TV Divisório Branco e Madeira com Estante Iluminada')">
-                    <div class="aspect-[4/3] overflow-hidden">
-                        <img src="103.png" alt="Painel de TV divisório com estante" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div class="p-4">
-                        <span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Painéis de TV &amp; Garrafeiras</span>
-                        <h3 class="font-serif text-xl font-semibold mt-0.5">Painel TV &amp; Estante Divisória</h3>
-                    </div>
+                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="paineis" onclick="openLightbox('103.png', 'Painel de TV Divisório Branco e Madeira com Estante Iluminada')">
+                    <div class="aspect-[4/3] overflow-hidden"><img src="103.png" alt="Painel de TV divisório com estante" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"></div>
+                    <div class="p-4"><span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Painéis de TV &amp; Garrafeiras</span><h3 class="font-serif text-xl font-semibold mt-0.5">Painel TV &amp; Estante Divisória</h3></div>
                 </div>
-
-                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="paineis"
-                     onclick="openLightbox('104.png', 'Detalhe da Estante Divisória em Madeira com Focos Embutidos e Pufes')">
-                    <div class="aspect-[4/3] overflow-hidden">
-                        <img src="104.png" alt="Detalhe estante divisória sala" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div class="p-4">
-                        <span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Painéis de TV &amp; Garrafeiras</span>
-                        <h3 class="font-serif text-xl font-semibold mt-0.5">Estante Aberta &amp; Módulo de Pufes</h3>
-                    </div>
+                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="paineis" onclick="openLightbox('104.png', 'Detalhe da Estante Divisória em Madeira com Focos Embutidos e Pufes')">
+                    <div class="aspect-[4/3] overflow-hidden"><img src="104.png" alt="Detalhe estante divisória sala" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"></div>
+                    <div class="p-4"><span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Painéis de TV &amp; Garrafeiras</span><h3 class="font-serif text-xl font-semibold mt-0.5">Estante Aberta &amp; Módulo de Pufes</h3></div>
                 </div>
-
-                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="paineis"
-                     onclick="openLightbox('WhatsApp Image 2026-11-21 at 13.27.36 (6).jpeg', 'Painel de TV de Pé-Direito Duplo em Lacado Brilho Bege e Laterais Texturizadas')">
-                    <div class="aspect-[4/3] overflow-hidden">
-                        <img src="WhatsApp Image 2026-11-21 at 13.27.36 (6).jpeg" alt="Painel de TV pé-direito duplo" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div class="p-4">
-                        <span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Painéis de TV &amp; Garrafeiras</span>
-                        <h3 class="font-serif text-xl font-semibold mt-0.5">Painel Pé-Direito Duplo</h3>
-                    </div>
+                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="paineis" onclick="openLightbox('WhatsApp Image 2026-11-21 at 13.27.36 (6).jpeg', 'Painel de TV de Pé-Direito Duplo em Lacado Brilho Bege e Laterais Texturizadas')">
+                    <div class="aspect-[4/3] overflow-hidden"><img src="WhatsApp Image 2026-11-21 at 13.27.36 (6).jpeg" alt="Painel de TV pé-direito duplo" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"></div>
+                    <div class="p-4"><span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Painéis de TV &amp; Garrafeiras</span><h3 class="font-serif text-xl font-semibold mt-0.5">Painel Pé-Direito Duplo</h3></div>
                 </div>
-
-                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="paineis"
-                     onclick="openLightbox('WhatsApp Image 2026-11-21 at 13.27.37 (1).jpeg', 'Painel de TV Ripado Efeito Cimento Queimado com Móvel em Madeira e Espelho')">
-                    <div class="aspect-[4/3] overflow-hidden">
-                        <img src="WhatsApp Image 2026-11-21 at 13.27.37 (1).jpeg" alt="Painel ripado cimento queimado" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div class="p-4">
-                        <span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Painéis de TV &amp; Garrafeiras</span>
-                        <h3 class="font-serif text-xl font-semibold mt-0.5">Ripado Cimento &amp; Rack Madeira</h3>
-                    </div>
+                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="paineis" onclick="openLightbox('WhatsApp Image 2026-11-21 at 13.27.37 (1).jpeg', 'Painel de TV Ripado Efeito Cimento Queimado com Móvel em Madeira e Espelho')">
+                    <div class="aspect-[4/3] overflow-hidden"><img src="WhatsApp Image 2026-11-21 at 13.27.37 (1).jpeg" alt="Painel ripado cimento queimado" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"></div>
+                    <div class="p-4"><span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Painéis de TV &amp; Garrafeiras</span><h3 class="font-serif text-xl font-semibold mt-0.5">Ripado Cimento &amp; Rack Madeira</h3></div>
                 </div>
-
-                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="paineis"
-                     onclick="openLightbox('WhatsApp Image 2026-11-21 at 13.27.37 (2).jpeg', 'Vista Frontal do Painel de Pé-Direito Duplo e Móvel Baixo Sob Medida')">
-                    <div class="aspect-[4/3] overflow-hidden">
-                        <img src="WhatsApp Image 2026-11-21 at 13.27.37 (2).jpeg" alt="Vista frontal painel pé-direito duplo" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div class="p-4">
-                        <span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Painéis de TV &amp; Garrafeiras</span>
-                        <h3 class="font-serif text-xl font-semibold mt-0.5">Móvel de TV &amp; Revestimento</h3>
-                    </div>
+                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="paineis" onclick="openLightbox('WhatsApp Image 2026-11-21 at 13.27.37 (2).jpeg', 'Vista Frontal do Painel de Pé-Direito Duplo e Móvel Baixo Sob Medida')">
+                    <div class="aspect-[4/3] overflow-hidden"><img src="WhatsApp Image 2026-11-21 at 13.27.37 (2).jpeg" alt="Vista frontal painel pé-direito duplo" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"></div>
+                    <div class="p-4"><span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Painéis de TV &amp; Garrafeiras</span><h3 class="font-serif text-xl font-semibold mt-0.5">Móvel de TV &amp; Revestimento</h3></div>
                 </div>
-
-                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="paineis"
-                     onclick="openLightbox('WhatsApp Image 2026-11-21 at 13.27.37 (3).jpeg', 'Perspetiva Superior do Painel de TV de Pé-Direito Duplo')">
-                    <div class="aspect-[4/3] overflow-hidden">
-                        <img src="WhatsApp Image 2026-11-21 at 13.27.37 (3).jpeg" alt="Perspetiva painel pé-direito duplo" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div class="p-4">
-                        <span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Painéis de TV &amp; Garrafeiras</span>
-                        <h3 class="font-serif text-xl font-semibold mt-0.5">Acabamento Lacado &amp; Textura</h3>
-                    </div>
+                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="paineis" onclick="openLightbox('WhatsApp Image 2026-11-21 at 13.27.37 (3).jpeg', 'Perspetiva Superior do Painel de TV de Pé-Direito Duplo')">
+                    <div class="aspect-[4/3] overflow-hidden"><img src="WhatsApp Image 2026-11-21 at 13.27.37 (3).jpeg" alt="Perspetiva painel pé-direito duplo" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"></div>
+                    <div class="p-4"><span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Painéis de TV &amp; Garrafeiras</span><h3 class="font-serif text-xl font-semibold mt-0.5">Acabamento Lacado &amp; Textura</h3></div>
                 </div>
 
                 <!-- 3. CASAS DE BANHO -->
-                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="wc"
-                     onclick="openLightbox('50.png', 'Casa de Banho Remodelada — Zona de Banho em Cerâmica Efeito Madeira')">
-                    <div class="aspect-[4/3] overflow-hidden">
-                        <img src="50.png" alt="Casa de banho remodelada madeira e pedra" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div class="p-4">
-                        <span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Casas de Banho</span>
-                        <h3 class="font-serif text-xl font-semibold mt-0.5">Cerâmica Madeira &amp; Resguardo</h3>
-                    </div>
+                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="wc" onclick="openLightbox('50.png', 'Casa de Banho Remodelada — Zona de Banho em Cerâmica Efeito Madeira')">
+                    <div class="aspect-[4/3] overflow-hidden"><img src="50.png" alt="Casa de banho remodelada madeira e pedra" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"></div>
+                    <div class="p-4"><span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Casas de Banho</span><h3 class="font-serif text-xl font-semibold mt-0.5">Cerâmica Madeira &amp; Resguardo</h3></div>
                 </div>
-
-                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="wc"
-                     onclick="openLightbox('52.png', 'Móvel de Casa de Banho Duplo com Estante Superior Sob Medida')">
-                    <div class="aspect-[4/3] overflow-hidden">
-                        <img src="52.png" alt="Móvel de casa de banho duplo sob medida" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div class="p-4">
-                        <span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Casas de Banho</span>
-                        <h3 class="font-serif text-xl font-semibold mt-0.5">Móvel Lavatório Duplo &amp; Estante</h3>
-                    </div>
+                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="wc" onclick="openLightbox('52.png', 'Móvel de Casa de Banho Duplo com Estante Superior Sob Medida')">
+                    <div class="aspect-[4/3] overflow-hidden"><img src="52.png" alt="Móvel de casa de banho duplo sob medida" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"></div>
+                    <div class="p-4"><span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Casas de Banho</span><h3 class="font-serif text-xl font-semibold mt-0.5">Móvel Lavatório Duplo &amp; Estante</h3></div>
                 </div>
-
-                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="wc"
-                     onclick="openLightbox('53.png', 'Casa de Banho Completa — Louças Sanitárias e Marcenaria Integrada')">
-                    <div class="aspect-[4/3] overflow-hidden">
-                        <img src="53.png" alt="Casa de banho completa remodelada" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div class="p-4">
-                        <span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Casas de Banho</span>
-                        <h3 class="font-serif text-xl font-semibold mt-0.5">Remodelação Integral WC</h3>
-                    </div>
+                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="wc" onclick="openLightbox('53.png', 'Casa de Banho Completa — Louças Sanitárias e Marcenaria Integrada')">
+                    <div class="aspect-[4/3] overflow-hidden"><img src="53.png" alt="Casa de banho completa remodelada" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"></div>
+                    <div class="p-4"><span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Casas de Banho</span><h3 class="font-serif text-xl font-semibold mt-0.5">Remodelação Integral WC</h3></div>
                 </div>
-
-                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="wc"
-                     onclick="openLightbox('54.jpeg', 'Em Obra — Assentamento de Revestimento Cerâmico com Niveladores Laser')">
-                    <div class="aspect-[4/3] overflow-hidden relative">
-                        <img src="54.jpeg" alt="Obra revestimento cerâmico casa de banho" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                        <span class="absolute top-3 left-3 bg-vosty-dark/80 text-vosty-goldlight text-[10px] font-semibold uppercase tracking-widest px-2.5 py-1">Em Obra</span>
-                    </div>
-                    <div class="p-4">
-                        <span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Casas de Banho</span>
-                        <h3 class="font-serif text-xl font-semibold mt-0.5">Cerâmica &amp; Nivelamento</h3>
-                    </div>
+                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="wc" onclick="openLightbox('54.jpeg', 'Em Obra — Assentamento de Revestimento Cerâmico com Niveladores Laser')">
+                    <div class="aspect-[4/3] overflow-hidden relative"><img src="54.jpeg" alt="Obra revestimento cerâmico casa de banho" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"><span class="absolute top-3 left-3 bg-vosty-dark/80 text-vosty-goldlight text-[10px] font-semibold uppercase tracking-widest px-2.5 py-1">Em Obra</span></div>
+                    <div class="p-4"><span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Casas de Banho</span><h3 class="font-serif text-xl font-semibold mt-0.5">Cerâmica &amp; Nivelamento</h3></div>
                 </div>
-
-                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="wc"
-                     onclick="openLightbox('55.jpeg', 'Em Obra — Impermeabilização e Aplicação de Cerâmica Efeito Madeira')">
-                    <div class="aspect-[4/3] overflow-hidden relative">
-                        <img src="55.jpeg" alt="Obra cerâmica efeito madeira WC" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                        <span class="absolute top-3 left-3 bg-vosty-dark/80 text-vosty-goldlight text-[10px] font-semibold uppercase tracking-widest px-2.5 py-1">Em Obra</span>
-                    </div>
-                    <div class="p-4">
-                        <span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Casas de Banho</span>
-                        <h3 class="font-serif text-xl font-semibold mt-0.5">Zona de Banho em Obra</h3>
-                    </div>
+                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="wc" onclick="openLightbox('55.jpeg', 'Em Obra — Impermeabilização e Aplicação de Cerâmica Efeito Madeira')">
+                    <div class="aspect-[4/3] overflow-hidden relative"><img src="55.jpeg" alt="Obra cerâmica efeito madeira WC" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"><span class="absolute top-3 left-3 bg-vosty-dark/80 text-vosty-goldlight text-[10px] font-semibold uppercase tracking-widest px-2.5 py-1">Em Obra</span></div>
+                    <div class="p-4"><span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Casas de Banho</span><h3 class="font-serif text-xl font-semibold mt-0.5">Zona de Banho em Obra</h3></div>
                 </div>
-
-                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="wc"
-                     onclick="openLightbox('56.jpeg', 'Em Obra — Acabamentos de Paredes e Vão de Porta')">
-                    <div class="aspect-[4/3] overflow-hidden relative">
-                        <img src="56.jpeg" alt="Obra acabamentos WC" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                        <span class="absolute top-3 left-3 bg-vosty-dark/80 text-vosty-goldlight text-[10px] font-semibold uppercase tracking-widest px-2.5 py-1">Em Obra</span>
-                    </div>
-                    <div class="p-4">
-                        <span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Casas de Banho</span>
-                        <h3 class="font-serif text-xl font-semibold mt-0.5">Preparação e Colagem Cerâmica</h3>
-                    </div>
+                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="wc" onclick="openLightbox('56.jpeg', 'Em Obra — Acabamentos de Paredes e Vão de Porta')">
+                    <div class="aspect-[4/3] overflow-hidden relative"><img src="56.jpeg" alt="Obra acabamentos WC" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"><span class="absolute top-3 left-3 bg-vosty-dark/80 text-vosty-goldlight text-[10px] font-semibold uppercase tracking-widest px-2.5 py-1">Em Obra</span></div>
+                    <div class="p-4"><span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Casas de Banho</span><h3 class="font-serif text-xl font-semibold mt-0.5">Preparação e Colagem Cerâmica</h3></div>
                 </div>
-
-                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="wc"
-                     onclick="openLightbox('58.jpeg', 'Antes — Estado Original da Zona de Duche Antes da Remodelação')">
-                    <div class="aspect-[4/3] overflow-hidden relative">
-                        <img src="58.jpeg" alt="Antes zona de duche antiga" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                        <span class="absolute top-3 left-3 bg-black/75 text-white text-[10px] font-semibold uppercase tracking-widest px-2.5 py-1">Antes</span>
-                    </div>
-                    <div class="p-4">
-                        <span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Casas de Banho</span>
-                        <h3 class="font-serif text-xl font-semibold mt-0.5">Antes — Zona de Banho</h3>
-                    </div>
+                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="wc" onclick="openLightbox('58.jpeg', 'Antes — Estado Original da Zona de Duche Antes da Remodelação')">
+                    <div class="aspect-[4/3] overflow-hidden relative"><img src="58.jpeg" alt="Antes zona de duche antiga" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"><span class="absolute top-3 left-3 bg-black/75 text-white text-[10px] font-semibold uppercase tracking-widest px-2.5 py-1">Antes</span></div>
+                    <div class="p-4"><span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Casas de Banho</span><h3 class="font-serif text-xl font-semibold mt-0.5">Antes — Zona de Banho</h3></div>
                 </div>
-
-                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="wc"
-                     onclick="openLightbox('60.jpeg', 'Antes — Banheira e Resguardo Antigo Antes da Intervenção')">
-                    <div class="aspect-[4/3] overflow-hidden relative">
-                        <img src="60.jpeg" alt="Antes banheira antiga" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                        <span class="absolute top-3 left-3 bg-black/75 text-white text-[10px] font-semibold uppercase tracking-widest px-2.5 py-1">Antes</span>
-                    </div>
-                    <div class="p-4">
-                        <span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Casas de Banho</span>
-                        <h3 class="font-serif text-xl font-semibold mt-0.5">Antes — Banheira Original</h3>
-                    </div>
+                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="wc" onclick="openLightbox('60.jpeg', 'Antes — Banheira e Resguardo Antigo Antes da Intervenção')">
+                    <div class="aspect-[4/3] overflow-hidden relative"><img src="60.jpeg" alt="Antes banheira antiga" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"><span class="absolute top-3 left-3 bg-black/75 text-white text-[10px] font-semibold uppercase tracking-widest px-2.5 py-1">Antes</span></div>
+                    <div class="p-4"><span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Casas de Banho</span><h3 class="font-serif text-xl font-semibold mt-0.5">Antes — Banheira Original</h3></div>
                 </div>
-
-                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="wc"
-                     onclick="openLightbox('WhatsApp Image 2026-11-21 at 10.17.17.jpeg', 'Casa de Banho em Mármore Calacatta com Base de Duche e Nicho LED')">
-                    <div class="aspect-[4/3] overflow-hidden">
-                        <img src="WhatsApp Image 2026-11-21 at 10.17.17.jpeg" alt="Casa de banho mármore Calacatta" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div class="p-4">
-                        <span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Casas de Banho</span>
-                        <h3 class="font-serif text-xl font-semibold mt-0.5">WC Calacatta &amp; Nicho LED</h3>
-                    </div>
+                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="wc" onclick="openLightbox('WhatsApp Image 2026-11-21 at 10.17.17.jpeg', 'Casa de Banho em Mármore Calacatta com Base de Duche e Nicho LED')">
+                    <div class="aspect-[4/3] overflow-hidden"><img src="WhatsApp Image 2026-11-21 at 10.17.17.jpeg" alt="Casa de banho mármore Calacatta" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"></div>
+                    <div class="p-4"><span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Casas de Banho</span><h3 class="font-serif text-xl font-semibold mt-0.5">WC Calacatta &amp; Nicho LED</h3></div>
                 </div>
-
-                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="wc"
-                     onclick="openLightbox('WhatsApp Image 2026-11-21 at 10.17.19.jpeg', 'Móvel Suspenso Lacado a Branco com Tampo Escuro e Espelho LED')">
-                    <div class="aspect-[4/3] overflow-hidden">
-                        <img src="WhatsApp Image 2026-11-21 at 10.17.19.jpeg" alt="Móvel suspenso WC e espelho LED" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div class="p-4">
-                        <span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Casas de Banho</span>
-                        <h3 class="font-serif text-xl font-semibold mt-0.5">Móvel Suspenso &amp; Espelho LED</h3>
-                    </div>
+                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="wc" onclick="openLightbox('WhatsApp Image 2026-11-21 at 10.17.19.jpeg', 'Móvel Suspenso Lacado a Branco com Tampo Escuro e Espelho LED')">
+                    <div class="aspect-[4/3] overflow-hidden"><img src="WhatsApp Image 2026-11-21 at 10.17.19.jpeg" alt="Móvel suspenso WC e espelho LED" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"></div>
+                    <div class="p-4"><span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Casas de Banho</span><h3 class="font-serif text-xl font-semibold mt-0.5">Móvel Suspenso &amp; Espelho LED</h3></div>
                 </div>
-
-                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="wc"
-                     onclick="openLightbox('WhatsApp Image 2026-11-21 at 08.23.16 (1).jpeg', 'Móvel de Lavatório Sob Medida em Acabamento Linho Cinza')">
-                    <div class="aspect-[4/3] overflow-hidden">
-                        <img src="WhatsApp Image 2026-11-21 at 08.23.16 (1).jpeg" alt="Móvel lavatório acabamento linho" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div class="p-4">
-                        <span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Casas de Banho</span>
-                        <h3 class="font-serif text-xl font-semibold mt-0.5">Móvel Sob Medida Linho</h3>
-                    </div>
+                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="wc" onclick="openLightbox('WhatsApp Image 2026-11-21 at 08.23.16 (1).jpeg', 'Móvel de Lavatório Sob Medida em Acabamento Linho Cinza')">
+                    <div class="aspect-[4/3] overflow-hidden"><img src="WhatsApp Image 2026-11-21 at 08.23.16 (1).jpeg" alt="Móvel lavatório acabamento linho" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"></div>
+                    <div class="p-4"><span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Casas de Banho</span><h3 class="font-serif text-xl font-semibold mt-0.5">Móvel Sob Medida Linho</h3></div>
                 </div>
-
-                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="wc"
-                     onclick="openLightbox('WhatsApp Image 2026-11-21 at 08.23.16 (2).jpeg', 'Móvel de Casa de Banho e Coluna Suspensa em Carvalho Natural')">
-                    <div class="aspect-[4/3] overflow-hidden">
-                        <img src="WhatsApp Image 2026-11-21 at 08.23.16 (2).jpeg" alt="Móvel WC em carvalho natural" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div class="p-4">
-                        <span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Casas de Banho</span>
-                        <h3 class="font-serif text-xl font-semibold mt-0.5">WC Carvalho &amp; Coluna</h3>
-                    </div>
+                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="wc" onclick="openLightbox('WhatsApp Image 2026-11-21 at 08.23.16 (2).jpeg', 'Móvel de Casa de Banho e Coluna Suspensa em Carvalho Natural')">
+                    <div class="aspect-[4/3] overflow-hidden"><img src="WhatsApp Image 2026-11-21 at 08.23.16 (2).jpeg" alt="Móvel WC em carvalho natural" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"></div>
+                    <div class="p-4"><span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Casas de Banho</span><h3 class="font-serif text-xl font-semibold mt-0.5">WC Carvalho &amp; Coluna</h3></div>
                 </div>
-
-                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="wc"
-                     onclick="openLightbox('WhatsApp Image 2026-11-21 at 08.23.16.jpeg', 'Perspetiva do Conjunto de Casa de Banho em Carvalho e Tampo Branco')">
-                    <div class="aspect-[4/3] overflow-hidden">
-                        <img src="WhatsApp Image 2026-11-21 at 08.23.16.jpeg" alt="Perspetiva móvel WC carvalho" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div class="p-4">
-                        <span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Casas de Banho</span>
-                        <h3 class="font-serif text-xl font-semibold mt-0.5">Marcenaria WC &amp; Armário</h3>
-                    </div>
+                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="wc" onclick="openLightbox('WhatsApp Image 2026-11-21 at 08.23.16.jpeg', 'Perspetiva do Conjunto de Casa de Banho em Carvalho e Tampo Branco')">
+                    <div class="aspect-[4/3] overflow-hidden"><img src="WhatsApp Image 2026-11-21 at 08.23.16.jpeg" alt="Perspetiva móvel WC carvalho" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"></div>
+                    <div class="p-4"><span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Casas de Banho</span><h3 class="font-serif text-xl font-semibold mt-0.5">Marcenaria WC &amp; Armário</h3></div>
                 </div>
 
                 <!-- 4. ROUPEIROS & REMODELAÇÃO GERAL -->
-                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="roupeiros"
-                     onclick="openLightbox('WhatsApp Image 2026-11-21 at 13.27.35.jpeg', 'Closet Aberto em Cinza Mate com Varões Metálicos e Gaveteiros Embutidos')">
-                    <div class="aspect-[4/3] overflow-hidden">
-                        <img src="WhatsApp Image 2026-11-21 at 13.27.35.jpeg" alt="Closet aberto em cinza mate" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div class="p-4">
-                        <span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Roupeiros &amp; Remodelação</span>
-                        <h3 class="font-serif text-xl font-semibold mt-0.5">Closet Sob Medida Cinza Mate</h3>
-                    </div>
+                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="roupeiros" onclick="openLightbox('WhatsApp Image 2026-11-21 at 13.27.35.jpeg', 'Closet Aberto em Cinza Mate com Varões Metálicos e Gaveteiros Embutidos')">
+                    <div class="aspect-[4/3] overflow-hidden"><img src="WhatsApp Image 2026-11-21 at 13.27.35.jpeg" alt="Closet aberto em cinza mate" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"></div>
+                    <div class="p-4"><span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Roupeiros &amp; Remodelação</span><h3 class="font-serif text-xl font-semibold mt-0.5">Closet Sob Medida Cinza Mate</h3></div>
                 </div>
-
-                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="roupeiros"
-                     onclick="openLightbox('WhatsApp Image 2026-11-21 at 13.27.36.jpeg', 'Vista Ampla do Closet com Prateleiras, Gavetões e Iluminação Direcionada')">
-                    <div class="aspect-[4/3] overflow-hidden">
-                        <img src="WhatsApp Image 2026-11-21 at 13.27.36.jpeg" alt="Vista ampla closet sob medida" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div class="p-4">
-                        <span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Roupeiros &amp; Remodelação</span>
-                        <h3 class="font-serif text-xl font-semibold mt-0.5">Closet em L Sob Medida</h3>
-                    </div>
+                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="roupeiros" onclick="openLightbox('WhatsApp Image 2026-11-21 at 13.27.36.jpeg', 'Vista Ampla do Closet com Prateleiras, Gavetões e Iluminação Direcionada')">
+                    <div class="aspect-[4/3] overflow-hidden"><img src="WhatsApp Image 2026-11-21 at 13.27.36.jpeg" alt="Vista ampla closet sob medida" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"></div>
+                    <div class="p-4"><span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Roupeiros &amp; Remodelação</span><h3 class="font-serif text-xl font-semibold mt-0.5">Closet em L Sob Medida</h3></div>
                 </div>
-
-                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="roupeiros"
-                     onclick="openLightbox('WhatsApp Image 2026-11-21 at 13.27.36 (2).jpeg', 'Roupeiro de Correr com Portas em Vidro/Lacado Claro e Perfis Metálicos')">
-                    <div class="aspect-[4/3] overflow-hidden">
-                        <img src="WhatsApp Image 2026-11-21 at 13.27.36 (2).jpeg" alt="Roupeiro portas de correr vidro" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div class="p-4">
-                        <span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Roupeiros &amp; Remodelação</span>
-                        <h3 class="font-serif text-xl font-semibold mt-0.5">Roupeiro Portas de Correr</h3>
-                    </div>
+                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="roupeiros" onclick="openLightbox('WhatsApp Image 2026-11-21 at 13.27.36 (2).jpeg', 'Roupeiro de Correr com Portas em Vidro/Lacado Claro e Perfis Metálicos')">
+                    <div class="aspect-[4/3] overflow-hidden"><img src="WhatsApp Image 2026-11-21 at 13.27.36 (2).jpeg" alt="Roupeiro portas de correr vidro" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"></div>
+                    <div class="p-4"><span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Roupeiros &amp; Remodelação</span><h3 class="font-serif text-xl font-semibold mt-0.5">Roupeiro Portas de Correr</h3></div>
                 </div>
-
-                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="roupeiros"
-                     onclick="openLightbox('WhatsApp Image 2026-11-21 at 13.27.36 (3).jpeg', 'Cómoda Central de Closet com Gavetas Duplas e Puxadores Cristal')">
-                    <div class="aspect-[4/3] overflow-hidden">
-                        <img src="WhatsApp Image 2026-11-21 at 13.27.36 (3).jpeg" alt="Cómoda sob medida closet" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div class="p-4">
-                        <span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Roupeiros &amp; Remodelação</span>
-                        <h3 class="font-serif text-xl font-semibold mt-0.5">Cómoda Toucador Sob Medida</h3>
-                    </div>
+                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="roupeiros" onclick="openLightbox('WhatsApp Image 2026-11-21 at 13.27.36 (3).jpeg', 'Cómoda Central de Closet com Gavetas Duplas e Puxadores Cristal')">
+                    <div class="aspect-[4/3] overflow-hidden"><img src="WhatsApp Image 2026-11-21 at 13.27.36 (3).jpeg" alt="Cómoda sob medida closet" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"></div>
+                    <div class="p-4"><span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Roupeiros &amp; Remodelação</span><h3 class="font-serif text-xl font-semibold mt-0.5">Cómoda Toucador Sob Medida</h3></div>
                 </div>
-
-                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="roupeiros"
-                     onclick="openLightbox('WhatsApp Image 2026-11-21 at 13.27.36 (4).jpeg', 'Portas de Correr Espelhadas com Moldura Dourada e Roupeiro Integrado')">
-                    <div class="aspect-[4/3] overflow-hidden">
-                        <img src="WhatsApp Image 2026-11-21 at 13.27.36 (4).jpeg" alt="Portas espelhadas moldura dourada" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div class="p-4">
-                        <span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Roupeiros &amp; Remodelação</span>
-                        <h3 class="font-serif text-xl font-semibold mt-0.5">Portas Espelhadas Douradas</h3>
-                    </div>
+                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="roupeiros" onclick="openLightbox('WhatsApp Image 2026-11-21 at 13.27.36 (4).jpeg', 'Portas de Correr Espelhadas com Moldura Dourada e Roupeiro Integrado')">
+                    <div class="aspect-[4/3] overflow-hidden"><img src="WhatsApp Image 2026-11-21 at 13.27.36 (4).jpeg" alt="Portas espelhadas moldura dourada" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"></div>
+                    <div class="p-4"><span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Roupeiros &amp; Remodelação</span><h3 class="font-serif text-xl font-semibold mt-0.5">Portas Espelhadas Douradas</h3></div>
                 </div>
-
-                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="roupeiros"
-                     onclick="openLightbox('WhatsApp Image 2026-11-21 at 13.27.36 (5).jpeg', 'Corredor de Vestiário / Closet Completo com Sanca Iluminada')">
-                    <div class="aspect-[4/3] overflow-hidden">
-                        <img src="WhatsApp Image 2026-11-21 at 13.27.36 (5).jpeg" alt="Corredor de closet completo" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div class="p-4">
-                        <span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Roupeiros &amp; Remodelação</span>
-                        <h3 class="font-serif text-xl font-semibold mt-0.5">Vestiário Completo &amp; LED</h3>
-                    </div>
+                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="roupeiros" onclick="openLightbox('WhatsApp Image 2026-11-21 at 13.27.36 (5).jpeg', 'Corredor de Vestiário / Closet Completo com Sanca Iluminada')">
+                    <div class="aspect-[4/3] overflow-hidden"><img src="WhatsApp Image 2026-11-21 at 13.27.36 (5).jpeg" alt="Corredor de closet completo" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"></div>
+                    <div class="p-4"><span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Roupeiros &amp; Remodelação</span><h3 class="font-serif text-xl font-semibold mt-0.5">Vestiário Completo &amp; LED</h3></div>
                 </div>
-
-                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="roupeiros"
-                     onclick="openLightbox('WhatsApp Image 2026-11-21 at 10.17.17 (1).jpeg', 'Portas de Interior Lacadas a Branco Mate, Rodapés e Pavimento Flutuante')">
-                    <div class="aspect-[4/3] overflow-hidden">
-                        <img src="WhatsApp Image 2026-11-21 at 10.17.17 (1).jpeg" alt="Portas interiores lacadas a branco" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div class="p-4">
-                        <span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Roupeiros &amp; Remodelação</span>
-                        <h3 class="font-serif text-xl font-semibold mt-0.5">Portas Lacadas &amp; Chão Flutuante</h3>
-                    </div>
+                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="roupeiros" onclick="openLightbox('WhatsApp Image 2026-11-21 at 10.17.17 (1).jpeg', 'Portas de Interior Lacadas a Branco Mate, Rodapés e Pavimento Flutuante')">
+                    <div class="aspect-[4/3] overflow-hidden"><img src="WhatsApp Image 2026-11-21 at 10.17.17 (1).jpeg" alt="Portas interiores lacadas a branco" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"></div>
+                    <div class="p-4"><span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Roupeiros &amp; Remodelação</span><h3 class="font-serif text-xl font-semibold mt-0.5">Portas Lacadas &amp; Chão Flutuante</h3></div>
                 </div>
-
-                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="roupeiros"
-                     onclick="openLightbox('WhatsApp Image 2026-11-21 at 10.17.18 (1).jpeg', 'Quarto Remodelado com Roupeiro Embutido de Portas de Correr Lacadas')">
-                    <div class="aspect-[4/3] overflow-hidden">
-                        <img src="WhatsApp Image 2026-11-21 at 10.17.18 (1).jpeg" alt="Roupeiro embutido portas de correr" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div class="p-4">
-                        <span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Roupeiros &amp; Remodelação</span>
-                        <h3 class="font-serif text-xl font-semibold mt-0.5">Roupeiro Embutido &amp; Piso Flutuante</h3>
-                    </div>
+                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="roupeiros" onclick="openLightbox('WhatsApp Image 2026-11-21 at 10.17.18 (1).jpeg', 'Quarto Remodelado com Roupeiro Embutido de Portas de Correr Lacadas')">
+                    <div class="aspect-[4/3] overflow-hidden"><img src="WhatsApp Image 2026-11-21 at 10.17.18 (1).jpeg" alt="Roupeiro embutido portas de correr" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"></div>
+                    <div class="p-4"><span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Roupeiros &amp; Remodelação</span><h3 class="font-serif text-xl font-semibold mt-0.5">Roupeiro Embutido &amp; Piso Flutuante</h3></div>
                 </div>
-
-                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="roupeiros"
-                     onclick="openLightbox('WhatsApp Image 2026-11-21 at 10.17.18.jpeg', 'Roupeiro Sob Medida até ao Teto e Caixilharia Nova')">
-                    <div class="aspect-[4/3] overflow-hidden">
-                        <img src="WhatsApp Image 2026-11-21 at 10.17.18.jpeg" alt="Roupeiro sob medida até ao teto" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div class="p-4">
-                        <span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Roupeiros &amp; Remodelação</span>
-                        <h3 class="font-serif text-xl font-semibold mt-0.5">Quarto &amp; Roupeiro à Medida</h3>
-                    </div>
+                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="roupeiros" onclick="openLightbox('WhatsApp Image 2026-11-21 at 10.17.18.jpeg', 'Roupeiro Sob Medida até ao Teto e Caixilharia Nova')">
+                    <div class="aspect-[4/3] overflow-hidden"><img src="WhatsApp Image 2026-11-21 at 10.17.18.jpeg" alt="Roupeiro sob medida até ao teto" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"></div>
+                    <div class="p-4"><span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Roupeiros &amp; Remodelação</span><h3 class="font-serif text-xl font-semibold mt-0.5">Quarto &amp; Roupeiro à Medida</h3></div>
                 </div>
-
-                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="roupeiros"
-                     onclick="openLightbox('WhatsApp Image 2026-11-21 at 10.17.18 (2).jpeg', 'Remodelação Integral de Sala com Tetos Falsos, LED e Pavimento Flutuante')">
-                    <div class="aspect-[4/3] overflow-hidden">
-                        <img src="WhatsApp Image 2026-11-21 at 10.17.18 (2).jpeg" alt="Sala remodelada com tetos falsos e LED" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div class="p-4">
-                        <span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Roupeiros &amp; Remodelação</span>
-                        <h3 class="font-serif text-xl font-semibold mt-0.5">Sala — Pladur, Pintura &amp; Flutuante</h3>
-                    </div>
+                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="roupeiros" onclick="openLightbox('WhatsApp Image 2026-11-21 at 10.17.18 (2).jpeg', 'Remodelação Integral de Sala com Tetos Falsos, LED e Pavimento Flutuante')">
+                    <div class="aspect-[4/3] overflow-hidden"><img src="WhatsApp Image 2026-11-21 at 10.17.18 (2).jpeg" alt="Sala remodelada com tetos falsos e LED" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"></div>
+                    <div class="p-4"><span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Roupeiros &amp; Remodelação</span><h3 class="font-serif text-xl font-semibold mt-0.5">Sala — Pladur, Pintura &amp; Flutuante</h3></div>
                 </div>
-
-                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="roupeiros"
-                     onclick="openLightbox('WhatsApp Image 2026-11-21 at 10.17.18 (3).jpeg', 'Corredor de Circulação Remodelado com Focos LED e Pavimento Flutuante')">
-                    <div class="aspect-[4/3] overflow-hidden">
-                        <img src="WhatsApp Image 2026-11-21 at 10.17.18 (3).jpeg" alt="Corredor remodelado com focos LED" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div class="p-4">
-                        <span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Roupeiros &amp; Remodelação</span>
-                        <h3 class="font-serif text-xl font-semibold mt-0.5">Corredor &amp; Iluminação LED</h3>
-                    </div>
+                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="roupeiros" onclick="openLightbox('WhatsApp Image 2026-11-21 at 10.17.18 (3).jpeg', 'Corredor de Circulação Remodelado com Focos LED e Pavimento Flutuante')">
+                    <div class="aspect-[4/3] overflow-hidden"><img src="WhatsApp Image 2026-11-21 at 10.17.18 (3).jpeg" alt="Corredor remodelado com focos LED" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"></div>
+                    <div class="p-4"><span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Roupeiros &amp; Remodelação</span><h3 class="font-serif text-xl font-semibold mt-0.5">Corredor &amp; Iluminação LED</h3></div>
                 </div>
 
                 <!-- 5. COMERCIAL & ESCRITÓRIOS -->
-                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="comercial"
-                     onclick="openLightbox('34.png', 'Escritório Executivo Remodelado — Ripado Retroiluminado e Secretária Sob Medida')">
-                    <div class="aspect-[4/3] overflow-hidden">
-                        <img src="34.png" alt="Escritório executivo remodelado" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div class="p-4">
-                        <span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Comercial &amp; Escritórios</span>
-                        <h3 class="font-serif text-xl font-semibold mt-0.5">Gabinete Executivo &amp; Ripado</h3>
-                    </div>
+                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="comercial" onclick="openLightbox('34.png', 'Escritório Executivo Remodelado — Ripado Retroiluminado e Secretária Sob Medida')">
+                    <div class="aspect-[4/3] overflow-hidden"><img src="34.png" alt="Escritório executivo remodelado" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"></div>
+                    <div class="p-4"><span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Comercial &amp; Escritórios</span><h3 class="font-serif text-xl font-semibold mt-0.5">Gabinete Executivo &amp; Ripado</h3></div>
                 </div>
-
-                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="comercial"
-                     onclick="openLightbox('35.png', 'Estante Iluminada Sob Medida e Painel Amadeirado para Escritório')">
-                    <div class="aspect-[4/3] overflow-hidden">
-                        <img src="35.png" alt="Estante iluminada sob medida escritório" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div class="p-4">
-                        <span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Comercial &amp; Escritórios</span>
-                        <h3 class="font-serif text-xl font-semibold mt-0.5">Estante Corporativa com LED</h3>
-                    </div>
+                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="comercial" onclick="openLightbox('35.png', 'Estante Iluminada Sob Medida e Painel Amadeirado para Escritório')">
+                    <div class="aspect-[4/3] overflow-hidden"><img src="35.png" alt="Estante iluminada sob medida escritório" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"></div>
+                    <div class="p-4"><span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Comercial &amp; Escritórios</span><h3 class="font-serif text-xl font-semibold mt-0.5">Estante Corporativa com LED</h3></div>
                 </div>
-
-                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="comercial"
-                     onclick="openLightbox('36.png', 'Vista Lateral do Gabinete Executivo e Secretária em Pedra Escura')">
-                    <div class="aspect-[4/3] overflow-hidden">
-                        <img src="36.png" alt="Gabinete executivo secretária pedra" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div class="p-4">
-                        <span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Comercial &amp; Escritórios</span>
-                        <h3 class="font-serif text-xl font-semibold mt-0.5">Secretária em Pedra &amp; LED</h3>
-                    </div>
+                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="comercial" onclick="openLightbox('36.png', 'Vista Lateral do Gabinete Executivo e Secretária em Pedra Escura')">
+                    <div class="aspect-[4/3] overflow-hidden"><img src="36.png" alt="Gabinete executivo secretária pedra" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"></div>
+                    <div class="p-4"><span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Comercial &amp; Escritórios</span><h3 class="font-serif text-xl font-semibold mt-0.5">Secretária em Pedra &amp; LED</h3></div>
                 </div>
-
-                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="comercial"
-                     onclick="openLightbox('40.png', 'Receção Corporativa — Balcão em Mármore Preto Retroiluminado')">
-                    <div class="aspect-[4/3] overflow-hidden">
-                        <img src="40.png" alt="Receção corporativa remodelada" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div class="p-4">
-                        <span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Comercial &amp; Escritórios</span>
-                        <h3 class="font-serif text-xl font-semibold mt-0.5">Receção &amp; Balcão LED</h3>
-                    </div>
+                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="comercial" onclick="openLightbox('40.png', 'Receção Corporativa — Balcão em Mármore Preto Retroiluminado')">
+                    <div class="aspect-[4/3] overflow-hidden"><img src="40.png" alt="Receção corporativa remodelada" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"></div>
+                    <div class="p-4"><span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Comercial &amp; Escritórios</span><h3 class="font-serif text-xl font-semibold mt-0.5">Receção &amp; Balcão LED</h3></div>
                 </div>
-
-                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="comercial"
-                     onclick="openLightbox('41.png', 'Sala de Espera Corporativa com Estante Metálica/Madeira')">
-                    <div class="aspect-[4/3] overflow-hidden">
-                        <img src="41.png" alt="Sala de espera corporativa" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div class="p-4">
-                        <span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Comercial &amp; Escritórios</span>
-                        <h3 class="font-serif text-xl font-semibold mt-0.5">Zona de Espera &amp; Estante</h3>
-                    </div>
+                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="comercial" onclick="openLightbox('41.png', 'Sala de Espera Corporativa com Estante Metálica/Madeira')">
+                    <div class="aspect-[4/3] overflow-hidden"><img src="41.png" alt="Sala de espera corporativa" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"></div>
+                    <div class="p-4"><span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Comercial &amp; Escritórios</span><h3 class="font-serif text-xl font-semibold mt-0.5">Zona de Espera &amp; Estante</h3></div>
                 </div>
-
-                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="comercial"
-                     onclick="openLightbox('42.png', 'Detalhe da Estante Sob Medida e Poltronas de Atendimento')">
-                    <div class="aspect-[4/3] overflow-hidden">
-                        <img src="42.png" alt="Detalhe estante comercial" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div class="p-4">
-                        <span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Comercial &amp; Escritórios</span>
-                        <h3 class="font-serif text-xl font-semibold mt-0.5">Estante em Ferro &amp; Madeira</h3>
-                    </div>
+                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="comercial" onclick="openLightbox('42.png', 'Detalhe da Estante Sob Medida e Poltronas de Atendimento')">
+                    <div class="aspect-[4/3] overflow-hidden"><img src="42.png" alt="Detalhe estante comercial" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"></div>
+                    <div class="p-4"><span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Comercial &amp; Escritórios</span><h3 class="font-serif text-xl font-semibold mt-0.5">Estante em Ferro &amp; Madeira</h3></div>
                 </div>
-
-                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="comercial"
-                     onclick="openLightbox('43.png', 'Balcão de Receção em Mármore Preto com Iluminação na Base')">
-                    <div class="aspect-[4/3] overflow-hidden">
-                        <img src="43.png" alt="Balcão de receção retroiluminado" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div class="p-4">
-                        <span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Comercial &amp; Escritórios</span>
-                        <h3 class="font-serif text-xl font-semibold mt-0.5">Balcão Escultural &amp; Porta</h3>
-                    </div>
+                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="comercial" onclick="openLightbox('43.png', 'Balcão de Receção em Mármore Preto com Iluminação na Base')">
+                    <div class="aspect-[4/3] overflow-hidden"><img src="43.png" alt="Balcão de receção retroiluminado" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"></div>
+                    <div class="p-4"><span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Comercial &amp; Escritórios</span><h3 class="font-serif text-xl font-semibold mt-0.5">Balcão Escultural &amp; Porta</h3></div>
                 </div>
-
-                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="comercial"
-                     onclick="openLightbox('44.png', 'Perspetiva Angular da Receção com Espelho e Frisos Arquitetónicos')">
-                    <div class="aspect-[4/3] overflow-hidden">
-                        <img src="44.png" alt="Perspetiva receção corporativa" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div class="p-4">
-                        <span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Comercial &amp; Escritórios</span>
-                        <h3 class="font-serif text-xl font-semibold mt-0.5">Revestimento &amp; Espelho</h3>
-                    </div>
+                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="comercial" onclick="openLightbox('44.png', 'Perspetiva Angular da Receção com Espelho e Frisos Arquitetónicos')">
+                    <div class="aspect-[4/3] overflow-hidden"><img src="44.png" alt="Perspetiva receção corporativa" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"></div>
+                    <div class="p-4"><span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Comercial &amp; Escritórios</span><h3 class="font-serif text-xl font-semibold mt-0.5">Revestimento &amp; Espelho</h3></div>
                 </div>
-
-                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="comercial"
-                     onclick="openLightbox('45.png', 'Vista Geral da Receção, Sancas Iluminadas e Zona de Espera')">
-                    <div class="aspect-[4/3] overflow-hidden">
-                        <img src="45.png" alt="Vista geral espaço corporativo" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div class="p-4">
-                        <span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Comercial &amp; Escritórios</span>
-                        <h3 class="font-serif text-xl font-semibold mt-0.5">Remodelação de Escritório</h3>
-                    </div>
+                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="comercial" onclick="openLightbox('45.png', 'Vista Geral da Receção, Sancas Iluminadas e Zona de Espera')">
+                    <div class="aspect-[4/3] overflow-hidden"><img src="45.png" alt="Vista geral espaço corporativo" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"></div>
+                    <div class="p-4"><span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Comercial &amp; Escritórios</span><h3 class="font-serif text-xl font-semibold mt-0.5">Remodelação de Escritório</h3></div>
                 </div>
-
-                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="comercial"
-                     onclick="openLightbox('46.png', 'Sala de Espera Corporativa com Aparador Sob Medida e Porta Integrada')">
-                    <div class="aspect-[4/3] overflow-hidden">
-                        <img src="46.png" alt="Aparador sob medida escritório" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div class="p-4">
-                        <span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Comercial &amp; Escritórios</span>
-                        <h3 class="font-serif text-xl font-semibold mt-0.5">Aparador Sob Medida</h3>
-                    </div>
+                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="comercial" onclick="openLightbox('46.png', 'Sala de Espera Corporativa com Aparador Sob Medida e Porta Integrada')">
+                    <div class="aspect-[4/3] overflow-hidden"><img src="46.png" alt="Aparador sob medida escritório" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"></div>
+                    <div class="p-4"><span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Comercial &amp; Escritórios</span><h3 class="font-serif text-xl font-semibold mt-0.5">Aparador Sob Medida</h3></div>
                 </div>
-
-                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="comercial"
-                     onclick="openLightbox('70.png', 'THAY Beauty Boutique — Remodelação Comercial Chave na Mão')">
-                    <div class="aspect-[4/3] overflow-hidden">
-                        <img src="70.png" alt="Clínica de estética remodelada chave na mão" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div class="p-4">
-                        <span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Comercial &amp; Escritórios</span>
-                        <h3 class="font-serif text-xl font-semibold mt-0.5">Espaço Comercial Chave na Mão</h3>
-                    </div>
+                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="comercial" onclick="openLightbox('70.png', 'THAY Beauty Boutique — Remodelação Comercial Chave na Mão')">
+                    <div class="aspect-[4/3] overflow-hidden"><img src="70.png" alt="Clínica de estética remodelada chave na mão" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"></div>
+                    <div class="p-4"><span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Comercial &amp; Escritórios</span><h3 class="font-serif text-xl font-semibold mt-0.5">Espaço Comercial Chave na Mão</h3></div>
                 </div>
-
-                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="comercial"
-                     onclick="openLightbox('71.png', 'Perspetiva Geral do Estúdio de Estética com Cadeiras e Bancadas Sob Medida')">
-                    <div class="aspect-[4/3] overflow-hidden">
-                        <img src="71.png" alt="Estúdio de estética remodelado" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div class="p-4">
-                        <span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Comercial &amp; Escritórios</span>
-                        <h3 class="font-serif text-xl font-semibold mt-0.5">Área de Atendimento &amp; Luz</h3>
-                    </div>
+                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="comercial" onclick="openLightbox('71.png', 'Perspetiva Geral do Estúdio de Estética com Cadeiras e Bancadas Sob Medida')">
+                    <div class="aspect-[4/3] overflow-hidden"><img src="71.png" alt="Estúdio de estética remodelado" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"></div>
+                    <div class="p-4"><span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Comercial &amp; Escritórios</span><h3 class="font-serif text-xl font-semibold mt-0.5">Área de Atendimento &amp; Luz</h3></div>
                 </div>
-
-                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="comercial"
-                     onclick="openLightbox('72.png', 'Bancada Linear de Atendimento Sob Medida e Arcos Retroiluminados')">
-                    <div class="aspect-[4/3] overflow-hidden">
-                        <img src="72.png" alt="Bancada comercial sob medida" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div class="p-4">
-                        <span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Comercial &amp; Escritórios</span>
-                        <h3 class="font-serif text-xl font-semibold mt-0.5">Bancada &amp; Arcos LED em Pladur</h3>
-                    </div>
+                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="comercial" onclick="openLightbox('72.png', 'Bancada Linear de Atendimento Sob Medida e Arcos Retroiluminados')">
+                    <div class="aspect-[4/3] overflow-hidden"><img src="72.png" alt="Bancada comercial sob medida" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"></div>
+                    <div class="p-4"><span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Comercial &amp; Escritórios</span><h3 class="font-serif text-xl font-semibold mt-0.5">Bancada &amp; Arcos LED em Pladur</h3></div>
                 </div>
-
-                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="comercial"
-                     onclick="openLightbox('73.png', 'Nichos em Arco Retroiluminados e Balcão de Apoio Sob Medida')">
-                    <div class="aspect-[4/3] overflow-hidden">
-                        <img src="73.png" alt="Nichos retroiluminados clínica" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div class="p-4">
-                        <span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Comercial &amp; Escritórios</span>
-                        <h3 class="font-serif text-xl font-semibold mt-0.5">Nichos em Arco LED</h3>
-                    </div>
+                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="comercial" onclick="openLightbox('73.png', 'Nichos em Arco Retroiluminados e Balcão de Apoio Sob Medida')">
+                    <div class="aspect-[4/3] overflow-hidden"><img src="73.png" alt="Nichos retroiluminados clínica" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"></div>
+                    <div class="p-4"><span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Comercial &amp; Escritórios</span><h3 class="font-serif text-xl font-semibold mt-0.5">Nichos em Arco LED</h3></div>
                 </div>
-
-                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="comercial"
-                     onclick="openLightbox('74.png', 'Postos de Atendimento com Espelhos Iluminados e Marcenaria Branca/Madeira')">
-                    <div class="aspect-[4/3] overflow-hidden">
-                        <img src="74.png" alt="Postos de atendimento sob medida" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div class="p-4">
-                        <span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Comercial &amp; Escritórios</span>
-                        <h3 class="font-serif text-xl font-semibold mt-0.5">Postos &amp; Espelhos LED</h3>
-                    </div>
+                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="comercial" onclick="openLightbox('74.png', 'Postos de Atendimento com Espelhos Iluminados e Marcenaria Branca/Madeira')">
+                    <div class="aspect-[4/3] overflow-hidden"><img src="74.png" alt="Postos de atendimento sob medida" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"></div>
+                    <div class="p-4"><span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Comercial &amp; Escritórios</span><h3 class="font-serif text-xl font-semibold mt-0.5">Postos &amp; Espelhos LED</h3></div>
                 </div>
-
-                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="comercial"
-                     onclick="openLightbox('75.png', 'Zona Lounge & Coffee Bar com Ripado de Madeira e Garrafeira Integrada')">
-                    <div class="aspect-[4/3] overflow-hidden">
-                        <img src="75.png" alt="Zona lounge e coffee bar comercial" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div class="p-4">
-                        <span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Comercial &amp; Escritórios</span>
-                        <h3 class="font-serif text-xl font-semibold mt-0.5">Lounge &amp; Coffee Bar</h3>
-                    </div>
+                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="comercial" onclick="openLightbox('75.png', 'Zona Lounge & Coffee Bar com Ripado de Madeira e Garrafeira Integrada')">
+                    <div class="aspect-[4/3] overflow-hidden"><img src="75.png" alt="Zona lounge e coffee bar comercial" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"></div>
+                    <div class="p-4"><span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Comercial &amp; Escritórios</span><h3 class="font-serif text-xl font-semibold mt-0.5">Lounge &amp; Coffee Bar</h3></div>
                 </div>
-
-                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="comercial"
-                     onclick="openLightbox('76.png', 'Detalhe do Balcão de Serviço e Divisória Ripada em Madeira')">
-                    <div class="aspect-[4/3] overflow-hidden">
-                        <img src="76.png" alt="Detalhe divisória ripada" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div class="p-4">
-                        <span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Comercial &amp; Escritórios</span>
-                        <h3 class="font-serif text-xl font-semibold mt-0.5">Divisória Ripada &amp; Acabamentos</h3>
-                    </div>
+                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="comercial" onclick="openLightbox('76.png', 'Detalhe do Balcão de Serviço e Divisória Ripada em Madeira')">
+                    <div class="aspect-[4/3] overflow-hidden"><img src="76.png" alt="Detalhe divisória ripada" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"></div>
+                    <div class="p-4"><span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Comercial &amp; Escritórios</span><h3 class="font-serif text-xl font-semibold mt-0.5">Divisória Ripada &amp; Acabamentos</h3></div>
                 </div>
-
-                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="comercial"
-                     onclick="openLightbox('77.png', 'Parede de Certificados e Postos de Atendimento ao Fundo')">
-                    <div class="aspect-[4/3] overflow-hidden">
-                        <img src="77.png" alt="Detalhe decoração clínica estética" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div class="p-4">
-                        <span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Comercial &amp; Escritórios</span>
-                        <h3 class="font-serif text-xl font-semibold mt-0.5">Decoração &amp; Iluminação</h3>
-                    </div>
+                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="comercial" onclick="openLightbox('77.png', 'Parede de Certificados e Postos de Atendimento ao Fundo')">
+                    <div class="aspect-[4/3] overflow-hidden"><img src="77.png" alt="Detalhe decoração clínica estética" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"></div>
+                    <div class="p-4"><span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Comercial &amp; Escritórios</span><h3 class="font-serif text-xl font-semibold mt-0.5">Decoração &amp; Iluminação</h3></div>
                 </div>
-
-                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="comercial"
-                     onclick="openLightbox('78.png', 'Vista Longitudinal da Bancada Principal Sob Medida e Poltronas')">
-                    <div class="aspect-[4/3] overflow-hidden">
-                        <img src="78.png" alt="Bancada longitudinal clínica" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div class="p-4">
-                        <span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Comercial &amp; Escritórios</span>
-                        <h3 class="font-serif text-xl font-semibold mt-0.5">Bancada &amp; Pendentes</h3>
-                    </div>
+                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="comercial" onclick="openLightbox('78.png', 'Vista Longitudinal da Bancada Principal Sob Medida e Poltronas')">
+                    <div class="aspect-[4/3] overflow-hidden"><img src="78.png" alt="Bancada longitudinal clínica" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"></div>
+                    <div class="p-4"><span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Comercial &amp; Escritórios</span><h3 class="font-serif text-xl font-semibold mt-0.5">Bancada &amp; Pendentes</h3></div>
                 </div>
-
-                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="comercial"
-                     onclick="openLightbox('79.png', 'Canto de Espera com Poltronas Douradas e Divisória Ripada em Madeira')">
-                    <div class="aspect-[4/3] overflow-hidden">
-                        <img src="79.png" alt="Canto de espera clínica" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div class="p-4">
-                        <span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Comercial &amp; Escritórios</span>
-                        <h3 class="font-serif text-xl font-semibold mt-0.5">Zona de Espera &amp; Ripado</h3>
-                    </div>
+                <div class="portfolio-item group bg-white border border-vosty-stone overflow-hidden cursor-pointer rounded-sm" data-category="comercial" onclick="openLightbox('79.png', 'Canto de Espera com Poltronas Douradas e Divisória Ripada em Madeira')">
+                    <div class="aspect-[4/3] overflow-hidden"><img src="79.png" alt="Canto de espera clínica" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"></div>
+                    <div class="p-4"><span class="text-[10px] uppercase tracking-widest text-vosty-gold font-semibold">Comercial &amp; Escritórios</span><h3 class="font-serif text-xl font-semibold mt-0.5">Zona de Espera &amp; Ripado</h3></div>
                 </div>
             </div>
         </div>
@@ -1323,8 +877,8 @@
         </div>
     </section>
 
-    <!-- Pedido de Orçamento & Contactos -->
-    <section id="orcamento" class="py-20 bg-vosty-cream reveal">
+    <!-- Contactos & E-mail -->
+    <section id="orcamento" class="py-20 bg-vosty-cream cad-grid reveal">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid lg:grid-cols-12 gap-12 items-start">
                 <div class="lg:col-span-5 space-y-6">
@@ -1333,25 +887,40 @@
                         Pronto para transformar o seu espaço?
                     </h2>
                     <p id="cta-sec-desc" class="text-sm text-vosty-muted leading-relaxed">
-                        Utilize o nosso simulador ou envie os detalhes do seu projeto para receber atendimento direto da VOSTY DESIGN.
+                        Atendemos em todo o território de Portugal e em toda a Europa. Envie mensagem por e-mail, WhatsApp ou Instagram.
                     </p>
 
                     <div class="space-y-4 pt-4 border-t border-vosty-stone text-sm">
+                        <div>
+                            <p class="text-xs uppercase tracking-widest text-vosty-muted">E-mail Oficial</p>
+                            <div class="flex flex-wrap items-center gap-3 mt-1">
+                                <a href="mailto:vostydesign@gmail.com" class="text-lg font-semibold text-vosty-dark hover:text-vosty-gold transition">
+                                    vostydesign@gmail.com
+                                </a>
+                                <button type="button" onclick="copyEmail()" id="copy-email-btn"
+                                        class="text-[11px] uppercase tracking-wider bg-white border border-vosty-stone hover:border-vosty-gold px-2.5 py-1 rounded-sm transition">
+                                    Copiar e-mail
+                                </button>
+                            </div>
+                        </div>
+
                         <div>
                             <p class="text-xs uppercase tracking-widest text-vosty-muted">Telefone / WhatsApp</p>
                             <a href="https://wa.me/351923189914" target="_blank" rel="noopener" class="text-lg font-semibold text-vosty-dark hover:text-vosty-gold transition">
                                 +351 923 189 914
                             </a>
                         </div>
+
                         <div>
-                            <p class="text-xs uppercase tracking-widest text-vosty-muted">Instagram Oficial</p>
+                            <p class="text-xs uppercase tracking-widest text-vosty-muted">Instagram</p>
                             <a href="https://instagram.com/vostydesign_remodelacoes" target="_blank" rel="noopener" class="text-base font-medium text-vosty-dark hover:text-vosty-gold transition">
                                 @vostydesign_remodelacoes
                             </a>
                         </div>
+
                         <div>
                             <p class="text-xs uppercase tracking-widest text-vosty-muted">Abrangência</p>
-                            <p id="area-text" class="text-base font-medium text-vosty-dark">Portugal (Lisboa, Odivelas, Sintra, Cascais, Oeiras...) &amp; Europa</p>
+                            <p id="area-text" class="text-base font-medium text-vosty-dark">Portugal inteiro &amp; toda a Europa</p>
                         </div>
                     </div>
                 </div>
@@ -1367,7 +936,7 @@
                             </div>
                             <div>
                                 <label id="lbl-loc" class="block text-xs font-semibold uppercase tracking-wider text-vosty-dark mb-2">Cidade / País *</label>
-                                <input type="text" id="client-location" required placeholder="Ex: Lisboa, Porto, Madrid, Paris..."
+                                <input type="text" id="client-location" required placeholder="Ex: Portugal, Espanha, França, Itália..."
                                        class="w-full border border-vosty-stone bg-vosty-cream/50 px-4 py-3 text-sm focus:outline-none focus:border-vosty-gold">
                             </div>
                         </div>
@@ -1376,12 +945,12 @@
                             <label id="lbl-srv" class="block text-xs font-semibold uppercase tracking-wider text-vosty-dark mb-2">Tipo de Serviço *</label>
                             <select id="service-type"
                                     class="w-full border border-vosty-stone bg-vosty-cream/50 px-4 py-3 text-sm focus:outline-none focus:border-vosty-gold">
-                                <option value="Remodelação de Apartamento / Divisão">Remodelação de Apartamento / Divisão</option>
-                                <option value="Cozinha / Móveis Sob Medida / Planejados">Cozinha / Móveis Sob Medida / Planejados</option>
-                                <option value="Roupeiro Sob Medida / Closet">Roupeiro Sob Medida / Closet</option>
+                                <option value="Marcenaria / Carpintaria / Móveis Sob Medida">Marcenaria / Carpintaria / Móveis Sob Medida</option>
+                                <option value="Cozinha / Roupeiro Sob Medida">Cozinha / Roupeiro Sob Medida</option>
                                 <option value="Remodelação de Casa de Banho / Cozinha">Remodelação de Casa de Banho / Cozinha</option>
+                                <option value="Remodelação de Apartamento / Divisão">Remodelação de Apartamento / Divisão</option>
                                 <option value="Piso Flutuante / Chão / Cerâmica / Pintura / Pladur">Piso Flutuante / Chão / Cerâmica / Pintura / Pladur</option>
-                                <option value="Painel de TV / Garrafeira / Espaço Comercial">Painel de TV / Garrafeira / Espaço Comercial</option>
+                                <option value="Obras / Espaço Comercial">Obras / Espaço Comercial</option>
                             </select>
                         </div>
 
@@ -1415,11 +984,12 @@
             </div>
 
             <p class="text-xs text-white/50 text-center">
-                © 2026 VOSTY DESIGN — Portugal &amp; Europa. Todos os direitos reservados.
+                © 2026 VOSTY DESIGN — Portugal inteiro &amp; toda a Europa • vostydesign@gmail.com
             </p>
 
-            <div class="flex items-center gap-5 text-xs">
+            <div class="flex flex-wrap items-center gap-5 text-xs">
                 <a href="#simulador" class="hover:text-vosty-goldlight transition">Simulador</a>
+                <a href="mailto:vostydesign@gmail.com" class="hover:text-vosty-goldlight transition">E-mail</a>
                 <a href="https://instagram.com/vostydesign_remodelacoes" target="_blank" rel="noopener" class="hover:text-vosty-goldlight transition">Instagram</a>
                 <a href="https://wa.me/351923189914" target="_blank" rel="noopener" class="hover:text-vosty-goldlight transition">WhatsApp</a>
             </div>
@@ -1445,106 +1015,105 @@
     </div>
 
     <script>
-        // Tradução multilingue com terminologia local (PT, ES, FR, EN, IT)
         const translations = {
             pt: {
                 langAttr: 'pt-PT',
-                title: 'VOSTY DESIGN | Remodelações, Móveis Sob Medida & Marcenaria — Portugal & Europa',
-                desc: 'Marcenaria, móveis planejados e sob medida, roupeiros, cozinhas, remodelação de casa de banho, apartamento e divisão, piso flutuante, tetos em pladur, pintura e cerâmica em Portugal e Europa.',
-                region: 'Portugal & Europa • Lisboa, Odivelas, Sintra, Cascais, Oeiras',
-                nav_services: 'Especialidades', nav_simulator: 'Simulador', nav_ba: 'Antes & Depois', nav_portfolio: 'Portfólio', nav_videos: 'Vídeos', nav_contact: 'Orçamento',
+                title: 'VOSTY DESIGN | Remodelações, Marcenaria & Móveis Sob Medida — Portugal Inteiro & Europa',
+                desc: 'Marcenaria, carpintaria, móveis sob medida, cozinhas, roupeiros, remodelação de casa de banho, apartamento e divisão, piso flutuante, tetos em pladur, pintura e cerâmica em Portugal inteiro e em toda a Europa.',
+                region: 'Portugal Inteiro & Toda a Europa • Sem Limites de Região',
+                nav_services: 'Especialidades', nav_simulator: 'Simulador', nav_ba: 'Antes & Depois', nav_portfolio: 'Portfólio', nav_videos: 'Vídeos', nav_contact: 'Contactos',
                 cta_simulate: 'Simular Orçamento',
-                hero_badge: 'Marcenaria Sob Medida & Remodelações • Portugal & Europa',
+                hero_badge: 'Portugal Inteiro & Toda a Europa',
                 hero_title: 'O seu espaço.<br><span class="text-vosty-gold italic font-medium">A nossa transformação.</span>',
-                hero_desc: 'Móveis planejados e sob medida, roupeiros, cozinhas, remodelação de casa de banho, apartamento e divisão, piso flutuante, chão, tetos em pladur, pintura e cerâmica.',
-                hero_btn_sim: 'Abrir Simulador de Orçamento <span>↓</span>',
+                hero_desc: 'Marcenaria, carpintaria, móveis sob medida, cozinhas, roupeiros, remodelação de casa de banho, apartamento e divisão, piso flutuante, chão, tetos em pladur, pintura e cerâmica em Portugal inteiro e em toda a Europa.',
+                hero_btn_sim: 'Abrir Simulador <span>↓</span>',
                 hero_btn_wa: 'WhatsApp Direto',
                 hero_btn_work: 'Ver Obras Reais',
-                stat_1: 'Móveis sob medida', stat_2: 'Obras & acabamentos', stat_3: 'Portugal & Europa',
-                serv_kicker: 'Marcenaria, Móveis Planejados & Obras',
-                serv_title: 'Soluções completas para casa, apartamento e comércio',
-                s1_title: 'Cozinhas & Roupeiros Sob Medida', s1_desc: 'Cozinhas sob medida, móveis planejados, roupeiros sob medida e closets com ferragens de precisão e iluminação LED.',
-                s2_title: 'Remodelação de Casa de Banho & Cozinha', s2_desc: 'Remodelação de casa de banho e cozinha completas: canalizações, cerâmica, bases de duche e móveis suspensos.',
-                s3_title: 'Remodelação de Apartamento & Divisões', s3_desc: 'Remodelação de apartamento e remodelação de divisão com gestão integral e acabamentos de qualidade.',
-                s4_title: 'Piso Flutuante, Chão & Cerâmica', s4_desc: 'Instalação de piso flutuante, chão flutuante, pavimentos e revestimentos cerâmicos com nivelamento preciso.',
-                s5_title: 'Tetos em Pladur, Pintura & Painéis TV', s5_desc: 'Tetos em pladur com iluminação LED, pintura interior, painéis de TV ripados, garrafeiras e estantes.',
-                s6_title: 'Espaços Comerciais & Europa', s6_desc: 'Lojas, clínicas e escritórios sob medida, com atendimento em Portugal e para toda a Europa.',
+                stat_1: 'Sob medida', stat_2: 'Do traço à obra', stat_3: 'Sem limites de zona',
+                serv_kicker: 'Marcenaria, Carpintaria & Obras',
+                serv_title: 'Soluções completas em Portugal e na Europa',
+                s1_title: 'Marcenaria, Móveis & Cozinhas', s1_desc: 'Marcenaria, carpintaria, móveis sob medida, roupeiros sob medida, cozinhas sob medida e closets com precisão e iluminação LED.',
+                s2_title: 'Remodelação de Casa de Banho & Cozinha', s2_desc: 'Remodelação de casa de banho e remodelação de cozinha completas: canalizações, cerâmica, bases de duche e mobiliário à medida.',
+                s3_title: 'Remodelação de Apartamento & Divisões', s3_desc: 'Remodelação de apartamento e remodelação de divisão com planeamento técnico e acabamento de excelência.',
+                s4_title: 'Piso Flutuante, Chão & Cerâmica', s4_desc: 'Piso flutuante, chão flutuante, pavimentos em madeira/vinil e revestimentos cerâmicos com nivelamento rigoroso.',
+                s5_title: 'Tetos em Pladur, Pintura & Painéis', s5_desc: 'Tetos em pladur, iluminação LED, pintura interior, painéis de TV ripados, garrafeiras e estantes feitas à medida.',
+                s6_title: 'Espaços Comerciais & Europa', s6_desc: 'Projetos residenciais e comerciais para todo o Portugal e países da Europa, com orçamento rápido e acompanhamento direto.',
                 sim_title: 'Simule o Seu Orçamento na Hora',
-                sim_desc: 'Calcule o seu projeto de marcenaria ou remodelação diretamente no simulador integrado ou abra em ecrã inteiro.',
+                sim_desc: 'Utilize o nosso simulador integrado abaixo ou abra em ecrã inteiro.',
                 ba_title: 'Arraste para ver o Antes & Depois',
-                ba_desc: 'Deslize o controlo central para comparar o estado original com o resultado final entregue pela VOSTY DESIGN.',
+                ba_desc: 'Deslize o controlo central para comparar o estado inicial com o resultado final entregue pela VOSTY DESIGN.',
                 port_title: 'Projetos Executados pela Nossa Equipa',
                 port_desc: 'Filtre por categoria ou clique em qualquer fotografia para ampliar em ecrã inteiro.',
                 vid_title: 'Da Obra ao Acabamento Final',
                 vid_desc: 'Acompanhe em vídeo o nosso processo de fabrico, montagem e entrega final.',
                 cta_sec_title: 'Pronto para transformar o seu espaço?',
-                cta_sec_desc: 'Utilize o simulador ou envie os detalhes do seu projeto pelo WhatsApp.',
-                area_text: 'Portugal (Lisboa, Odivelas, Sintra, Cascais, Oeiras...) & Europa',
+                cta_sec_desc: 'Atendemos em todo o território de Portugal e em toda a Europa. Envie mensagem por e-mail, WhatsApp ou Instagram.',
+                area_text: 'Portugal inteiro & toda a Europa',
                 form_title: 'Pedir Orçamento via WhatsApp',
                 lbl_name: 'O seu Nome *', lbl_loc: 'Cidade / País *', lbl_srv: 'Tipo de Serviço *', lbl_desc: 'Detalhes do Projeto',
                 btn_submit: 'Enviar Pedido pelo WhatsApp →'
             },
             es: {
                 langAttr: 'es',
-                title: 'VOSTY DESIGN | Carpintería a Medida & Reformas Integrales — Portugal y Europa',
-                desc: 'Carpintería a medida, armarios y cocinas a medida, reformas de baño, cocina, piso y habitaciones, tarima flotante, pladur, pintura y cerámica en Portugal y Europa.',
-                region: 'Portugal & Europa • Reformas y Carpintería a Medida',
-                nav_services: 'Servicios', nav_simulator: 'Simulador', nav_ba: 'Antes y Después', nav_portfolio: 'Portafolio', nav_videos: 'Vídeos', nav_contact: 'Presupuesto',
+                title: 'VOSTY DESIGN | Carpintería a Medida & Reformas — Todo Portugal y Europa',
+                desc: 'Carpintería, armarios y cocinas a medida, reformas de baño, cocina, piso y habitaciones, tarima flotante, pladur, pintura y cerámica en todo Portugal y Europa.',
+                region: 'Todo Portugal & Toda Europa • Sin Límites de Zona',
+                nav_services: 'Servicios', nav_simulator: 'Simulador', nav_ba: 'Antes y Después', nav_portfolio: 'Portafolio', nav_videos: 'Vídeos', nav_contact: 'Contacto',
                 cta_simulate: 'Simular Presupuesto',
-                hero_badge: 'Carpintería a Medida & Reformas • Portugal & Europa',
+                hero_badge: 'Todo Portugal & Toda Europa',
                 hero_title: 'Tu espacio.<br><span class="text-vosty-gold italic font-medium">Nuestra transformación.</span>',
-                hero_desc: 'Muebles a medida, armarios y cocinas a medida, reforma de baño, cocina, piso y estancias, tarima flotante, pladur, pintura y cerámica.',
-                hero_btn_sim: 'Abrir Simulador de Presupuesto <span>↓</span>',
+                hero_desc: 'Carpintería, muebles y cocinas a medida, reforma de baño, piso y estancias, tarima flotante, techos de pladur, pintura y cerámica en todo Portugal y Europa.',
+                hero_btn_sim: 'Abrir Simulador <span>↓</span>',
                 hero_btn_wa: 'WhatsApp Directo',
                 hero_btn_work: 'Ver Proyectos',
-                stat_1: 'A medida', stat_2: 'Llave en mano', stat_3: 'Portugal & Europa',
-                serv_kicker: 'Carpintería a Medida & Reformas',
-                serv_title: 'Soluciones completas para viviendas, pisos y locales',
-                s1_title: 'Cocinas y Armarios a Medida', s1_desc: 'Cocinas y armarios a medida, vestidores y muebles planeados con iluminación LED y herrajes de calidad.',
-                s2_title: 'Reforma de Baño y Cocina', s2_desc: 'Reforma integral de baño y cocina: fontanería, cerámica, platos de ducha y muebles suspendidos.',
-                s3_title: 'Reforma de Piso y Estancias', s3_desc: 'Reforma de piso, apartamentos y habitaciones con ejecución cuidada y plazos claros.',
+                stat_1: 'A medida', stat_2: 'Del plano a la obra', stat_3: 'Sin límites de zona',
+                serv_kicker: 'Carpintería & Obras',
+                serv_title: 'Soluciones completas en Portugal y Europa',
+                s1_title: 'Carpintería, Muebles y Cocinas', s1_desc: 'Muebles, cocinas y armarios a medida, vestidores y acabados con iluminación LED.',
+                s2_title: 'Reforma de Baño y Cocina', s2_desc: 'Reforma integral de baño y cocina: fontanería, cerámica, platos de ducha y muebles a medida.',
+                s3_title: 'Reforma de Piso y Estancias', s3_desc: 'Reforma de piso, apartamentos y habitaciones con planificación técnica y calidad.',
                 s4_title: 'Tarima Flotante, Suelos y Cerámica', s4_desc: 'Instalación de tarima flotante, suelos laminados/vinílicos y revestimientos cerámicos.',
-                s5_title: 'Techos Pladur, Pintura y Paneles TV', s5_desc: 'Techos de pladur con luz LED, pintura interior, paneles de TV y muebles a medida.',
-                s6_title: 'Locales Comerciales y Europa', s6_desc: 'Tiendas, clínicas y oficinas con atención en Portugal y toda Europa.',
+                s5_title: 'Techos Pladur, Pintura y Paneles', s5_desc: 'Techos de pladur con LED, pintura interior, paneles TV y muebles personalizados.',
+                s6_title: 'Comercios y Toda Europa', s6_desc: 'Proyectos para todo Portugal y países de Europa.',
                 sim_title: 'Simula tu Presupuesto al Instante',
-                sim_desc: 'Calcula tu proyecto en el simulador integrado o ábrelo a pantalla completa.',
+                sim_desc: 'Usa el simulador integrado o ábrelo a pantalla completa.',
                 ba_title: 'Arrastra para ver el Antes y Después',
-                ba_desc: 'Desliza el control central para comparar el estado inicial con el resultado final.',
+                ba_desc: 'Desliza el control central para comparar el estado inicial y el resultado final.',
                 port_title: 'Proyectos Ejecutados',
                 port_desc: 'Filtra por categoría o haz clic en cualquier foto para ampliarla.',
                 vid_title: 'De la Obra al Acabado Final',
                 vid_desc: 'Mira en vídeo nuestro proceso de fabricación, montaje y entrega.',
                 cta_sec_title: '¿Listo para transformar tu espacio?',
-                cta_sec_desc: 'Usa el simulador o envía los detalles de tu proyecto por WhatsApp.',
-                area_text: 'Portugal & Toda Europa',
+                cta_sec_desc: 'Atendemos en todo Portugal y en toda Europa por correo, WhatsApp o Instagram.',
+                area_text: 'Todo Portugal y toda Europa',
                 form_title: 'Solicitar Presupuesto por WhatsApp',
                 lbl_name: 'Tu Nombre *', lbl_loc: 'Ciudad / País *', lbl_srv: 'Tipo de Servicio *', lbl_desc: 'Detalles del Proyecto',
                 btn_submit: 'Enviar por WhatsApp →'
             },
             fr: {
                 langAttr: 'fr',
-                title: 'VOSTY DESIGN | Menuiserie sur Mesure & Rénovation — Portugal & Europe',
-                desc: 'Menuiserie sur mesure, dressings, cuisines, rénovation de salle de bain, cuisine, appartement et pièces, parquet flottant, placo, peinture et carrelage au Portugal et en Europe.',
-                region: 'Portugal & Europe • Menuiserie sur Mesure & Rénovation',
-                nav_services: 'Prestations', nav_simulator: 'Simulateur', nav_ba: 'Avant / Après', nav_portfolio: 'Portfolio', nav_videos: 'Vidéos', nav_contact: 'Devis',
+                title: 'VOSTY DESIGN | Menuiserie sur Mesure & Rénovation — Tout le Portugal & Europe',
+                desc: 'Menuiserie, dressings, cuisines, rénovation de salle de bain, appartement et pièces, parquet flottant, placo, peinture et carrelage dans tout le Portugal et en Europe.',
+                region: 'Tout le Portugal & Toute l’Europe • Sans Limite de Zone',
+                nav_services: 'Prestations', nav_simulator: 'Simulateur', nav_ba: 'Avant / Après', nav_portfolio: 'Portfolio', nav_videos: 'Vidéos', nav_contact: 'Contact',
                 cta_simulate: 'Simuler un Devis',
-                hero_badge: 'Menuiserie sur Mesure & Rénovation • Portugal & Europe',
+                hero_badge: 'Tout le Portugal & Toute l’Europe',
                 hero_title: 'Votre espace.<br><span class="text-vosty-gold italic font-medium">Notre transformation.</span>',
-                hero_desc: 'Meubles sur mesure, dressings, cuisines, rénovation de salle de bain, appartement et pièces, parquet flottant, plafonds placo, peinture et carrelage.',
+                hero_desc: 'Menuiserie, meubles et cuisines sur mesure, rénovation de salle de bain, appartement et pièces, parquet flottant, placo, peinture et carrelage au Portugal et en Europe.',
                 hero_btn_sim: 'Ouvrir le Simulateur <span>↓</span>',
                 hero_btn_wa: 'WhatsApp Direct',
                 hero_btn_work: 'Voir les Réalisations',
-                stat_1: 'Sur mesure', stat_2: 'Clé en main', stat_3: 'Portugal & Europe',
-                serv_kicker: 'Menuiserie sur Mesure & Travaux',
-                serv_title: 'Solutions complètes pour appartements, maisons et commerces',
-                s1_title: 'Cuisines & Dressings sur Mesure', s1_desc: 'Cuisines, armoires et dressings sur mesure avec finitions soignées et éclairage LED.',
-                s2_title: 'Rénovation Salle de Bain & Cuisine', s2_desc: 'Rénovation complète de salle de bain et cuisine, plomberie, carrelage et meubles suspendus.',
-                s3_title: 'Rénovation Appartement & Pièces', s3_desc: 'Rénovation d’appartement et réaménagement de pièces avec suivi complet.',
-                s4_title: 'Parquet Flottant, Sols & Carrelage', s4_desc: 'Pose de parquet flottant, sols stratifiés/vinyles et carrelage mural ou sol.',
-                s5_title: 'Plafonds Placo, Peinture & Meubles TV', s5_desc: 'Faux plafonds en placo avec LED, peinture intérieure, panneaux TV et rangements.',
-                s6_title: 'Espaces Commerciaux & Europe', s6_desc: 'Boutiques, cabinets et bureaux au Portugal et dans toute l’Europe.',
+                stat_1: 'Sur mesure', stat_2: 'Du plan au chantier', stat_3: 'Sans limite de zone',
+                serv_kicker: 'Menuiserie & Travaux',
+                serv_title: 'Solutions complètes au Portugal et en Europe',
+                s1_title: 'Menuiserie, Meubles & Cuisines', s1_desc: 'Cuisines, dressings et meubles sur mesure avec finitions soignées et éclairage LED.',
+                s2_title: 'Rénovation Salle de Bain & Cuisine', s2_desc: 'Rénovation complète de salle de bain et cuisine, plomberie, carrelage et rangements.',
+                s3_title: 'Rénovation Appartement & Pièces', s3_desc: 'Rénovation d’appartement et aménagement de pièces avec suivi complet.',
+                s4_title: 'Parquet Flottant, Sols & Carrelage', s4_desc: 'Pose de parquet flottant, sols stratifiés/vinyles et carrelage.',
+                s5_title: 'Plafonds Placo, Peinture & Meubles', s5_desc: 'Plafonds placo avec LED, peinture intérieure, panneaux TV et rangements sur mesure.',
+                s6_title: 'Espaces Commerciaux & Europe', s6_desc: 'Projets dans tout le Portugal et partout en Europe.',
                 sim_title: 'Simulez votre Devis en Ligne',
-                sim_desc: 'Estimez votre projet dans le simulateur intégré ou ouvrez-le en plein écran.',
+                sim_desc: 'Utilisez le simulateur intégré ou ouvrez-le en plein écran.',
                 ba_title: 'Glissez pour voir l’Avant / Après',
                 ba_desc: 'Déplacez le curseur pour comparer l’état initial et le résultat final.',
                 port_title: 'Projets Réalisés',
@@ -1552,36 +1121,36 @@
                 vid_title: 'Du Chantier à la Finition',
                 vid_desc: 'Découvrez en vidéo la fabrication, la pose et le rendu final.',
                 cta_sec_title: 'Prêt à transformer votre espace ?',
-                cta_sec_desc: 'Utilisez le simulateur ou envoyez les détails de votre projet sur WhatsApp.',
-                area_text: 'Portugal & Toute l’Europe',
+                cta_sec_desc: 'Intervention dans tout le Portugal et toute l’Europe par e-mail, WhatsApp ou Instagram.',
+                area_text: 'Tout le Portugal & toute l’Europe',
                 form_title: 'Demander un Devis via WhatsApp',
                 lbl_name: 'Votre Nom *', lbl_loc: 'Ville / Pays *', lbl_srv: 'Type de Prestation *', lbl_desc: 'Détails du Projet',
                 btn_submit: 'Envoyer sur WhatsApp →'
             },
             en: {
                 langAttr: 'en',
-                title: 'VOSTY DESIGN | Bespoke Joinery, Custom Furniture & Renovation — Portugal & Europe',
-                desc: 'Bespoke joinery, custom wardrobes and kitchens, bathroom, kitchen, apartment and room renovation, laminate/floating flooring, drywall ceilings, painting and tiling across Portugal and Europe.',
-                region: 'Portugal & Europe • Bespoke Joinery & Home Renovation',
-                nav_services: 'Services', nav_simulator: 'Simulator', nav_ba: 'Before & After', nav_portfolio: 'Portfolio', nav_videos: 'Videos', nav_contact: 'Quote',
+                title: 'VOSTY DESIGN | Bespoke Joinery & Renovation — All of Portugal & Europe',
+                desc: 'Joinery, custom furniture, kitchens, wardrobes, bathroom, apartment and room renovation, floating floors, drywall ceilings, painting and tiling across all of Portugal and Europe.',
+                region: 'All of Portugal & All of Europe • No Area Limits',
+                nav_services: 'Services', nav_simulator: 'Simulator', nav_ba: 'Before & After', nav_portfolio: 'Portfolio', nav_videos: 'Videos', nav_contact: 'Contact',
                 cta_simulate: 'Get a Quote',
-                hero_badge: 'Bespoke Joinery & Renovation • Portugal & Europe',
+                hero_badge: 'All of Portugal & All of Europe',
                 hero_title: 'Your space.<br><span class="text-vosty-gold italic font-medium">Our transformation.</span>',
-                hero_desc: 'Custom furniture, bespoke wardrobes and kitchens, bathroom, apartment and room remodeling, floating floors, drywall ceilings, painting and ceramic tiles.',
-                hero_btn_sim: 'Open Quote Simulator <span>↓</span>',
+                hero_desc: 'Joinery, bespoke furniture, kitchens, wardrobes, bathroom, apartment and room remodeling, floating floors, drywall ceilings, painting and ceramic tiles across all of Portugal and Europe.',
+                hero_btn_sim: 'Open Simulator <span>↓</span>',
                 hero_btn_wa: 'Direct WhatsApp',
                 hero_btn_work: 'View Projects',
-                stat_1: 'Bespoke made', stat_2: 'Turnkey finish', stat_3: 'Portugal & Europe',
-                serv_kicker: 'Bespoke Joinery & Remodeling',
-                serv_title: 'Complete solutions for homes, apartments and commercial spaces',
-                s1_title: 'Custom Kitchens & Wardrobes', s1_desc: 'Tailor-made kitchens, fitted wardrobes and walk-in closets with precision hardware and LED lighting.',
-                s2_title: 'Bathroom & Kitchen Remodeling', s2_desc: 'Full bathroom and kitchen renovations including plumbing, tiling, walk-in showers and vanity units.',
-                s3_title: 'Apartment & Room Renovation', s3_desc: 'Complete apartment and room remodeling with end-to-end execution and clean finishes.',
+                stat_1: 'Bespoke made', stat_2: 'From plan to build', stat_3: 'All of PT & Europe',
+                serv_kicker: 'Joinery & Remodeling',
+                serv_title: 'Complete solutions across Portugal and Europe',
+                s1_title: 'Joinery, Furniture & Kitchens', s1_desc: 'Custom kitchens, fitted wardrobes and bespoke furniture with precision and LED lighting.',
+                s2_title: 'Bathroom & Kitchen Remodeling', s2_desc: 'Full bathroom and kitchen renovations including plumbing, tiling, showers and custom units.',
+                s3_title: 'Apartment & Room Renovation', s3_desc: 'Complete apartment and room remodeling with clear planning and clean execution.',
                 s4_title: 'Floating Floors, Flooring & Tiling', s4_desc: 'Installation of floating floors, laminate/vinyl flooring and ceramic wall & floor tiles.',
-                s5_title: 'Drywall Ceilings, Painting & TV Walls', s5_desc: 'Suspended drywall ceilings with LED coves, interior painting, fluted TV panels and shelving.',
-                s6_title: 'Commercial Spaces & Europe', s6_desc: 'Retail stores, clinics and offices serving Portugal and clients across Europe.',
+                s5_title: 'Drywall Ceilings, Painting & Panels', s5_desc: 'Drywall ceilings with LED, interior painting, fluted TV panels and custom shelving.',
+                s6_title: 'Commercial Spaces & Europe', s6_desc: 'Residential and commercial projects across all of Portugal and Europe.',
                 sim_title: 'Simulate Your Estimate Instantly',
-                sim_desc: 'Calculate your joinery or renovation project in the embedded simulator or open full screen.',
+                sim_desc: 'Use the embedded simulator below or open it in full screen.',
                 ba_title: 'Drag to See Before & After',
                 ba_desc: 'Slide the handle to compare the original condition with the finished result.',
                 port_title: 'Completed Projects',
@@ -1589,36 +1158,36 @@
                 vid_title: 'From Site Work to Final Finish',
                 vid_desc: 'Watch our craft, installation and final results on video.',
                 cta_sec_title: 'Ready to transform your space?',
-                cta_sec_desc: 'Use the simulator or send your project details via WhatsApp.',
-                area_text: 'Portugal & Across Europe',
+                cta_sec_desc: 'Serving all of Portugal and all of Europe via email, WhatsApp or Instagram.',
+                area_text: 'All of Portugal & all of Europe',
                 form_title: 'Request a Quote via WhatsApp',
                 lbl_name: 'Your Name *', lbl_loc: 'City / Country *', lbl_srv: 'Service Type *', lbl_desc: 'Project Details',
                 btn_submit: 'Send via WhatsApp →'
             },
             it: {
                 langAttr: 'it',
-                title: 'VOSTY DESIGN | Falegnameria su Misura & Ristrutturazioni — Portogallo & Europa',
-                desc: 'Falegnameria su misura, armadi e cucine su misura, ristrutturazione bagno, cucina, appartamento e stanze, pavimento flottante, cartongesso, tinteggiatura e piastrelle in Portogallo e in Europa.',
-                region: 'Portogallo & Europa • Falegnameria su Misura & Ristrutturazioni',
-                nav_services: 'Servizi', nav_simulator: 'Simulatore', nav_ba: 'Prima e Dopo', nav_portfolio: 'Portfolio', nav_videos: 'Video', nav_contact: 'Preventivo',
+                title: 'VOSTY DESIGN | Falegnameria su Misura & Ristrutturazioni — Tutto il Portogallo & Europa',
+                desc: 'Falegnameria, arredi e cucine su misura, armadi, ristrutturazione bagno, appartamento e stanze, pavimento flottante, cartongesso, tinteggiatura e piastrelle in tutto il Portogallo e in Europa.',
+                region: 'Tutto il Portogallo & Tutta l’Europa • Senza Limiti di Zona',
+                nav_services: 'Servizi', nav_simulator: 'Simulatore', nav_ba: 'Prima e Dopo', nav_portfolio: 'Portfolio', nav_videos: 'Video', nav_contact: 'Contatti',
                 cta_simulate: 'Simula Preventivo',
-                hero_badge: 'Falegnameria su Misura & Ristrutturazioni • Portogallo & Europa',
+                hero_badge: 'Tutto il Portogallo & Tutta l’Europa',
                 hero_title: 'Il tuo spazio.<br><span class="text-vosty-gold italic font-medium">La nostra trasformazione.</span>',
-                hero_desc: 'Arredi su misura, armadi, cucine, ristrutturazione bagno, appartamento e ambienti, pavimento flottante, cartongesso, tinteggiatura e ceramiche.',
-                hero_btn_sim: 'Apri Simulatore Preventivo <span>↓</span>',
+                hero_desc: 'Falegnameria, arredi e cucine su misura, armadi, ristrutturazione bagno, appartamento e stanze, pavimento flottante, cartongesso, tinteggiatura e ceramiche in tutto il Portogallo e in Europa.',
+                hero_btn_sim: 'Apri Simulatore <span>↓</span>',
                 hero_btn_wa: 'WhatsApp Diretto',
                 hero_btn_work: 'Vedi Lavori',
-                stat_1: 'Su misura', stat_2: 'Chiavi in mano', stat_3: 'Portogallo & Europa',
-                serv_kicker: 'Falegnameria su Misura & Lavori',
-                serv_title: 'Soluzioni complete per casa, appartamenti e attività commerciali',
-                s1_title: 'Cucine e Armadi su Misura', s1_desc: 'Cucine, armadi e cabine armadio su misura con ferramenta di qualità e illuminazione LED.',
-                s2_title: 'Ristrutturazione Bagno e Cucina', s2_desc: 'Ristrutturazione completa di bagno e cucina, impianti, piastrelle e mobili sospesi.',
+                stat_1: 'Su misura', stat_2: 'Dal progetto all’opera', stat_3: 'Tutto PT & Europa',
+                serv_kicker: 'Falegnameria & Lavori',
+                serv_title: 'Soluzioni complete in Portogallo e in Europa',
+                s1_title: 'Falegnameria, Arredi e Cucine', s1_desc: 'Cucine, armadi e mobili su misura con finiture curate e illuminazione LED.',
+                s2_title: 'Ristrutturazione Bagno e Cucina', s2_desc: 'Ristrutturazione completa di bagno e cucina, impianti, piastrelle e mobili su misura.',
                 s3_title: 'Ristrutturazione Appartamento e Stanze', s3_desc: 'Ristrutturazione di appartamenti e singoli ambienti con gestione completa.',
                 s4_title: 'Pavimento Flottante, Pavimenti e Ceramica', s4_desc: 'Posa di pavimento flottante, laminato/LVT e rivestimenti in ceramica.',
-                s5_title: 'Cartongesso, Tinteggiatura e Pannelli TV', s5_desc: 'Controsoffitti in cartongesso con LED, tinteggiatura, pareti TV e librerie su misura.',
-                s6_title: 'Spazi Commerciali ed Europa', s6_desc: 'Negozi, studi e uffici in Portogallo e in tutta Europa.',
+                s5_title: 'Cartongesso, Tinteggiatura e Pannelli', s5_desc: 'Controsoffitti in cartongesso con LED, tinteggiatura, pareti TV e librerie su misura.',
+                s6_title: 'Spazi Commerciali ed Europa', s6_desc: 'Progetti in tutto il Portogallo e in tutta Europa.',
                 sim_title: 'Simula il tuo Preventivo Subito',
-                sim_desc: 'Calcola il progetto nel simulatore integrato o aprilo a schermo intero.',
+                sim_desc: 'Usa il simulatore integrato o aprilo a schermo intero.',
                 ba_title: 'Trascina per vedere Prima e Dopo',
                 ba_desc: 'Scorri il cursore centrale per confrontare lo stato iniziale e il risultato finale.',
                 port_title: 'Progetti Realizzati',
@@ -1626,8 +1195,8 @@
                 vid_title: 'Dal Cantiere alla Finitura Finale',
                 vid_desc: 'Guarda in video lavorazione, posa e risultato finale.',
                 cta_sec_title: 'Pronto a trasformare il tuo spazio?',
-                cta_sec_desc: 'Usa il simulatore o invia i dettagli del progetto su WhatsApp.',
-                area_text: 'Portogallo & Tutta Europa',
+                cta_sec_desc: 'Operiamo in tutto il Portogallo e in tutta Europa via e-mail, WhatsApp o Instagram.',
+                area_text: 'Tutto il Portogallo & tutta l’Europa',
                 form_title: 'Richiedi Preventivo via WhatsApp',
                 lbl_name: 'Il tuo Nome *', lbl_loc: 'Città / Paese *', lbl_srv: 'Tipo di Servizio *', lbl_desc: 'Dettagli del Progetto',
                 btn_submit: 'Invia su WhatsApp →'
@@ -1679,7 +1248,6 @@
             });
         }
 
-        // Deteção automática inicial do idioma do navegador (sem forçar se o utilizador clicar)
         (function initLang() {
             const urlLang = new URLSearchParams(window.location.search).get('lang');
             if (urlLang && translations[urlLang]) {
@@ -1692,26 +1260,31 @@
             }
         })();
 
-        // Animação ao rolar (Reveal)
+        function copyEmail() {
+            const email = 'vostydesign@gmail.com';
+            const btn = document.getElementById('copy-email-btn');
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+                navigator.clipboard.writeText(email).then(() => {
+                    if (btn) btn.textContent = 'Copiado!';
+                    setTimeout(() => { if (btn) btn.textContent = 'Copiar e-mail'; }, 2000);
+                });
+            }
+        }
+
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                }
+                if (entry.isIntersecting) entry.target.classList.add('visible');
             });
         }, { threshold: 0.08 });
         document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-        // 1. Comparador Antes & Depois Interativo
         document.querySelectorAll('[data-ba]').forEach(container => {
             const beforeWrapper = container.querySelector('.ba-before-wrapper');
             const beforeImg = container.querySelector('.ba-before');
             const handle = container.querySelector('.ba-handle');
             let isDragging = false;
 
-            const syncWidth = () => {
-                beforeImg.style.width = container.offsetWidth + 'px';
-            };
+            const syncWidth = () => { beforeImg.style.width = container.offsetWidth + 'px'; };
             syncWidth();
             window.addEventListener('resize', syncWidth);
 
@@ -1732,7 +1305,6 @@
             window.addEventListener('touchmove', (e) => { if (isDragging) updatePosition(e.touches[0].clientX); }, { passive: true });
         });
 
-        // 2. Filtros do Portfólio
         const filterBtns = document.querySelectorAll('.filter-btn');
         const portfolioItems = document.querySelectorAll('.portfolio-item');
 
@@ -1752,7 +1324,6 @@
             });
         });
 
-        // 3. Lightbox
         function openLightbox(src, caption) {
             const lb = document.getElementById('lightbox');
             document.getElementById('lightbox-img').src = src;
@@ -1766,7 +1337,6 @@
             if (e.key === 'Escape') closeLightbox();
         });
 
-        // 4. Envio de Orçamento via WhatsApp
         document.getElementById('quote-form').addEventListener('submit', function(e) {
             e.preventDefault();
             const name = document.getElementById('client-name').value.trim();
@@ -1776,7 +1346,7 @@
 
             const msg = `Olá VOSTY DESIGN! Gostaria de pedir um orçamento:%0A%0A` +
                         `*Nome:* ${encodeURIComponent(name)}%0A` +
-                        `*Localidade/País:* ${encodeURIComponent(location)}%0A` +
+                        `*Cidade/País:* ${encodeURIComponent(location)}%0A` +
                         `*Serviço:* ${encodeURIComponent(service)}%0A` +
                         `*Detalhes:* ${encodeURIComponent(details || 'A combinar')}`;
 
